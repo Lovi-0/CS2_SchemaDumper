@@ -1,3 +1,10 @@
+// Schema offset: 0x26fac850200 
+// Schema name: soundsystem.dll 
+// Schema declared class: 73 
+
+// Offset: 0x7ffe21899d60 
+// N. Class: 0 
+// Fields: 3 
 namespace CSosGroupActionSchema
 {
 	constexpr uint32_t m_name = 0x8;  // CUtlString 
@@ -5,6 +12,9 @@ namespace CSosGroupActionSchema
 	constexpr uint32_t m_actionInstanceType = 0x14;  // ActionType_t 
 }
 
+// Offset: 0x7ffe21899c70 
+// N. Class: 1 
+// Fields: 3 
 namespace CSosGroupActionLimitSchema
 {
 	constexpr uint32_t m_nMaxCount = 0x18;  // int32 
@@ -12,17 +22,26 @@ namespace CSosGroupActionLimitSchema
 	constexpr uint32_t m_nSortType = 0x20;  // SosActionSortType_t 
 }
 
+// Offset: 0x7ffe21899bb0 
+// N. Class: 2 
+// Fields: 1 
 namespace CSosGroupActionTimeLimitSchema
 {
 	constexpr uint32_t m_flMaxDuration = 0x18;  // float32 
 }
 
+// Offset: 0x7ffe21899af0 
+// N. Class: 3 
+// Fields: 2 
 namespace CSosGroupActionTimeBlockLimitSchema
 {
 	constexpr uint32_t m_nMaxCount = 0x18;  // int32 
 	constexpr uint32_t m_flMaxDuration = 0x1C;  // float32 
 }
 
+// Offset: 0x7ffe21899990 
+// N. Class: 4 
+// Fields: 5 
 namespace CSosGroupActionSetSoundeventParameterSchema
 {
 	constexpr uint32_t m_nMaxCount = 0x18;  // int32 
@@ -32,6 +51,9 @@ namespace CSosGroupActionSetSoundeventParameterSchema
 	constexpr uint32_t m_nSortType = 0x30;  // SosActionSortType_t 
 }
 
+// Offset: 0x7ffe218997e0 
+// N. Class: 5 
+// Fields: 7 
 namespace CSosGroupActionSoundeventClusterSchema
 {
 	constexpr uint32_t m_nMinNearby = 0x18;  // int32 
@@ -43,6 +65,9 @@ namespace CSosGroupActionSoundeventClusterSchema
 	constexpr uint32_t m_groupBoundingBoxMaxsOpvar = 0x40;  // CUtlString 
 }
 
+// Offset: 0x7ffe218996c0 
+// N. Class: 6 
+// Fields: 4 
 namespace CSosGroupActionSoundeventPrioritySchema
 {
 	constexpr uint32_t m_priorityValue = 0x18;  // CUtlString 
@@ -51,6 +76,9 @@ namespace CSosGroupActionSoundeventPrioritySchema
 	constexpr uint32_t m_bPriorityReadButDontContribute = 0x30;  // CUtlString 
 }
 
+// Offset: 0x7ffe218994f0 
+// N. Class: 7 
+// Fields: 8 
 namespace CSosGroupActionMemberCountEnvelopeSchema
 {
 	constexpr uint32_t m_nBaseCount = 0x18;  // int32 
@@ -63,12 +91,18 @@ namespace CSosGroupActionMemberCountEnvelopeSchema
 	constexpr uint32_t m_bSaveToGroup = 0x38;  // bool 
 }
 
+// Offset: 0x7ffe21899410 
+// N. Class: 8 
+// Fields: 2 
 namespace CSosGroupActionSoundeventCountSchema
 {
 	constexpr uint32_t m_bExcludeStoppedSounds = 0x18;  // bool 
 	constexpr uint32_t m_strCountKeyName = 0x20;  // CUtlString 
 }
 
+// Offset: 0x7ffe218991d0 
+// N. Class: 9 
+// Fields: 10 
 namespace CSosGroupActionSoundeventMinMaxValuesSchema
 {
 	constexpr uint32_t m_strQueryPublicFieldName = 0x18;  // CUtlString 
@@ -83,6 +117,9 @@ namespace CSosGroupActionSoundeventMinMaxValuesSchema
 	constexpr uint32_t m_strMaxValueName = 0x40;  // CUtlString 
 }
 
+// Offset: 0x7ffe21899090 
+// N. Class: 10 
+// Fields: 5 
 namespace CSosGroupBranchPattern
 {
 	constexpr uint32_t m_bMatchEventName = 0x8;  // bool 
@@ -92,6 +129,9 @@ namespace CSosGroupBranchPattern
 	constexpr uint32_t m_bMatchString = 0xC;  // bool 
 }
 
+// Offset: 0x7ffe21898f40 
+// N. Class: 11 
+// Fields: 5 
 namespace CSosGroupMatchPattern
 {
 	constexpr uint32_t m_matchSoundEventName = 0x10;  // CUtlString 
@@ -101,6 +141,9 @@ namespace CSosGroupMatchPattern
 	constexpr uint32_t m_opvarString = 0x28;  // CUtlString 
 }
 
+// Offset: 0x7ffe21898d30 
+// N. Class: 12 
+// Fields: 9 
 namespace CSosSoundEventGroupSchema
 {
 	constexpr uint32_t m_name = 0x0;  // CUtlString 
@@ -114,10 +157,17 @@ namespace CSosSoundEventGroupSchema
 	constexpr uint32_t m_vActions = 0xC0;  // CSosGroupActionSchema*[4] 
 }
 
+// Offset: 0x7ffe21898c98 
+// N. Class: 13 
+// Fields: 1 
 namespace CSosSoundEventGroupListSchema
 {
+	constexpr uint32_t m_groupList = 0x0;  // CUtlVector< CSosSoundEventGroupSchema > 
 }
 
+// Offset: 0x7ffe21898b30 
+// N. Class: 14 
+// Fields: 5 
 namespace SosEditItemInfo_t
 {
 	constexpr uint32_t itemType = 0x0;  // SosEditItemType_t 
@@ -127,16 +177,24 @@ namespace SosEditItemInfo_t
 	constexpr uint32_t itemPos = 0x28;  // Vector2D 
 }
 
+// Offset: 0x7ffe21898a88 
+// N. Class: 15 
+// Fields: 1 
 namespace SelectedEditItemInfo_t
 {
 	constexpr uint32_t m_EditItems = 0x0;  // CUtlVector< SosEditItemInfo_t > 
 }
 
+// Offset: 0x7ffe2189a018 
+// N. Class: 16 
+// Fields: 1 
 namespace CSoundEventMetaData
 {
-	constexpr uint32_t m_soundEventVMix = 0x0;  // CStrongHandle< InfoForResourceTypeCVMixListResource > 
 }
 
+// Offset: 0x7ffe21898870 
+// N. Class: 17 
+// Fields: 6 
 namespace CDSPMixgroupModifier
 {
 	constexpr uint32_t m_mixgroup = 0x0;  // CUtlString 
@@ -147,29 +205,44 @@ namespace CDSPMixgroupModifier
 	constexpr uint32_t m_flListenerReverbModifierWhenSourceReverbIsActive = 0x18;  // float32 
 }
 
+// Offset: 0x7ffe21898800 
+// N. Class: 18 
+// Fields: 2 
 namespace CDspPresetModifierList
 {
 	constexpr uint32_t m_dspName = 0x0;  // CUtlString 
 	constexpr uint32_t m_modifiers = 0x8;  // CUtlVector< CDSPMixgroupModifier > 
 }
 
+// Offset: 0x7ffe21898750 
+// N. Class: 19 
+// Fields: 1 
 namespace CDSPPresetMixgroupModifierTable
 {
 	constexpr uint32_t m_table = 0x0;  // CUtlVector< CDspPresetModifierList > 
 }
 
+// Offset: 0x7ffe21893fc0 
+// N. Class: 20 
+// Fields: 2 
 namespace CVoiceContainerAnalysisBase
 {
 	constexpr uint32_t m_bRegenerateCurveOnCompile = 0x8;  // bool 
 	constexpr uint32_t m_curve = 0x10;  // CPiecewiseCurve 
 }
 
+// Offset: 0x7ffe218940a0 
+// N. Class: 21 
+// Fields: 2 
 namespace CVoiceContainerBase
 {
 	constexpr uint32_t m_vSound = 0x38;  // CVSound 
 	constexpr uint32_t m_pEnvelopeAnalyzer = 0xB8;  // CVoiceContainerAnalysisBase* 
 }
 
+// Offset: 0x7ffe21894bf0 
+// N. Class: 22 
+// Fields: 11 
 namespace CVSound
 {
 	constexpr uint32_t m_nRate = 0x0;  // int32 
@@ -185,14 +258,23 @@ namespace CVSound
 	constexpr uint32_t m_encodedHeader = 0x58;  // CUtlBinaryBlock 
 }
 
+// Offset: 0x0 
+// N. Class: 23 
+// Fields: 0 
 namespace CVoiceContainerDefault
 {
 }
 
+// Offset: 0x0 
+// N. Class: 24 
+// Fields: 0 
 namespace CVoiceContainerNull
 {
 }
 
+// Offset: 0x7ffe218942d0 
+// N. Class: 25 
+// Fields: 3 
 namespace CSoundContainerReference
 {
 	constexpr uint32_t m_bUseReference = 0x0;  // bool 
@@ -200,6 +282,9 @@ namespace CSoundContainerReference
 	constexpr uint32_t m_pSound = 0x10;  // CVoiceContainerBase* 
 }
 
+// Offset: 0x7ffe218943e0 
+// N. Class: 26 
+// Fields: 3 
 namespace CSoundContainerReferenceArray
 {
 	constexpr uint32_t m_bUseReference = 0x0;  // bool 
@@ -207,12 +292,18 @@ namespace CSoundContainerReferenceArray
 	constexpr uint32_t m_pSounds = 0x20;  // CUtlVector< CVoiceContainerBase* > 
 }
 
+// Offset: 0x7ffe21895720 
+// N. Class: 27 
+// Fields: 2 
 namespace CAudioEmphasisSample
 {
 	constexpr uint32_t m_flTime = 0x0;  // float32 
 	constexpr uint32_t m_flValue = 0x4;  // float32 
 }
 
+// Offset: 0x7ffe218957e0 
+// N. Class: 28 
+// Fields: 3 
 namespace CAudioPhonemeTag
 {
 	constexpr uint32_t m_flStartTime = 0x0;  // float32 
@@ -220,6 +311,9 @@ namespace CAudioPhonemeTag
 	constexpr uint32_t m_nPhonemeCode = 0x8;  // int32 
 }
 
+// Offset: 0x7ffe218958c0 
+// N. Class: 29 
+// Fields: 6 
 namespace CAudioMorphData
 {
 	constexpr uint32_t m_times = 0x0;  // CUtlVector< float32 > 
@@ -230,6 +324,9 @@ namespace CAudioMorphData
 	constexpr uint32_t m_flEaseOut = 0x64;  // float32 
 }
 
+// Offset: 0x7ffe21895a00 
+// N. Class: 30 
+// Fields: 4 
 namespace CAudioSentence
 {
 	constexpr uint32_t m_bShouldVoiceDuck = 0x0;  // bool 
@@ -238,10 +335,16 @@ namespace CAudioSentence
 	constexpr uint32_t m_morphData = 0x38;  // CAudioMorphData 
 }
 
+// Offset: 0x0 
+// N. Class: 31 
+// Fields: 0 
 namespace CSoundInfoHeader
 {
 }
 
+// Offset: 0x7ffe21894e50 
+// N. Class: 32 
+// Fields: 3 
 namespace CVoiceContainerEnvelopeAnalyzer
 {
 	constexpr uint32_t m_mode = 0x50;  // EMode_t 
@@ -249,18 +352,28 @@ namespace CVoiceContainerEnvelopeAnalyzer
 	constexpr uint32_t m_flThreshold = 0x58;  // float32 
 }
 
+// Offset: 0x7ffe21894f60 
+// N. Class: 33 
+// Fields: 2 
 namespace CVoiceContainerEnvelope
 {
 	constexpr uint32_t m_sound = 0xC0;  // CStrongHandle< InfoForResourceTypeCVoiceContainerBase > 
 	constexpr uint32_t m_analysisContainer = 0xC8;  // CVoiceContainerAnalysisBase* 
 }
 
+// Offset: 0x7ffe21894740 
+// N. Class: 34 
+// Fields: 3 
 namespace CVoiceContainerSelector
 {
 	constexpr uint32_t m_mode = 0xC0;  // PlayBackMode_t 
+	constexpr uint32_t m_soundsToPlay = 0xC8;  // CSoundContainerReferenceArray 
 	constexpr uint32_t m_fProbabilityWeights = 0x100;  // CUtlVector< float32 > 
 }
 
+// Offset: 0x7ffe21895b10 
+// N. Class: 35 
+// Fields: 3 
 namespace CVoiceContainerBlender
 {
 	constexpr uint32_t m_firstSound = 0xC0;  // CSoundContainerReference 
@@ -268,6 +381,9 @@ namespace CVoiceContainerBlender
 	constexpr uint32_t m_flBlendFactor = 0xF0;  // float32 
 }
 
+// Offset: 0x7ffe21895c10 
+// N. Class: 36 
+// Fields: 5 
 namespace CVoiceContainerLoopTrigger
 {
 	constexpr uint32_t m_sound = 0xC0;  // CSoundContainerReference 
@@ -277,6 +393,9 @@ namespace CVoiceContainerLoopTrigger
 	constexpr uint32_t m_bCrossFade = 0xE4;  // bool 
 }
 
+// Offset: 0x7ffe21894530 
+// N. Class: 37 
+// Fields: 6 
 namespace CVoiceContainerRandomSampler
 {
 	constexpr uint32_t m_flAmplitude = 0xC0;  // float32 
@@ -287,6 +406,9 @@ namespace CVoiceContainerRandomSampler
 	constexpr uint32_t m_grainResources = 0xD8;  // CUtlVector< CStrongHandle< InfoForResourceTypeCVoiceContainerBase > > 
 }
 
+// Offset: 0x7ffe21895d40 
+// N. Class: 38 
+// Fields: 5 
 namespace CVoiceContainerGranulator
 {
 	constexpr uint32_t m_flGrainLength = 0xC0;  // float32 
@@ -296,11 +418,17 @@ namespace CVoiceContainerGranulator
 	constexpr uint32_t m_sourceAudio = 0xD0;  // CStrongHandle< InfoForResourceTypeCVoiceContainerBase > 
 }
 
+// Offset: 0x7ffe218950d0 
+// N. Class: 39 
+// Fields: 1 
 namespace CVoiceContainerStaticAdditiveSynth
 {
 	constexpr uint32_t m_tones = 0xC0;  // CUtlVector< CVoiceContainerStaticAdditiveSynth::CTone > 
 }
 
+// Offset: 0x7ffe21895440 
+// N. Class: 40 
+// Fields: 3 
 namespace CVoiceContainerStaticAdditiveSynth::CTone
 {
 	constexpr uint32_t m_harmonics = 0x0;  // CUtlVector< CVoiceContainerStaticAdditiveSynth::CHarmonic > 
@@ -308,6 +436,9 @@ namespace CVoiceContainerStaticAdditiveSynth::CTone
 	constexpr uint32_t m_bSyncInstances = 0x58;  // bool 
 }
 
+// Offset: 0x7ffe218951a0 
+// N. Class: 41 
+// Fields: 4 
 namespace CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance
 {
 	constexpr uint32_t m_flMinVolume = 0x0;  // float32 
@@ -316,6 +447,9 @@ namespace CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance
 	constexpr uint32_t m_nInstancesAtMaxVolume = 0xC;  // int32 
 }
 
+// Offset: 0x7ffe218952d0 
+// N. Class: 42 
+// Fields: 7 
 namespace CVoiceContainerStaticAdditiveSynth::CHarmonic
 {
 	constexpr uint32_t m_nWaveform = 0x0;  // EWaveform 
@@ -327,6 +461,9 @@ namespace CVoiceContainerStaticAdditiveSynth::CHarmonic
 	constexpr uint32_t m_volumeScaling = 0x50;  // CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance 
 }
 
+// Offset: 0x7ffe21895570 
+// N. Class: 43 
+// Fields: 9 
 namespace CVoiceContainerShapedNoise
 {
 	constexpr uint32_t m_bUseCurveForFrequency = 0xC0;  // bool 
@@ -340,33 +477,51 @@ namespace CVoiceContainerShapedNoise
 	constexpr uint32_t m_gainSweep = 0x158;  // CPiecewiseCurve 
 }
 
+// Offset: 0x7ffe21895e80 
+// N. Class: 44 
+// Fields: 1 
 namespace CVoiceContainerSwitch
 {
 	constexpr uint32_t m_soundsToPlay = 0xC0;  // CUtlVector< CSoundContainerReference > 
 }
 
+// Offset: 0x7ffe21895f30 
+// N. Class: 45 
+// Fields: 2 
 namespace CVoiceContainerSetElement
 {
 	constexpr uint32_t m_sound = 0x0;  // CSoundContainerReference 
 	constexpr uint32_t m_flVolumeDB = 0x18;  // float32 
 }
 
+// Offset: 0x7ffe21896000 
+// N. Class: 46 
+// Fields: 1 
 namespace CVoiceContainerSet
 {
 	constexpr uint32_t m_soundsToPlay = 0xC0;  // CUtlVector< CVoiceContainerSetElement > 
 }
 
+// Offset: 0x7ffe21894860 
+// N. Class: 47 
+// Fields: 2 
 namespace CVoiceContainerDecayingSineWave
 {
 	constexpr uint32_t m_flFrequency = 0xC0;  // float32 
 	constexpr uint32_t m_flDecayTime = 0xC4;  // float32 
 }
 
+// Offset: 0x7ffe21894948 
+// N. Class: 48 
+// Fields: 1 
 namespace CVoiceContainerAmpedDecayingSineWave
 {
 	constexpr uint32_t m_flGainAmount = 0xC8;  // float32 
 }
 
+// Offset: 0x7ffe21894a40 
+// N. Class: 49 
+// Fields: 3 
 namespace CVoiceContainerRealtimeFMSineWave
 {
 	constexpr uint32_t m_flCarrierFrequency = 0xC0;  // float32 
@@ -374,6 +529,9 @@ namespace CVoiceContainerRealtimeFMSineWave
 	constexpr uint32_t m_flModulatorAmount = 0xC8;  // float32 
 }
 
+// Offset: 0x7ffe218927e0 
+// N. Class: 50 
+// Fields: 6 
 namespace VMixFilterDesc_t
 {
 	constexpr uint32_t m_nFilterType = 0x0;  // VMixFilterType_t 
@@ -384,11 +542,17 @@ namespace VMixFilterDesc_t
 	constexpr uint32_t m_flQ = 0xC;  // float32 
 }
 
+// Offset: 0x7ffe218920e0 
+// N. Class: 51 
+// Fields: 1 
 namespace VMixEQ8Desc_t
 {
 	constexpr uint32_t m_stages = 0x0;  // VMixFilterDesc_t[8] 
 }
 
+// Offset: 0x7ffe218922d0 
+// N. Class: 52 
+// Fields: 7 
 namespace VMixDelayDesc_t
 {
 	constexpr uint32_t m_feedbackFilter = 0x0;  // VMixFilterDesc_t 
@@ -400,12 +564,18 @@ namespace VMixDelayDesc_t
 	constexpr uint32_t m_flWidth = 0x24;  // float32 
 }
 
+// Offset: 0x7ffe218928b0 
+// N. Class: 53 
+// Fields: 2 
 namespace VMixPannerDesc_t
 {
 	constexpr uint32_t m_type = 0x0;  // VMixPannerType_t 
 	constexpr uint32_t m_flStrength = 0x4;  // float32 
 }
 
+// Offset: 0x7ffe218929e0 
+// N. Class: 54 
+// Fields: 9 
 namespace VMixModDelayDesc_t
 {
 	constexpr uint32_t m_feedbackFilter = 0x0;  // VMixFilterDesc_t 
@@ -419,6 +589,9 @@ namespace VMixModDelayDesc_t
 	constexpr uint32_t m_bApplyAntialiasing = 0x2C;  // bool 
 }
 
+// Offset: 0x7ffe21892b80 
+// N. Class: 55 
+// Fields: 4 
 namespace VMixDiffusorDesc_t
 {
 	constexpr uint32_t m_flSize = 0x0;  // float32 
@@ -427,6 +600,9 @@ namespace VMixDiffusorDesc_t
 	constexpr uint32_t m_flOutputGain = 0xC;  // float32 
 }
 
+// Offset: 0x7ffe21892c80 
+// N. Class: 56 
+// Fields: 17 
 namespace VMixBoxverbDesc_t
 {
 	constexpr uint32_t m_flSizeMax = 0x0;  // float32 
@@ -448,6 +624,9 @@ namespace VMixBoxverbDesc_t
 	constexpr uint32_t m_flTaps = 0x4C;  // float32 
 }
 
+// Offset: 0x7ffe21892f20 
+// N. Class: 57 
+// Fields: 4 
 namespace VMixFreeverbDesc_t
 {
 	constexpr uint32_t m_flRoomSize = 0x0;  // float32 
@@ -456,6 +635,9 @@ namespace VMixFreeverbDesc_t
 	constexpr uint32_t m_flLateReflections = 0xC;  // float32 
 }
 
+// Offset: 0x7ffe21893210 
+// N. Class: 58 
+// Fields: 7 
 namespace VMixPlateverbDesc_t
 {
 	constexpr uint32_t m_flPrefilter = 0x0;  // float32 
@@ -467,6 +649,9 @@ namespace VMixPlateverbDesc_t
 	constexpr uint32_t m_flFeedbackDiffusion2 = 0x18;  // float32 
 }
 
+// Offset: 0x7ffe218933e0 
+// N. Class: 59 
+// Fields: 12 
 namespace VMixDynamicsDesc_t
 {
 	constexpr uint32_t m_fldbGain = 0x0;  // float32 
@@ -483,6 +668,9 @@ namespace VMixDynamicsDesc_t
 	constexpr uint32_t m_bPeakMode = 0x2C;  // bool 
 }
 
+// Offset: 0x7ffe218937e0 
+// N. Class: 60 
+// Fields: 9 
 namespace VMixDynamicsCompressorDesc_t
 {
 	constexpr uint32_t m_fldbOutputGain = 0x0;  // float32 
@@ -496,6 +684,9 @@ namespace VMixDynamicsCompressorDesc_t
 	constexpr uint32_t m_bPeakMode = 0x20;  // bool 
 }
 
+// Offset: 0x7ffe21893b30 
+// N. Class: 61 
+// Fields: 10 
 namespace VMixDynamicsBand_t
 {
 	constexpr uint32_t m_fldbGainInput = 0x0;  // float32 
@@ -510,6 +701,9 @@ namespace VMixDynamicsBand_t
 	constexpr uint32_t m_bSolo = 0x21;  // bool 
 }
 
+// Offset: 0x7ffe21891dc0 
+// N. Class: 62 
+// Fields: 10 
 namespace VMixDynamics3BandDesc_t
 {
 	constexpr uint32_t m_fldbGainOutput = 0x0;  // float32 
@@ -524,6 +718,9 @@ namespace VMixDynamics3BandDesc_t
 	constexpr uint32_t m_bandDesc = 0x24;  // VMixDynamicsBand_t[3] 
 }
 
+// Offset: 0x7ffe21891f80 
+// N. Class: 63 
+// Fields: 3 
 namespace VMixEnvelopeDesc_t
 {
 	constexpr uint32_t m_flAttackTimeMS = 0x0;  // float32 
@@ -531,6 +728,9 @@ namespace VMixEnvelopeDesc_t
 	constexpr uint32_t m_flReleaseTimeMS = 0x8;  // float32 
 }
 
+// Offset: 0x7ffe21892060 
+// N. Class: 64 
+// Fields: 4 
 namespace VMixPitchShiftDesc_t
 {
 	constexpr uint32_t m_nGrainSampleCount = 0x0;  // int32 
@@ -539,6 +739,9 @@ namespace VMixPitchShiftDesc_t
 	constexpr uint32_t m_nProcType = 0xC;  // int32 
 }
 
+// Offset: 0x7ffe21892470 
+// N. Class: 65 
+// Fields: 8 
 namespace VMixConvolutionDesc_t
 {
 	constexpr uint32_t m_fldbGain = 0x0;  // float32 
@@ -551,6 +754,9 @@ namespace VMixConvolutionDesc_t
 	constexpr uint32_t m_flHighCutoffFreq = 0x1C;  // float32 
 }
 
+// Offset: 0x7ffe218935e0 
+// N. Class: 66 
+// Fields: 10 
 namespace VMixVocoderDesc_t
 {
 	constexpr uint32_t m_nBandCount = 0x0;  // int32 
@@ -565,6 +771,9 @@ namespace VMixVocoderDesc_t
 	constexpr uint32_t m_bPeakMode = 0x24;  // bool 
 }
 
+// Offset: 0x7ffe218939c0 
+// N. Class: 67 
+// Fields: 5 
 namespace VMixShaperDesc_t
 {
 	constexpr uint32_t m_nShape = 0x0;  // int32 
@@ -574,6 +783,9 @@ namespace VMixShaperDesc_t
 	constexpr uint32_t m_nOversampleFactor = 0x10;  // int32 
 }
 
+// Offset: 0x7ffe21893d20 
+// N. Class: 68 
+// Fields: 6 
 namespace VMixUtilityDesc_t
 {
 	constexpr uint32_t m_nOp = 0x0;  // VMixChannelOperation_t 
@@ -584,6 +796,9 @@ namespace VMixUtilityDesc_t
 	constexpr uint32_t m_flBassFreq = 0x14;  // float32 
 }
 
+// Offset: 0x7ffe21893020 
+// N. Class: 69 
+// Fields: 8 
 namespace VMixAutoFilterDesc_t
 {
 	constexpr uint32_t m_flEnvelopeAmount = 0x0;  // float32 
@@ -596,6 +811,9 @@ namespace VMixAutoFilterDesc_t
 	constexpr uint32_t m_nLFOShape = 0x28;  // VMixLFOShape_t 
 }
 
+// Offset: 0x7ffe21893e80 
+// N. Class: 70 
+// Fields: 3 
 namespace VMixOscDesc_t
 {
 	constexpr uint32_t oscType = 0x0;  // VMixLFOShape_t 
@@ -603,11 +821,17 @@ namespace VMixOscDesc_t
 	constexpr uint32_t m_flPhase = 0x8;  // float32 
 }
 
+// Offset: 0x7ffe21892248 
+// N. Class: 71 
+// Fields: 1 
 namespace VMixEffectChainDesc_t
 {
 	constexpr uint32_t m_flCrossfadeTime = 0x0;  // float32 
 }
 
+// Offset: 0x7ffe21893130 
+// N. Class: 72 
+// Fields: 3 
 namespace VMixSubgraphSwitchDesc_t
 {
 	constexpr uint32_t m_interpolationMode = 0x0;  // VMixSubgraphSwitchInterpolationType_t 

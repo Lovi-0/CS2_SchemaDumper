@@ -33,3 +33,5 @@
 
 # Other
 .vs
+.vscode
+x64

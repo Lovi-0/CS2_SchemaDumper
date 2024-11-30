@@ -8,64 +8,64 @@
 
 namespace SDK {
 
-    class CSchemaFieldType{
+    class CSchemaFieldType {
     public:
-        void* vfptr;
-        char* typeName;
-    }; 
+        void* vfptr;                                // 0x0
+        char* m_szTypeName;                         // 0x8
+    };
 
-    class CSchemaField{
+    class CSchemaField {
     public:
-        const char* name;
-        CSchemaFieldType* instanceSchemaFieldType;
-        uint32_t offset;
-        uint32_t metadata_count;
-        void* metadata;
+        const char* m_szName;                       // 0x0
+        CSchemaFieldType* m_pSchemaFieldType;       // 0x8
+        uint32_t m_nOffset;                         // 0x10
+        uint32_t m_nMetadata_count;                 // 0x14
+        void* metadata;                             // 0x18
     };
 
     class CSchemaClass {
     public:
-        void* vfptr;                      // Offset: 0x0
-        const char* m_szName;             // Offset: 0x8
-        const char* m_szModuleName;       // Offset: 0x10
-        uint32_t m_nSize;                 // Offset: 0x18
-        uint16_t m_nNumFields;            // Offset: 0x1C
-        S2_PAD(0x2);                      // Offset: 0x1E (Padding)
-        uint16_t m_nStaticSize;           // Offset: 0x20
-        uint16_t m_nMetadataSize;         // Offset: 0x22
-        S2_PAD(0x4);                      // Offset: 0x24 (Padding)
-        CSchemaField* m_pFields;          // Offset: 0x28
+        void* vfptr;                      // 0x0
+        const char* m_szName;             // 0x8
+        const char* m_szModuleName;       // 0x10
+        uint32_t m_nSize;                 // 0x18
+        uint16_t m_nNumFields;            // 0x1C
+        S2_PAD(0x2);                      // 0x1E
+        uint16_t m_nStaticSize;           // 0x20
+        uint16_t m_nMetadataSize;         // 0x22
+        S2_PAD(0x4);                      // 0x24
+        CSchemaField* m_pFields;          // 0x28
     };
 
     class CSchemaDeclaredClass {
     public:
-        void* vfptr;                      // Offset: 0x0
-        const char* m_szName;             // Offset: 0x8
-        const char* m_szModuleName;       // Offset: 0x10
-        uint16_t m_szUnknownStr;          // Offset: 0x18
-        CSchemaClass* m_Class;            // Offset: 0x20
+        void* vfptr;                      // 0x0
+        const char* m_szName;             // 0x8
+        const char* m_szModuleName;       // 0x10
+        uint16_t m_szUnknownStr;          // 0x18
+        CSchemaClass* m_Class;            // 0x20
     };
 
     class CSchemaDeclaredClassEntry {
     public:
-        uint64_t m_nHash[2];              // Offset: 0x0
-        CSchemaDeclaredClass* m_pDeclaredClass; // Offset: 0x10
+        uint64_t m_nHash[2];                    // 0x0
+        CSchemaDeclaredClass* m_pDeclaredClass; // 0x10
     };
 
     class CSchemaSystemTypeScope {
     public:
-        void* vfptr;                            // Offset: 0x0
-        char m_szName[256];                     // Offset: 0x8
-        S2_PAD(0x338);                          // Offset: 0x108 (Padding)
-        CSchemaDeclaredClassEntry* m_pDeclaredClasses; // Offset: 0x440
-        S2_PAD(0xE);                            // Offset: 0x448 (Padding)
-        uint16_t m_nNumDeclaredClasses;         // Offset: 0x450
+        void* vfptr;                            // 0x0
+        char m_szName[256];                     // 0x8
+        S2_PAD(0x338);                          // 0x108
+        CSchemaDeclaredClassEntry* m_pDeclaredClasses; // 0x440
+        S2_PAD(0xE);                            // 0x448
+        uint16_t m_nNumDeclaredClasses;         // 0x450
     };
 
     class CSchemaSystem {
     public:
-        S2_PAD(0x188);                          // Offset: 0x0 (Padding)
-        uint64_t m_nScopeSize;                  // Offset: 0x188
+        S2_PAD(0x188);                          // 0x0
+        uint64_t m_nScopeSize;                  // 0x188
         CSchemaSystemTypeScope** m_pScopeArray; // Offset: 0x190
     };
 }

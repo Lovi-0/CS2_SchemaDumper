@@ -90,14 +90,14 @@ int main() {
     CreateDirectoryA(DUMP_FOLDER_NAME, 0);
 
     // Dumping Schema Classes
-    for (uint64_t s = 0; s < SchemaSystem.m_nScopeSize; ++s) {
+    for (uint64_t s = 0; s < SchemaSystem.m_nScopeSize; s++) {
+
         SDK::CSchemaSystemTypeScope SchemaScope = { 0 };
         if (!mem.Read(ScopeArray[s], &SchemaScope) || !SchemaScope.m_pDeclaredClasses)
             continue;
-           
-        // Prepare file name for dumping
+          
         char DumpFileName[MAX_PATH] = { 0 };
-        printf("\nDumping Schema: %s\n", SchemaScope.m_szName);
+        printf("\nDumping Schema: %s, Declared classes: %d \n", SchemaScope.m_szName, SchemaScope.m_nNumDeclaredClasses);
         sprintf_s(DumpFileName, sizeof(DumpFileName), DUMP_FOLDER_NAME"\\%s.hpp", SchemaScope.m_szName);
 
         FILE* _File = NULL;
@@ -107,6 +107,11 @@ int main() {
             continue;
         }
 
+        fprintf(_File, "// Schema offset: 0x%llx \n", ScopeArray[s]);
+        fprintf(_File, "// Schema name: %s \n", SchemaScope.m_szName);
+        fprintf(_File, "// Schema declared class: %d \n\n", SchemaScope.m_nNumDeclaredClasses);
+
+
         SDK::CSchemaDeclaredClassEntry* DeclaredClassEntries = new SDK::CSchemaDeclaredClassEntry[SchemaScope.m_nNumDeclaredClasses + 1];
         if (!mem.Read(SchemaScope.m_pDeclaredClasses, DeclaredClassEntries, (SchemaScope.m_nNumDeclaredClasses + 1) * sizeof(SDK::CSchemaDeclaredClassEntry))) {
             printf("[ ERROR ] Failed to read declared class entries.\n");
@@ -114,7 +119,7 @@ int main() {
         }
 
         // Iterate through all declared classes
-        for (uint16_t c = 0; c < SchemaScope.m_nNumDeclaredClasses; ++c) {
+        for (uint16_t c = 0; c < SchemaScope.m_nNumDeclaredClasses; c++) {
 
             SDK::CSchemaDeclaredClass DeclaredClass;
             if (!mem.Read(DeclaredClassEntries[c].m_pDeclaredClass, &DeclaredClass))
@@ -128,34 +133,36 @@ int main() {
             if (!mem.Read((void*)(Class.m_szName), ClassName, sizeof(ClassName)))
                 continue;
 
-            printf("\nDumping Class: %s, offset = 0x%llx \n", ClassName, reinterpret_cast<uintptr_t>(DeclaredClassEntries[c].m_pDeclaredClass));
-            printf("Class info size: 0x%X (%u), Fields: %hu, Size: %hu, Metadata Size: % hu \n", Class.m_nSize, Class.m_nSize, Class.m_nNumFields, Class.m_nStaticSize, Class.m_nMetadataSize);
+            printf("\nDumping Class: %d=%s, offset = 0x%llx, Fields: %d \n", c, ClassName, reinterpret_cast<uintptr_t>(DeclaredClassEntries[c].m_pDeclaredClass), Class.m_nNumFields);
            
             uintptr_t _ClassFieldsPtr = reinterpret_cast<uintptr_t>(Class.m_pFields);
+            fprintf(_File, "// Offset: 0x%llx \n", _ClassFieldsPtr);
+            fprintf(_File, "// N. Class: %d \n", c);
+            fprintf(_File, "// Fields: %d \n", Class.m_nNumFields);
             fprintf(_File, "namespace %s\n{\n", ClassName);
 
             // Loop through each field in the class
-            for (uint16_t f = 0; f < Class.m_nNumFields; ++f) {
+            for (uint16_t f = 0; f < Class.m_nNumFields; f++) {
 
                 SDK::CSchemaField Field;
                 if (!mem.Read(_ClassFieldsPtr + sizeof(SDK::CSchemaField) * f, &Field))
                     continue;
 
                 char fieldName[128];
-                if (!mem.ReadString(reinterpret_cast<uintptr_t>(Field.name), fieldName, sizeof(fieldName)))
+                if (!mem.ReadString(reinterpret_cast<uintptr_t>(Field.m_szName), fieldName, sizeof(fieldName)))
                     continue;
 
                 SDK::CSchemaFieldType FieldType;
                 char typeName[128];
 
-                if (mem.Read(Field.instanceSchemaFieldType, &FieldType)) {
-                    if (!mem.ReadString(reinterpret_cast<uintptr_t>(FieldType.typeName), typeName, sizeof(typeName))) {
+                if (mem.Read(Field.m_pSchemaFieldType, &FieldType)) {
+                    if (!mem.ReadString(reinterpret_cast<uintptr_t>(FieldType.m_szTypeName), typeName, sizeof(typeName))) {
                         continue;
                     }
                 }
-
-                printf("[ + ] %s->%s: Offset = 0x%X; Type = %s; \n", ClassName, fieldName, Field.offset, typeName);
-                fprintf(_File, "\tconstexpr uint32_t %s = 0x%X;  // %s \n", fieldName, Field.offset, typeName);
+                
+                //printf("[ + ] %s->%s: Offset = 0x%X; Type = %s; \n", ClassName, fieldName, Field.offset, typeName);
+                fprintf(_File, "\tconstexpr uint32_t %s = 0x%X;  // %s \n", fieldName, Field.m_nOffset, typeName);
             }
 
             fprintf(_File, "}\n\n");

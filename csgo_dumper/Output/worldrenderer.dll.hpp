@@ -1,8 +1,18 @@
+// Schema offset: 0x26fac9d00c0 
+// Schema name: worldrenderer.dll 
+// Schema declared class: 26 
+
+// Offset: 0x7ffe2839b6e0 
+// N. Class: 0 
+// Fields: 1 
 namespace CScriptComponent
 {
 	constexpr uint32_t m_scriptClassName = 0x30;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe2839dae0 
+// N. Class: 1 
+// Fields: 7 
 namespace EntityIOConnectionData_t
 {
 	constexpr uint32_t m_outputName = 0x0;  // CUtlString 
@@ -14,12 +24,18 @@ namespace EntityIOConnectionData_t
 	constexpr uint32_t m_nTimesToFire = 0x2C;  // int32 
 }
 
+// Offset: 0x7ffe2839dd80 
+// N. Class: 2 
+// Fields: 2 
 namespace EntityKeyValueData_t
 {
 	constexpr uint32_t m_connections = 0x8;  // CUtlVector< EntityIOConnectionData_t > 
 	constexpr uint32_t m_keyValuesData = 0x20;  // CUtlBinaryBlock 
 }
 
+// Offset: 0x7ffe2839dca0 
+// N. Class: 3 
+// Fields: 3 
 namespace PermEntityLumpData_t
 {
 	constexpr uint32_t m_name = 0x8;  // CUtlString 
@@ -27,6 +43,9 @@ namespace PermEntityLumpData_t
 	constexpr uint32_t m_entityKeyValues = 0x28;  // CUtlLeanVector< EntityKeyValueData_t > 
 }
 
+// Offset: 0x7ffe2839e750 
+// N. Class: 4 
+// Fields: 14 
 namespace SceneObject_t
 {
 	constexpr uint32_t m_nObjectID = 0x0;  // uint32 
@@ -45,11 +64,17 @@ namespace SceneObject_t
 	constexpr uint32_t m_renderable = 0x80;  // CStrongHandle< InfoForResourceTypeCRenderMesh > 
 }
 
+// Offset: 0x7ffe2839ece8 
+// N. Class: 5 
+// Fields: 1 
 namespace BaseSceneObjectOverride_t
 {
 	constexpr uint32_t m_nSceneObjectIndex = 0x0;  // uint32 
 }
 
+// Offset: 0x7ffe2839e5e0 
+// N. Class: 6 
+// Fields: 4 
 namespace ExtraVertexStreamOverride_t
 {
 	constexpr uint32_t m_nSubSceneObject = 0x4;  // uint32 
@@ -58,6 +83,9 @@ namespace ExtraVertexStreamOverride_t
 	constexpr uint32_t m_extraBufferBinding = 0x10;  // CRenderBufferBinding 
 }
 
+// Offset: 0x7ffe2839e500 
+// N. Class: 7 
+// Fields: 3 
 namespace MaterialOverride_t
 {
 	constexpr uint32_t m_nSubSceneObject = 0x4;  // uint32 
@@ -65,6 +93,9 @@ namespace MaterialOverride_t
 	constexpr uint32_t m_pMaterial = 0x10;  // CStrongHandle< InfoForResourceTypeIMaterial2 > 
 }
 
+// Offset: 0x7ffe2839edf0 
+// N. Class: 8 
+// Fields: 10 
 namespace InfoOverlayData_t
 {
 	constexpr uint32_t m_transform = 0x0;  // matrix3x4_t 
@@ -79,6 +110,9 @@ namespace InfoOverlayData_t
 	constexpr uint32_t m_nSequenceOverride = 0x6C;  // int32 
 }
 
+// Offset: 0x7ffe2839df30 
+// N. Class: 9 
+// Fields: 9 
 namespace BakedLightingInfo_t
 {
 	constexpr uint32_t m_nLightmapVersionNumber = 0x0;  // uint32 
@@ -92,6 +126,9 @@ namespace BakedLightingInfo_t
 	constexpr uint32_t m_lightMaps = 0x18;  // CUtlVector< CStrongHandle< InfoForResourceTypeCTextureBase > > 
 }
 
+// Offset: 0x7ffe2839e0d0 
+// N. Class: 10 
+// Fields: 4 
 namespace WorldNodeOnDiskBufferData_t
 {
 	constexpr uint32_t m_nElementCount = 0x0;  // int32 
@@ -100,6 +137,9 @@ namespace WorldNodeOnDiskBufferData_t
 	constexpr uint32_t m_pData = 0x20;  // CUtlVector< uint8 > 
 }
 
+// Offset: 0x7ffe2839ea60 
+// N. Class: 11 
+// Fields: 9 
 namespace AggregateMeshInfo_t
 {
 	constexpr uint32_t m_nVisClusterMemberOffset = 0x0;  // uint32 
@@ -113,6 +153,9 @@ namespace AggregateMeshInfo_t
 	constexpr uint32_t m_nLightProbeVolumePrecomputedHandshake = 0x14;  // int32 
 }
 
+// Offset: 0x7ffe2839e910 
+// N. Class: 12 
+// Fields: 3 
 namespace AggregateLODSetup_t
 {
 	constexpr uint32_t m_vLODOrigin = 0x0;  // Vector 
@@ -120,6 +163,9 @@ namespace AggregateLODSetup_t
 	constexpr uint32_t m_fSwitchDistances = 0x10;  // CUtlVector< float32 > 
 }
 
+// Offset: 0x7ffe2839e160 
+// N. Class: 13 
+// Fields: 8 
 namespace AggregateSceneObject_t
 {
 	constexpr uint32_t m_allFlags = 0x0;  // ObjectTypeFlags_t 
@@ -132,6 +178,9 @@ namespace AggregateSceneObject_t
 	constexpr uint32_t m_renderableModel = 0x70;  // CStrongHandle< InfoForResourceTypeCModel > 
 }
 
+// Offset: 0x7ffe2839eb80 
+// N. Class: 14 
+// Fields: 3 
 namespace ClutterTile_t
 {
 	constexpr uint32_t m_nFirstInstance = 0x0;  // uint32 
@@ -139,6 +188,9 @@ namespace ClutterTile_t
 	constexpr uint32_t m_BoundsWs = 0x8;  // AABB_t 
 }
 
+// Offset: 0x7ffe2839ebe0 
+// N. Class: 15 
+// Fields: 8 
 namespace ClutterSceneObject_t
 {
 	constexpr uint32_t m_Bounds = 0x0;  // AABB_t 
@@ -151,6 +203,9 @@ namespace ClutterSceneObject_t
 	constexpr uint32_t m_renderableModel = 0x98;  // CStrongHandle< InfoForResourceTypeCModel > 
 }
 
+// Offset: 0x7ffe2839e270 
+// N. Class: 16 
+// Fields: 14 
 namespace WorldNode_t
 {
 	constexpr uint32_t m_sceneObjects = 0x0;  // CUtlVector< SceneObject_t > 
@@ -169,6 +224,9 @@ namespace WorldNode_t
 	constexpr uint32_t m_bHasBakedGeometryFlag = 0x140;  // bool 
 }
 
+// Offset: 0x7ffe2839f3a0 
+// N. Class: 17 
+// Fields: 5 
 namespace WorldBuilderParams_t
 {
 	constexpr uint32_t m_flMinDrawVolumeSize = 0x0;  // float32 
@@ -178,6 +236,9 @@ namespace WorldBuilderParams_t
 	constexpr uint32_t m_nCompileFingerprint = 0x40;  // uint64 
 }
 
+// Offset: 0x7ffe2839f0c0 
+// N. Class: 18 
+// Fields: 7 
 namespace NodeData_t
 {
 	constexpr uint32_t m_nParent = 0x0;  // int32 
@@ -185,24 +246,31 @@ namespace NodeData_t
 	constexpr uint32_t m_vMinBounds = 0x10;  // Vector 
 	constexpr uint32_t m_vMaxBounds = 0x1C;  // Vector 
 	constexpr uint32_t m_flMinimumDistance = 0x28;  // float32 
-	constexpr uint32_t m_ChildNodeIndices = 0x30;  // CUtlVector< int32 > 
 	constexpr uint32_t m_worldNodePrefix = 0x48;  // CUtlString 
 }
 
+// Offset: 0x7ffe2839f440 
+// N. Class: 19 
+// Fields: 4 
 namespace World_t
 {
 	constexpr uint32_t m_builderParams = 0x0;  // WorldBuilderParams_t 
-	constexpr uint32_t m_worldNodes = 0x48;  // CUtlVector< NodeData_t > 
 	constexpr uint32_t m_worldLightingInfo = 0x60;  // BakedLightingInfo_t 
 	constexpr uint32_t m_entityLumps = 0x90;  // CUtlVector< CStrongHandleCopyable< InfoForResourceTypeCEntityLump > > 
 }
 
+// Offset: 0x7ffe2839f350 
+// N. Class: 20 
+// Fields: 2 
 namespace VoxelVisBlockOffset_t
 {
 	constexpr uint32_t m_nOffset = 0x0;  // uint32 
 	constexpr uint32_t m_nElementCount = 0x4;  // uint32 
 }
 
+// Offset: 0x7ffe2839f1b0 
+// N. Class: 21 
+// Fields: 13 
 namespace CVoxelVisibility
 {
 	constexpr uint32_t m_nBaseClusterCount = 0x40;  // uint32 
@@ -212,26 +280,32 @@ namespace CVoxelVisibility
 	constexpr uint32_t m_flGridSize = 0x60;  // float32 
 	constexpr uint32_t m_nSkyVisibilityCluster = 0x64;  // uint32 
 	constexpr uint32_t m_nSunVisibilityCluster = 0x68;  // uint32 
-	constexpr uint32_t m_NodeBlock = 0x6C;  // VoxelVisBlockOffset_t 
-	constexpr uint32_t m_RegionBlock = 0x74;  // VoxelVisBlockOffset_t 
-	constexpr uint32_t m_EnclosedClusterListBlock = 0x7C;  // VoxelVisBlockOffset_t 
-	constexpr uint32_t m_EnclosedClustersBlock = 0x84;  // VoxelVisBlockOffset_t 
-	constexpr uint32_t m_MasksBlock = 0x8C;  // VoxelVisBlockOffset_t 
-	constexpr uint32_t m_nVisBlocks = 0x94;  // VoxelVisBlockOffset_t 
 }
 
+// Offset: 0x0 
+// N. Class: 22 
+// Fields: 0 
 namespace VMapResourceData_t
 {
 }
 
+// Offset: 0x0 
+// N. Class: 23 
+// Fields: 0 
 namespace InfoForResourceTypeVMapResourceData_t
 {
 }
 
+// Offset: 0x0 
+// N. Class: 24 
+// Fields: 0 
 namespace CEntityComponent
 {
 }
 
+// Offset: 0x7ffe2839b4d0 
+// N. Class: 25 
+// Fields: 11 
 namespace CEntityIdentity
 {
 	constexpr uint32_t m_nameStringableIndex = 0x14;  // int32 

@@ -1,8 +1,18 @@
+// Schema offset: 0x26fb9220580 
+// Schema name: server.dll 
+// Schema declared class: 810 
+
+// Offset: 0x7ffe05902ce0 
+// N. Class: 0 
+// Fields: 1 
 namespace CScriptComponent
 {
 	constexpr uint32_t m_scriptClassName = 0x30;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe05835540 
+// N. Class: 1 
+// Fields: 77 
 namespace CBaseEntity
 {
 	constexpr uint32_t m_CBodyComponent = 0x38;  // CBodyComponent* 
@@ -20,7 +30,6 @@ namespace CBaseEntity
 	constexpr uint32_t m_lifeState = 0x2D0;  // uint8 
 	constexpr uint32_t m_flDamageAccumulator = 0x2D4;  // float32 
 	constexpr uint32_t m_bTakesDamage = 0x2D8;  // bool 
-	constexpr uint32_t m_nTakeDamageFlags = 0x2E0;  // TakeDamageFlags_t 
 	constexpr uint32_t m_nPlatformType = 0x2E8;  // EntityPlatformTypes_t 
 	constexpr uint32_t m_MoveCollide = 0x2EA;  // MoveCollide_t 
 	constexpr uint32_t m_MoveType = 0x2EB;  // MoveType_t 
@@ -84,11 +93,17 @@ namespace CBaseEntity
 	constexpr uint32_t m_nBloodType = 0x4D8;  // BloodType 
 }
 
+// Offset: 0x7ffe0580b200 
+// N. Class: 2 
+// Fields: 1 
 namespace ParticleIndex_t
 {
 	constexpr uint32_t m_Value = 0x0;  // int32 
 }
 
+// Offset: 0x7ffe058424b0 
+// N. Class: 3 
+// Fields: 4 
 namespace CountdownTimer
 {
 	constexpr uint32_t m_duration = 0x8;  // float32 
@@ -97,57 +112,90 @@ namespace CountdownTimer
 	constexpr uint32_t m_nWorldGroupId = 0x14;  // WorldGroupId_t 
 }
 
+// Offset: 0x7ffe0580fbb8 
+// N. Class: 4 
+// Fields: 1 
 namespace CSkillFloat
 {
 	constexpr uint32_t m_pValue = 0x0;  // float32[4] 
 }
 
+// Offset: 0x7ffe0580fc58 
+// N. Class: 5 
+// Fields: 1 
 namespace CSkillInt
 {
 	constexpr uint32_t m_pValue = 0x0;  // int32[4] 
 }
 
+// Offset: 0x7ffe05942ce8 
+// N. Class: 6 
+// Fields: 1 
 namespace CRangeInt
 {
 	constexpr uint32_t m_pValue = 0x0;  // int32[2] 
 }
 
+// Offset: 0x7ffe05928ec0 
+// N. Class: 7 
+// Fields: 2 
 namespace NavGravity_t
 {
 	constexpr uint32_t m_vGravity = 0x0;  // Vector 
 	constexpr uint32_t m_bDefault = 0xC;  // bool 
 }
 
+// Offset: 0x7ffe05928f70 
+// N. Class: 8 
+// Fields: 2 
 namespace Extent
 {
 	constexpr uint32_t lo = 0x0;  // Vector 
 	constexpr uint32_t hi = 0xC;  // Vector 
 }
 
+// Offset: 0x0 
+// N. Class: 9 
+// Fields: 0 
 namespace CNavVolume
 {
 }
 
+// Offset: 0x7ffe059283b0 
+// N. Class: 10 
+// Fields: 1 
 namespace CNavVolumeVector
 {
 	constexpr uint32_t m_bHasBeenPreFiltered = 0x78;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 11 
+// Fields: 0 
 namespace CNavVolumeAll
 {
 }
 
+// Offset: 0x7ffe059284d0 
+// N. Class: 12 
+// Fields: 2 
 namespace CNavVolumeSphere
 {
 	constexpr uint32_t m_vCenter = 0x70;  // Vector 
 	constexpr uint32_t m_flRadius = 0x7C;  // float32 
 }
 
+// Offset: 0x7ffe05928590 
+// N. Class: 13 
+// Fields: 1 
 namespace CNavVolumeSphericalShell
 {
 	constexpr uint32_t m_flRadiusInner = 0x80;  // float32 
 }
 
+// Offset: 0x7ffe05928b60 
+// N. Class: 14 
+// Fields: 13 
 namespace CNavHullVData
 {
 	constexpr uint32_t m_bAgentEnabled = 0x0;  // bool 
@@ -165,15 +213,24 @@ namespace CNavHullVData
 	constexpr uint32_t m_flowMapNodeMaxRadius = 0x30;  // float32 
 }
 
+// Offset: 0x7ffe05928d90 
+// N. Class: 15 
+// Fields: 1 
 namespace CNavHullPresetVData
 {
 	constexpr uint32_t m_vecNavHulls = 0x0;  // CUtlVector< CUtlString > 
 }
 
+// Offset: 0x0 
+// N. Class: 16 
+// Fields: 0 
 namespace CEntityComponent
 {
 }
 
+// Offset: 0x7ffe05902f00 
+// N. Class: 17 
+// Fields: 11 
 namespace CEntityIdentity
 {
 	constexpr uint32_t m_nameStringableIndex = 0x14;  // int32 
@@ -189,6 +246,9 @@ namespace CEntityIdentity
 	constexpr uint32_t m_pNextByClass = 0x70;  // CEntityIdentity* 
 }
 
+// Offset: 0x7ffe05902970 
+// N. Class: 18 
+// Fields: 4 
 namespace CEntityInstance
 {
 	constexpr uint32_t m_iszPrivateVScripts = 0x8;  // CUtlSymbolLarge 
@@ -197,6 +257,9 @@ namespace CEntityInstance
 	constexpr uint32_t m_bVisibleinPVS = 0x30;  // bool 
 }
 
+// Offset: 0x7ffe05838120 
+// N. Class: 19 
+// Fields: 33 
 namespace CGameSceneNode
 {
 	constexpr uint32_t m_nodeToWorld = 0x10;  // CTransform 
@@ -234,17 +297,26 @@ namespace CGameSceneNode
 	constexpr uint32_t m_vRenderOrigin = 0x144;  // Vector 
 }
 
+// Offset: 0x7ffe057dfb40 
+// N. Class: 20 
+// Fields: 2 
 namespace CBodyComponent
 {
 	constexpr uint32_t m_pSceneNode = 0x8;  // CGameSceneNode* 
 	constexpr uint32_t __m_pChainEntity = 0x20;  // CNetworkVarChainer 
 }
 
+// Offset: 0x7ffe057dfca0 
+// N. Class: 21 
+// Fields: 1 
 namespace CBodyComponentPoint
 {
 	constexpr uint32_t m_sceneNode = 0x50;  // CGameSceneNode 
 }
 
+// Offset: 0x7ffe05840070 
+// N. Class: 22 
+// Fields: 8 
 namespace CSkeletonInstance
 {
 	constexpr uint32_t m_modelState = 0x170;  // CModelState 
@@ -257,16 +329,25 @@ namespace CSkeletonInstance
 	constexpr uint32_t m_nHitboxSet = 0x3A8;  // uint8 
 }
 
+// Offset: 0x7ffe057dfd70 
+// N. Class: 23 
+// Fields: 1 
 namespace CBodyComponentSkeletonInstance
 {
 	constexpr uint32_t m_skeletonInstance = 0x50;  // CSkeletonInstance 
 }
 
+// Offset: 0x7ffe057dfb80 
+// N. Class: 24 
+// Fields: 1 
 namespace CHitboxComponent
 {
 	constexpr uint32_t m_bvDisabledHitGroups = 0x24;  // uint32[1] 
 }
 
+// Offset: 0x7ffe057dffd0 
+// N. Class: 25 
+// Fields: 67 
 namespace CLightComponent
 {
 	constexpr uint32_t __m_pChainEntity = 0x38;  // CNetworkVarChainer 
@@ -338,11 +419,17 @@ namespace CLightComponent
 	constexpr uint32_t m_bPvsModifyEntity = 0x1B0;  // bool 
 }
 
+// Offset: 0x7ffe057dfa50 
+// N. Class: 26 
+// Fields: 1 
 namespace CNetworkTransmitComponent
 {
 	constexpr uint32_t m_nTransmitStateOwnedCounter = 0x184;  // uint8 
 }
 
+// Offset: 0x7ffe057e0b30 
+// N. Class: 27 
+// Fields: 5 
 namespace CRenderComponent
 {
 	constexpr uint32_t __m_pChainEntity = 0x10;  // CNetworkVarChainer 
@@ -352,18 +439,30 @@ namespace CRenderComponent
 	constexpr uint32_t m_bInterpolationReadyToDraw = 0xB0;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 28 
+// Fields: 0 
 namespace CAnimEventListenerBase
 {
 }
 
+// Offset: 0x0 
+// N. Class: 29 
+// Fields: 0 
 namespace CAnimEventListener
 {
 }
 
+// Offset: 0x0 
+// N. Class: 30 
+// Fields: 0 
 namespace CAnimEventQueueListener
 {
 }
 
+// Offset: 0x7ffe057fa810 
+// N. Class: 31 
+// Fields: 4 
 namespace PointCameraSettings_t
 {
 	constexpr uint32_t m_flNearBlurryDistance = 0x0;  // float32 
@@ -372,6 +471,9 @@ namespace PointCameraSettings_t
 	constexpr uint32_t m_flFarBlurryDistance = 0xC;  // float32 
 }
 
+// Offset: 0x7ffe057fa980 
+// N. Class: 32 
+// Fields: 3 
 namespace CPulseCell_LerpCameraSettings
 {
 	constexpr uint32_t m_flSeconds = 0x78;  // float32 
@@ -379,6 +481,9 @@ namespace CPulseCell_LerpCameraSettings
 	constexpr uint32_t m_End = 0x8C;  // PointCameraSettings_t 
 }
 
+// Offset: 0x7ffe057fab00 
+// N. Class: 33 
+// Fields: 3 
 namespace CPulseCell_LerpCameraSettings::CursorState_t
 {
 	constexpr uint32_t m_hCamera = 0x8;  // CHandle< CPointCamera > 
@@ -386,6 +491,9 @@ namespace CPulseCell_LerpCameraSettings::CursorState_t
 	constexpr uint32_t m_OverlaidEnd = 0x1C;  // PointCameraSettings_t 
 }
 
+// Offset: 0x7ffe05802630 
+// N. Class: 34 
+// Fields: 26 
 namespace CPointCamera
 {
 	constexpr uint32_t m_FOV = 0x4E0;  // float32 
@@ -416,10 +524,16 @@ namespace CPointCamera
 	constexpr uint32_t m_pNext = 0x538;  // CPointCamera* 
 }
 
+// Offset: 0x0 
+// N. Class: 35 
+// Fields: 0 
 namespace CPointTemplateAPI
 {
 }
 
+// Offset: 0x7ffe05802080 
+// N. Class: 36 
+// Fields: 10 
 namespace CPropDataComponent
 {
 	constexpr uint32_t m_flDmgModBullet = 0x10;  // float32 
@@ -434,18 +548,27 @@ namespace CPropDataComponent
 	constexpr uint32_t m_nMotionDisabledSpawnFlag = 0x3C;  // int32 
 }
 
+// Offset: 0x7ffe057f4950 
+// N. Class: 37 
+// Fields: 2 
 namespace WaterWheelFrictionScale_t
 {
 	constexpr uint32_t m_flFractionOfWheelSubmerged = 0x0;  // float32 
 	constexpr uint32_t m_flFrictionScale = 0x4;  // float32 
 }
 
+// Offset: 0x7ffe057f4a10 
+// N. Class: 38 
+// Fields: 2 
 namespace WaterWheelDrag_t
 {
 	constexpr uint32_t m_flFractionOfWheelSubmerged = 0x0;  // float32 
 	constexpr uint32_t m_flWheelDrag = 0x4;  // float32 
 }
 
+// Offset: 0x7ffe057f4ac0 
+// N. Class: 39 
+// Fields: 6 
 namespace CBuoyancyHelper
 {
 	constexpr uint32_t m_nFluidType = 0x18;  // CUtlStringToken 
@@ -456,6 +579,9 @@ namespace CBuoyancyHelper
 	constexpr uint32_t m_vecWheelDrag = 0x68;  // CUtlVector< float32 > 
 }
 
+// Offset: 0x7ffe05803b70 
+// N. Class: 40 
+// Fields: 5 
 namespace SoundeventPathCornerPairNetworked_t
 {
 	constexpr uint32_t vP1 = 0x0;  // Vector 
@@ -465,12 +591,18 @@ namespace SoundeventPathCornerPairNetworked_t
 	constexpr uint32_t flP2Pct = 0x20;  // float32 
 }
 
+// Offset: 0x7ffe058024c0 
+// N. Class: 41 
+// Fields: 2 
 namespace CWorldCompositionChunkReferenceElement_t
 {
 	constexpr uint32_t m_strMapToLoad = 0x0;  // CUtlString 
 	constexpr uint32_t m_strLandmarkName = 0x8;  // CUtlString 
 }
 
+// Offset: 0x7ffe0580fd10 
+// N. Class: 42 
+// Fields: 3 
 namespace CSkillDamage
 {
 	constexpr uint32_t m_flDamage = 0x0;  // CSkillFloat 
@@ -478,26 +610,41 @@ namespace CSkillDamage
 	constexpr uint32_t m_flPhysicsForceDamage = 0x14;  // float32 
 }
 
+// Offset: 0x7ffe0580fe18 
+// N. Class: 43 
+// Fields: 1 
 namespace CRemapFloat
 {
 	constexpr uint32_t m_pValue = 0x0;  // float32[4] 
 }
 
+// Offset: 0x7ffe0580ff50 
+// N. Class: 44 
+// Fields: 2 
 namespace CScriptUniformRandomStream
 {
 	constexpr uint32_t m_hScriptScope = 0x8;  // HSCRIPT 
 	constexpr uint32_t m_nInitialSeed = 0x9C;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 45 
+// Fields: 0 
 namespace IGapHost_GameEntity
 {
 }
 
+// Offset: 0x7ffe05850d88 
+// N. Class: 46 
+// Fields: 1 
 namespace CPulseCell_Step_EntFire
 {
 	constexpr uint32_t m_Input = 0x48;  // CUtlString 
 }
 
+// Offset: 0x7ffe05850e80 
+// N. Class: 47 
+// Fields: 4 
 namespace CPulseCell_PlaySequence
 {
 	constexpr uint32_t m_SequenceName = 0x48;  // CUtlString 
@@ -506,11 +653,17 @@ namespace CPulseCell_PlaySequence
 	constexpr uint32_t m_OnCanceled = 0x98;  // CPulse_ResumePoint 
 }
 
+// Offset: 0x7ffe05850b50 
+// N. Class: 48 
+// Fields: 1 
 namespace CPulseCell_PlaySequence::CursorState_t
 {
 	constexpr uint32_t m_hTarget = 0x0;  // CHandle< CBaseAnimGraph > 
 }
 
+// Offset: 0x7ffe05833110 
+// N. Class: 49 
+// Fields: 11 
 namespace CBaseAnimGraph
 {
 	constexpr uint32_t m_bInitiallyPopulateInterpHistory = 0x808;  // bool 
@@ -526,18 +679,30 @@ namespace CBaseAnimGraph
 	constexpr uint32_t m_nLastDestructiblePartDestroyedAnimgraphSetTick = 0x9A0;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 50 
+// Fields: 0 
 namespace CPulseAnimFuncs
 {
 }
 
+// Offset: 0x0 
+// N. Class: 51 
+// Fields: 0 
 namespace CSharedGapTypeQueryRegistration
 {
 }
 
+// Offset: 0x0 
+// N. Class: 52 
+// Fields: 0 
 namespace CBasePlayerControllerAPI
 {
 }
 
+// Offset: 0x7ffe05870610 
+// N. Class: 53 
+// Fields: 3 
 namespace ViewAngleServerChange_t
 {
 	constexpr uint32_t nType = 0x30;  // FixAngleSet_t 
@@ -545,12 +710,18 @@ namespace ViewAngleServerChange_t
 	constexpr uint32_t nIndex = 0x40;  // uint32 
 }
 
+// Offset: 0x7ffe05870440 
+// N. Class: 54 
+// Fields: 2 
 namespace CBreakableStageHelper
 {
 	constexpr uint32_t m_nCurrentStage = 0x8;  // int32 
 	constexpr uint32_t m_nStageCount = 0xC;  // int32 
 }
 
+// Offset: 0x7ffe058794d0 
+// N. Class: 55 
+// Fields: 12 
 namespace CommandToolCommand_t
 {
 	constexpr uint32_t m_bEnabled = 0x0;  // bool 
@@ -567,20 +738,32 @@ namespace CommandToolCommand_t
 	constexpr uint32_t m_ClearDebugBits = 0x40;  // DebugOverlayBits_t 
 }
 
+// Offset: 0x7ffe05884610 
+// N. Class: 56 
+// Fields: 1 
 namespace CPlayerPawnComponent
 {
 	constexpr uint32_t __m_pChainEntity = 0x8;  // CNetworkVarChainer 
 }
 
+// Offset: 0x7ffe05884580 
+// N. Class: 57 
+// Fields: 1 
 namespace CPlayerControllerComponent
 {
 	constexpr uint32_t __m_pChainEntity = 0x8;  // CNetworkVarChainer 
 }
 
+// Offset: 0x0 
+// N. Class: 58 
+// Fields: 0 
 namespace CPlayer_AutoaimServices
 {
 }
 
+// Offset: 0x7ffe058801d0 
+// N. Class: 59 
+// Fields: 5 
 namespace audioparams_t
 {
 	constexpr uint32_t localSound = 0x8;  // Vector[8] 
@@ -590,9 +773,11 @@ namespace audioparams_t
 	constexpr uint32_t soundEventHash = 0x74;  // uint32 
 }
 
+// Offset: 0x7ffe05809e20 
+// N. Class: 60 
+// Fields: 14 
 namespace fogplayerparams_t
 {
-	constexpr uint32_t m_hCtrl = 0x8;  // CHandle< CFogController > 
 	constexpr uint32_t m_flTransitionTime = 0xC;  // float32 
 	constexpr uint32_t m_OldColor = 0x10;  // Color 
 	constexpr uint32_t m_flOldStart = 0x14;  // float32 
@@ -608,6 +793,9 @@ namespace fogplayerparams_t
 	constexpr uint32_t m_flNewFarZ = 0x3C;  // float32 
 }
 
+// Offset: 0x7ffe058325d0 
+// N. Class: 61 
+// Fields: 17 
 namespace CColorCorrection
 {
 	constexpr uint32_t m_flFadeInDuration = 0x4E0;  // float32 
@@ -629,6 +817,9 @@ namespace CColorCorrection
 	constexpr uint32_t m_lookupFilename = 0x710;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe057fb7f0 
+// N. Class: 62 
+// Fields: 8 
 namespace CTonemapController2
 {
 	constexpr uint32_t m_flAutoExposureMin = 0x4E0;  // float32 
@@ -641,6 +832,9 @@ namespace CTonemapController2
 	constexpr uint32_t m_flTonemapEVSmoothingRange = 0x4FC;  // float32 
 }
 
+// Offset: 0x7ffe05802fa0 
+// N. Class: 63 
+// Fields: 16 
 namespace CPostProcessingVolume
 {
 	constexpr uint32_t m_hPostSettings = 0x970;  // CStrongHandle< InfoForResourceTypeCPostProcessingResource > 
@@ -661,10 +855,16 @@ namespace CPostProcessingVolume
 	constexpr uint32_t m_flTonemapMinAvgLum = 0x9AC;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 64 
+// Fields: 0 
 namespace CEnvSoundscapeTriggerable
 {
 }
 
+// Offset: 0x7ffe05880330 
+// N. Class: 65 
+// Fields: 12 
 namespace CPlayer_CameraServices
 {
 	constexpr uint32_t m_vecCsViewPunchAngle = 0x40;  // QAngle 
@@ -681,19 +881,31 @@ namespace CPlayer_CameraServices
 	constexpr uint32_t m_hTriggerSoundscapeList = 0x158;  // CUtlVector< CHandle< CEnvSoundscapeTriggerable > > 
 }
 
+// Offset: 0x0 
+// N. Class: 66 
+// Fields: 0 
 namespace CPlayer_FlashlightServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 67 
+// Fields: 0 
 namespace CPlayer_ItemServices
 {
 }
 
+// Offset: 0x7ffe0583d158 
+// N. Class: 68 
+// Fields: 1 
 namespace CInButtonState
 {
 	constexpr uint32_t m_pButtonStates = 0x8;  // uint64[3] 
 }
 
+// Offset: 0x7ffe058806a0 
+// N. Class: 69 
+// Fields: 15 
 namespace CPlayer_MovementServices
 {
 	constexpr uint32_t m_nImpulse = 0x40;  // int32 
@@ -713,6 +925,9 @@ namespace CPlayer_MovementServices
 	constexpr uint32_t m_vecOldViewAngles = 0x1C4;  // QAngle 
 }
 
+// Offset: 0x7ffe05884680 
+// N. Class: 70 
+// Fields: 14 
 namespace CPlayer_MovementServices_Humanoid
 {
 	constexpr uint32_t m_flStepSoundTime = 0x1D8;  // float32 
@@ -731,6 +946,9 @@ namespace CPlayer_MovementServices_Humanoid
 	constexpr uint32_t m_vecSmoothedVelocity = 0x218;  // Vector 
 }
 
+// Offset: 0x7ffe05884a50 
+// N. Class: 71 
+// Fields: 4 
 namespace CPlayer_ObserverServices
 {
 	constexpr uint32_t m_iObserverMode = 0x40;  // uint8 
@@ -739,14 +957,23 @@ namespace CPlayer_ObserverServices
 	constexpr uint32_t m_bForcedObserverMode = 0x4C;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 72 
+// Fields: 0 
 namespace CPlayer_UseServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 73 
+// Fields: 0 
 namespace CPlayer_WaterServices
 {
 }
 
+// Offset: 0x7ffe05870bc0 
+// N. Class: 74 
+// Fields: 8 
 namespace CBasePlayerWeapon
 {
 	constexpr uint32_t m_nNextPrimaryAttackTick = 0xD30;  // GameTick_t 
@@ -759,14 +986,21 @@ namespace CBasePlayerWeapon
 	constexpr uint32_t m_OnPlayerUse = 0xD50;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058843e0 
+// N. Class: 75 
+// Fields: 5 
 namespace CPlayer_WeaponServices
 {
+	constexpr uint32_t m_hMyWeapons = 0x40;  // CNetworkUtlVectorBase< CHandle< CBasePlayerWeapon > > 
 	constexpr uint32_t m_hActiveWeapon = 0x58;  // CHandle< CBasePlayerWeapon > 
 	constexpr uint32_t m_hLastWeapon = 0x5C;  // CHandle< CBasePlayerWeapon > 
 	constexpr uint32_t m_iAmmo = 0x60;  // uint16[32] 
 	constexpr uint32_t m_bPreventWeaponPickup = 0xA0;  // bool 
 }
 
+// Offset: 0x7ffe058329b0 
+// N. Class: 76 
+// Fields: 5 
 namespace AmmoTypeInfo_t
 {
 	constexpr uint32_t m_nMaxCarry = 0x10;  // int32 
@@ -776,12 +1010,18 @@ namespace AmmoTypeInfo_t
 	constexpr uint32_t m_flSpeed = 0x2C;  // CRangeFloat 
 }
 
+// Offset: 0x7ffe05832d80 
+// N. Class: 77 
+// Fields: 2 
 namespace CAnimGraphControllerBase
 {
 	constexpr uint32_t m_sDestructiblePartDestroyedHitGroup = 0x18;  // CAnimGraphParamOptionalRef< char* > 
 	constexpr uint32_t m_nDestructiblePartDestroyedPartIndex = 0x40;  // CAnimGraphParamOptionalRef< int32 > 
 }
 
+// Offset: 0x7ffe05833930 
+// N. Class: 78 
+// Fields: 14 
 namespace CBaseAnimGraphController
 {
 	constexpr uint32_t m_animGraphNetworkedVars = 0x18;  // CAnimGraphNetworkedVariables 
@@ -800,22 +1040,34 @@ namespace CBaseAnimGraphController
 	constexpr uint32_t m_flPrevAnimUpdateTime = 0x250;  // GameTime_t 
 }
 
+// Offset: 0x7ffe05833be0 
+// N. Class: 79 
+// Fields: 1 
 namespace CBodyComponentBaseAnimGraph
 {
 	constexpr uint32_t m_animationController = 0x490;  // CBaseAnimGraphController 
 }
 
+// Offset: 0x7ffe05832ac0 
+// N. Class: 80 
+// Fields: 2 
 namespace EntityRenderAttribute_t
 {
 	constexpr uint32_t m_ID = 0x30;  // CUtlStringToken 
 	constexpr uint32_t m_Values = 0x34;  // Vector4D 
 }
 
+// Offset: 0x7ffe05832bf0 
+// N. Class: 81 
+// Fields: 1 
 namespace ModelConfigHandle_t
 {
 	constexpr uint32_t m_Value = 0x0;  // uint32 
 }
 
+// Offset: 0x7ffe05833410 
+// N. Class: 82 
+// Fields: 33 
 namespace CBaseModelEntity
 {
 	constexpr uint32_t m_CRenderComponent = 0x4E0;  // CRenderComponent* 
@@ -853,6 +1105,9 @@ namespace CBaseModelEntity
 	constexpr uint32_t m_vecViewOffset = 0x760;  // CNetworkViewOffsetVector 
 }
 
+// Offset: 0x7ffe05832dc0 
+// N. Class: 83 
+// Fields: 4 
 namespace ActiveModelConfig_t
 {
 	constexpr uint32_t m_Handle = 0x28;  // ModelConfigHandle_t 
@@ -861,10 +1116,16 @@ namespace ActiveModelConfig_t
 	constexpr uint32_t m_AssociatedEntityNames = 0x50;  // CNetworkUtlVectorBase< CUtlSymbolLarge > 
 }
 
+// Offset: 0x0 
+// N. Class: 84 
+// Fields: 0 
 namespace CBodyComponentBaseModelEntity
 {
 }
 
+// Offset: 0x7ffe05834100 
+// N. Class: 85 
+// Fields: 10 
 namespace CDestructiblePartsSystemData_PartData
 {
 	constexpr uint32_t m_sName = 0x0;  // CUtlString 
@@ -879,6 +1140,9 @@ namespace CDestructiblePartsSystemData_PartData
 	constexpr uint32_t m_sCustomDeathHandshake = 0x48;  // CGlobalSymbol 
 }
 
+// Offset: 0x7ffe058342e0 
+// N. Class: 86 
+// Fields: 3 
 namespace CDestructiblePartsSystemData_HitGroupInfoAndPartData
 {
 	constexpr uint32_t m_sName = 0x0;  // CUtlString 
@@ -886,21 +1150,33 @@ namespace CDestructiblePartsSystemData_HitGroupInfoAndPartData
 	constexpr uint32_t m_bDisableHitGroupWhenDestroyed = 0x20;  // bool 
 }
 
+// Offset: 0x7ffe05834450 
+// N. Class: 87 
+// Fields: 1 
 namespace CDestructiblePartsSystemData
 {
 	constexpr uint32_t m_DestructiblePartsDataByHitGroup = 0x0;  // CUtlOrderedMap< HitGroup_t, CDestructiblePartsSystemData_HitGroupInfoAndPartData > 
 }
 
+// Offset: 0x7ffe058345c8 
+// N. Class: 88 
+// Fields: 1 
 namespace CDestructiblePartRuntimeData
 {
 	constexpr uint32_t m_nHealthRemaining = 0x0;  // int32 
 }
 
+// Offset: 0x7ffe058347a8 
+// N. Class: 89 
+// Fields: 1 
 namespace CDestructiblePartRuntimeDataVector
 {
 	constexpr uint32_t m_DestructiblePartsRuntimeData = 0x0;  // CUtlVector< CDestructiblePartRuntimeData > 
 }
 
+// Offset: 0x7ffe05837830 
+// N. Class: 90 
+// Fields: 7 
 namespace CNetworkOriginCellCoordQuantizedVector
 {
 	constexpr uint32_t m_cellX = 0x10;  // uint16 
@@ -912,6 +1188,9 @@ namespace CNetworkOriginCellCoordQuantizedVector
 	constexpr uint32_t m_vecZ = 0x28;  // CNetworkedQuantizedFloat 
 }
 
+// Offset: 0x7ffe058379d0 
+// N. Class: 91 
+// Fields: 3 
 namespace CNetworkOriginQuantizedVector
 {
 	constexpr uint32_t m_vecX = 0x10;  // CNetworkedQuantizedFloat 
@@ -919,6 +1198,9 @@ namespace CNetworkOriginQuantizedVector
 	constexpr uint32_t m_vecZ = 0x20;  // CNetworkedQuantizedFloat 
 }
 
+// Offset: 0x7ffe05837af0 
+// N. Class: 92 
+// Fields: 3 
 namespace CNetworkVelocityVector
 {
 	constexpr uint32_t m_vecX = 0x10;  // CNetworkedQuantizedFloat 
@@ -926,6 +1208,9 @@ namespace CNetworkVelocityVector
 	constexpr uint32_t m_vecZ = 0x20;  // CNetworkedQuantizedFloat 
 }
 
+// Offset: 0x7ffe05837d20 
+// N. Class: 93 
+// Fields: 3 
 namespace CNetworkViewOffsetVector
 {
 	constexpr uint32_t m_vecX = 0x10;  // CNetworkedQuantizedFloat 
@@ -933,18 +1218,27 @@ namespace CNetworkViewOffsetVector
 	constexpr uint32_t m_vecZ = 0x20;  // CNetworkedQuantizedFloat 
 }
 
+// Offset: 0x7ffe05837df0 
+// N. Class: 94 
+// Fields: 2 
 namespace CRopeOverlapHit
 {
 	constexpr uint32_t m_hEntity = 0x0;  // CHandle< CBaseEntity > 
 	constexpr uint32_t m_vecOverlappingLinks = 0x8;  // CUtlVector< int32 > 
 }
 
+// Offset: 0x7ffe05837fb0 
+// N. Class: 95 
+// Fields: 2 
 namespace CGameSceneNodeHandle
 {
 	constexpr uint32_t m_hOwner = 0x8;  // CEntityHandle 
 	constexpr uint32_t m_name = 0xC;  // CUtlStringToken 
 }
 
+// Offset: 0x7ffe0583bcd0 
+// N. Class: 96 
+// Fields: 10 
 namespace HullFlags_t
 {
 	constexpr uint32_t m_bHull_Human = 0x0;  // bool 
@@ -959,14 +1253,23 @@ namespace HullFlags_t
 	constexpr uint32_t m_bHull_Small = 0x9;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 97 
+// Fields: 0 
 namespace IChoreoServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 98 
+// Fields: 0 
 namespace CPathSimpleAPI
 {
 }
 
+// Offset: 0x7ffe0583f9a0 
+// N. Class: 99 
+// Fields: 6 
 namespace SequenceHistory_t
 {
 	constexpr uint32_t m_hSequence = 0x0;  // HSequence 
@@ -977,15 +1280,24 @@ namespace SequenceHistory_t
 	constexpr uint32_t m_flCyclesPerSecond = 0x14;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 100 
+// Fields: 0 
 namespace ISkeletonAnimationController
 {
 }
 
+// Offset: 0x7ffe0583fb40 
+// N. Class: 101 
+// Fields: 1 
 namespace CSkeletonAnimationController
 {
 	constexpr uint32_t m_pSkeletonInstance = 0x8;  // CSkeletonInstance* 
 }
 
+// Offset: 0x7ffe0583fd10 
+// N. Class: 102 
+// Fields: 8 
 namespace CNetworkedSequenceOperation
 {
 	constexpr uint32_t m_hSequence = 0x8;  // HSequence 
@@ -998,6 +1310,9 @@ namespace CNetworkedSequenceOperation
 	constexpr uint32_t m_flPrevCycleForAnimEventDetection = 0x24;  // float32 
 }
 
+// Offset: 0x7ffe0583ff10 
+// N. Class: 103 
+// Fields: 7 
 namespace CModelState
 {
 	constexpr uint32_t m_hModel = 0xA0;  // CStrongHandle< InfoForResourceTypeCModel > 
@@ -1009,12 +1324,18 @@ namespace CModelState
 	constexpr uint32_t m_nClothUpdateFlags = 0x21C;  // int8 
 }
 
+// Offset: 0x7ffe05842170 
+// N. Class: 104 
+// Fields: 2 
 namespace IntervalTimer
 {
 	constexpr uint32_t m_timestamp = 0x8;  // GameTime_t 
 	constexpr uint32_t m_nWorldGroupId = 0xC;  // WorldGroupId_t 
 }
 
+// Offset: 0x7ffe05842610 
+// N. Class: 105 
+// Fields: 3 
 namespace EngineCountdownTimer
 {
 	constexpr uint32_t m_duration = 0x8;  // float32 
@@ -1022,6 +1343,9 @@ namespace EngineCountdownTimer
 	constexpr uint32_t m_timescale = 0x10;  // float32 
 }
 
+// Offset: 0x7ffe05842790 
+// N. Class: 106 
+// Fields: 7 
 namespace CTimeline
 {
 	constexpr uint32_t m_flValues = 0x10;  // float32[64] 
@@ -1033,9 +1357,11 @@ namespace CTimeline
 	constexpr uint32_t m_bStopped = 0x220;  // bool 
 }
 
+// Offset: 0x7ffe05842fa0 
+// N. Class: 107 
+// Fields: 24 
 namespace CAnimGraphNetworkedVariables
 {
-	constexpr uint32_t m_PredNetBoolVariables = 0x8;  // CNetworkUtlVectorBase< uint32 > 
 	constexpr uint32_t m_PredNetByteVariables = 0x20;  // CNetworkUtlVectorBase< uint8 > 
 	constexpr uint32_t m_PredNetUInt16Variables = 0x38;  // CNetworkUtlVectorBase< uint16 > 
 	constexpr uint32_t m_PredNetIntVariables = 0x50;  // CNetworkUtlVectorBase< int32 > 
@@ -1061,10 +1387,16 @@ namespace CAnimGraphNetworkedVariables
 	constexpr uint32_t m_flLastTeleportTime = 0x1F4;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 108 
+// Fields: 0 
 namespace CFootstepTableHandle
 {
 }
 
+// Offset: 0x7ffe05850540 
+// N. Class: 109 
+// Fields: 8 
 namespace ResponseFollowup
 {
 	constexpr uint32_t followup_concept = 0x0;  // char* 
@@ -1077,6 +1409,9 @@ namespace ResponseFollowup
 	constexpr uint32_t bFired = 0x30;  // bool 
 }
 
+// Offset: 0x7ffe058506b0 
+// N. Class: 110 
+// Fields: 3 
 namespace ResponseParams
 {
 	constexpr uint32_t odds = 0x10;  // int16 
@@ -1084,12 +1419,18 @@ namespace ResponseParams
 	constexpr uint32_t m_pFollowup = 0x18;  // ResponseFollowup* 
 }
 
+// Offset: 0x7ffe05850780 
+// N. Class: 111 
+// Fields: 2 
 namespace CResponseCriteriaSet
 {
 	constexpr uint32_t m_nNumPrefixedContexts = 0x20;  // int32 
 	constexpr uint32_t m_bOverrideOnAppend = 0x24;  // bool 
 }
 
+// Offset: 0x7ffe05850830 
+// N. Class: 112 
+// Fields: 11 
 namespace CRR_Response
 {
 	constexpr uint32_t m_Type = 0x0;  // uint8 
@@ -1105,6 +1446,9 @@ namespace CRR_Response
 	constexpr uint32_t m_pchCriteriaValues = 0x1D0;  // CUtlVector< char* > 
 }
 
+// Offset: 0x7ffe05888ee0 
+// N. Class: 113 
+// Fields: 10 
 namespace CAI_Expresser
 {
 	constexpr uint32_t m_flStopTalkTime = 0x38;  // GameTime_t 
@@ -1119,6 +1463,9 @@ namespace CAI_Expresser
 	constexpr uint32_t m_pOuter = 0x70;  // CBaseFlex* 
 }
 
+// Offset: 0x7ffe058327f0 
+// N. Class: 114 
+// Fields: 7 
 namespace CBaseFlex
 {
 	constexpr uint32_t m_flexWeight = 0x9A8;  // CNetworkUtlVectorBase< float32 > 
@@ -1130,11 +1477,17 @@ namespace CBaseFlex
 	constexpr uint32_t m_bUpdateLayerPriorities = 0xA2C;  // bool 
 }
 
+// Offset: 0x7ffe058891f0 
+// N. Class: 115 
+// Fields: 1 
 namespace CResponseQueue
 {
 	constexpr uint32_t m_ExpresserTargets = 0x48;  // CUtlVector< CAI_Expresser* > 
 }
 
+// Offset: 0x7ffe05889290 
+// N. Class: 116 
+// Fields: 5 
 namespace CResponseQueue::CDeferredResponse
 {
 	constexpr uint32_t m_contexts = 0x8;  // CResponseCriteriaSet 
@@ -1144,20 +1497,32 @@ namespace CResponseQueue::CDeferredResponse
 	constexpr uint32_t m_bResponseValid = 0x228;  // bool 
 }
 
+// Offset: 0x7ffe05889410 
+// N. Class: 117 
+// Fields: 1 
 namespace CAI_ExpresserWithFollowup
 {
 	constexpr uint32_t m_pPostponedFollowup = 0x78;  // ResponseFollowup* 
 }
 
+// Offset: 0x7ffe05889530 
+// N. Class: 118 
+// Fields: 1 
 namespace CMultiplayer_Expresser
 {
 	constexpr uint32_t m_bAllowMultipleScenes = 0x88;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 119 
+// Fields: 0 
 namespace CBaseEntityAPI
 {
 }
 
+// Offset: 0x7ffe058987d0 
+// N. Class: 120 
+// Fields: 10 
 namespace CCommentarySystem
 {
 	constexpr uint32_t m_bCommentaryConvarsChanging = 0x11;  // bool 
@@ -1172,6 +1537,9 @@ namespace CCommentarySystem
 	constexpr uint32_t m_vecNodes = 0x48;  // CUtlVector< CHandle< CPointCommentaryNode > > 
 }
 
+// Offset: 0x7ffe05898280 
+// N. Class: 121 
+// Fields: 30 
 namespace CPointCommentaryNode
 {
 	constexpr uint32_t m_iszPreCommands = 0x9A8;  // CUtlSymbolLarge 
@@ -1206,11 +1574,17 @@ namespace CPointCommentaryNode
 	constexpr uint32_t m_bListenedTo = 0xA98;  // bool 
 }
 
+// Offset: 0x7ffe058a2b10 
+// N. Class: 122 
+// Fields: 1 
 namespace CPhysicsShake
 {
 	constexpr uint32_t m_force = 0x8;  // Vector 
 }
 
+// Offset: 0x7ffe058adc60 
+// N. Class: 123 
+// Fields: 18 
 namespace CGameScriptedMoveData
 {
 	constexpr uint32_t m_vAccumulatedRootMotion = 0x0;  // Vector 
@@ -1233,6 +1607,9 @@ namespace CGameScriptedMoveData
 	constexpr uint32_t m_bIgnoreCollisions = 0x6C;  // bool 
 }
 
+// Offset: 0x7ffe058ae000 
+// N. Class: 124 
+// Fields: 6 
 namespace CGameScriptedMoveDef_t
 {
 	constexpr uint32_t m_nType = 0x0;  // ScriptedMoveType_t 
@@ -1243,6 +1620,9 @@ namespace CGameScriptedMoveDef_t
 	constexpr uint32_t m_flAngRate = 0x24;  // float32 
 }
 
+// Offset: 0x7ffe058ae1a0 
+// N. Class: 125 
+// Fields: 5 
 namespace CGameChoreoServices
 {
 	constexpr uint32_t m_hOwner = 0x8;  // CHandle< CBaseAnimGraph > 
@@ -1252,6 +1632,9 @@ namespace CGameChoreoServices
 	constexpr uint32_t m_flTimeStartedState = 0x18;  // GameTime_t 
 }
 
+// Offset: 0x7ffe058e1d10 
+// N. Class: 126 
+// Fields: 72 
 namespace CScriptedSequence
 {
 	constexpr uint32_t m_iszEntry = 0x4E0;  // CUtlSymbolLarge 
@@ -1262,7 +1645,9 @@ namespace CScriptedSequence
 	constexpr uint32_t m_iszNextScript = 0x508;  // CUtlSymbolLarge 
 	constexpr uint32_t m_iszEntity = 0x510;  // CUtlSymbolLarge 
 	constexpr uint32_t m_iszSyncGroup = 0x518;  // CUtlSymbolLarge 
+	constexpr uint32_t m_nMoveTo = 0x520;  // ScriptedMoveTo_t 
 	constexpr uint32_t m_nMoveToGait = 0x524;  // MovementGait_t 
+	constexpr uint32_t m_nHeldWeaponBehavior = 0x528;  // ScriptedHeldWeaponBehavior_t 
 	constexpr uint32_t m_bIsPlayingPreIdle = 0x52C;  // bool 
 	constexpr uint32_t m_bIsPlayingEntry = 0x52D;  // bool 
 	constexpr uint32_t m_bIsPlayingAction = 0x52E;  // bool 
@@ -1326,6 +1711,9 @@ namespace CScriptedSequence
 	constexpr uint32_t m_iPlayerDeathBehavior = 0x7F4;  // int32 
 }
 
+// Offset: 0x7ffe058c2e10 
+// N. Class: 127 
+// Fields: 4 
 namespace CConstantForceController
 {
 	constexpr uint32_t m_linear = 0xC;  // Vector 
@@ -1334,6 +1722,9 @@ namespace CConstantForceController
 	constexpr uint32_t m_angularSave = 0x30;  // RotationVector 
 }
 
+// Offset: 0x7ffe058c37f0 
+// N. Class: 128 
+// Fields: 4 
 namespace CMotorController
 {
 	constexpr uint32_t m_speed = 0x8;  // float32 
@@ -1342,6 +1733,9 @@ namespace CMotorController
 	constexpr uint32_t m_inertiaFactor = 0x1C;  // float32 
 }
 
+// Offset: 0x7ffe058eeb60 
+// N. Class: 129 
+// Fields: 4 
 namespace CSoundEnvelope
 {
 	constexpr uint32_t m_current = 0x0;  // float32 
@@ -1350,12 +1744,18 @@ namespace CSoundEnvelope
 	constexpr uint32_t m_forceupdate = 0xC;  // bool 
 }
 
+// Offset: 0x7ffe058eec80 
+// N. Class: 130 
+// Fields: 2 
 namespace CCopyRecipientFilter
 {
 	constexpr uint32_t m_Flags = 0x8;  // int32 
 	constexpr uint32_t m_Recipients = 0x10;  // CUtlVector< CPlayerSlot > 
 }
 
+// Offset: 0x7ffe058eed60 
+// N. Class: 131 
+// Fields: 13 
 namespace CSoundPatch
 {
 	constexpr uint32_t m_pitch = 0x8;  // CSoundEnvelope 
@@ -1373,10 +1773,16 @@ namespace CSoundPatch
 	constexpr uint32_t m_iszClassName = 0x88;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 132 
+// Fields: 0 
 namespace CTakeDamageInfoAPI
 {
 }
 
+// Offset: 0x7ffe058dc0f0 
+// N. Class: 133 
+// Fields: 6 
 namespace CPulseGraphComponentBase
 {
 	constexpr uint32_t m_hOwner = 0x8;  // CHandle< CBaseEntity > 
@@ -1387,40 +1793,63 @@ namespace CPulseGraphComponentBase
 	constexpr uint32_t m_sProceduralWorldNameForRelays = 0x28;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058dbe58 
+// N. Class: 134 
+// Fields: 1 
 namespace CPulseGraphInstance_ServerEntity
 {
-	constexpr uint32_t m_pComponent = 0x100;  // CPulseGraphComponentBase* 
 }
 
+// Offset: 0x0 
+// N. Class: 135 
+// Fields: 0 
 namespace CPulseGraphComponentPointServer
 {
 }
 
+// Offset: 0x0 
+// N. Class: 136 
+// Fields: 0 
 namespace IPulseComponentEntity
 {
 }
 
+// Offset: 0x7ffe058da8a0 
+// N. Class: 137 
+// Fields: 1 
 namespace CPulseCell_Value_FindEntByClassNameWithin
 {
 	constexpr uint32_t m_EntityType = 0x48;  // CUtlString 
 }
 
+// Offset: 0x7ffe058dac08 
+// N. Class: 138 
+// Fields: 1 
 namespace CPulseCell_Value_FindEntByName
 {
 	constexpr uint32_t m_EntityType = 0x48;  // CUtlString 
 }
 
+// Offset: 0x7ffe058dad70 
+// N. Class: 139 
+// Fields: 2 
 namespace CPulseCell_Step_FollowEntity
 {
 	constexpr uint32_t m_ParamBoneOrAttachName = 0x48;  // CUtlString 
 	constexpr uint32_t m_ParamBoneOrAttachNameChild = 0x50;  // CUtlString 
 }
 
+// Offset: 0x7ffe058dae50 
+// N. Class: 140 
+// Fields: 1 
 namespace CPulseCell_Step_SetAnimGraphParam
 {
 	constexpr uint32_t m_ParamName = 0x48;  // CUtlString 
 }
 
+// Offset: 0x7ffe058daf90 
+// N. Class: 141 
+// Fields: 5 
 namespace CPulseCell_Outflow_ListenForEntityOutput
 {
 	constexpr uint32_t m_OnFired = 0x48;  // SignatureOutflow_Resume 
@@ -1430,47 +1859,73 @@ namespace CPulseCell_Outflow_ListenForEntityOutput
 	constexpr uint32_t m_bListenUntilCanceled = 0xB8;  // bool 
 }
 
+// Offset: 0x7ffe058db2a8 
+// N. Class: 142 
+// Fields: 1 
 namespace CPulseCell_Outflow_ListenForEntityOutput::CursorState_t
 {
 	constexpr uint32_t m_entity = 0x0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x0 
+// N. Class: 143 
+// Fields: 0 
 namespace CPulseServerFuncs
 {
 }
 
+// Offset: 0x7ffe058db828 
+// N. Class: 144 
+// Fields: 1 
 namespace CPulseCell_SoundEventStart
 {
 	constexpr uint32_t m_Type = 0x48;  // SoundEventStartType_t 
 }
 
+// Offset: 0x0 
+// N. Class: 145 
+// Fields: 0 
 namespace CPulseServerFuncs_Sounds
 {
 }
 
+// Offset: 0x7ffe058db660 
+// N. Class: 146 
+// Fields: 3 
 namespace CPulseCell_Outflow_PlaySceneBase
 {
 	constexpr uint32_t m_OnFinished = 0x48;  // CPulse_ResumePoint 
 	constexpr uint32_t m_OnCanceled = 0x78;  // CPulse_ResumePoint 
-	constexpr uint32_t m_Triggers = 0xA8;  // CUtlVector< CPulse_OutflowConnection > 
 }
 
+// Offset: 0x7ffe058db750 
+// N. Class: 147 
+// Fields: 2 
 namespace CPulseCell_Outflow_PlaySceneBase::CursorState_t
 {
 	constexpr uint32_t m_sceneInstance = 0x0;  // CHandle< CBaseEntity > 
 	constexpr uint32_t m_mainActor = 0x4;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe058db870 
+// N. Class: 148 
+// Fields: 1 
 namespace CPulseCell_Outflow_PlayVCD
 {
 	constexpr uint32_t m_vcdFilename = 0xC0;  // CUtlString 
 }
 
+// Offset: 0x7ffe058dbab8 
+// N. Class: 149 
+// Fields: 1 
 namespace CPulseCell_Outflow_PlaySequence
 {
 	constexpr uint32_t m_ParamSequenceName = 0xC0;  // CUtlString 
 }
 
+// Offset: 0x7ffe058dbc40 
+// N. Class: 150 
+// Fields: 12 
 namespace PulseScriptedSequenceData_t
 {
 	constexpr uint32_t m_nActorID = 0x0;  // int32 
@@ -1478,13 +1933,18 @@ namespace PulseScriptedSequenceData_t
 	constexpr uint32_t m_szEntrySequence = 0x10;  // CUtlString 
 	constexpr uint32_t m_szSequence = 0x18;  // CUtlString 
 	constexpr uint32_t m_szExitSequence = 0x20;  // CUtlString 
+	constexpr uint32_t m_nMoveTo = 0x28;  // ScriptedMoveTo_t 
 	constexpr uint32_t m_nMoveToGait = 0x2C;  // MovementGait_t 
+	constexpr uint32_t m_nHeldWeaponBehavior = 0x30;  // ScriptedHeldWeaponBehavior_t 
 	constexpr uint32_t m_bLoopPreIdleSequence = 0x34;  // bool 
 	constexpr uint32_t m_bLoopActionSequence = 0x35;  // bool 
 	constexpr uint32_t m_bLoopPostIdleSequence = 0x36;  // bool 
 	constexpr uint32_t m_bIgnoreLookAt = 0x37;  // bool 
 }
 
+// Offset: 0x7ffe058dbf60 
+// N. Class: 151 
+// Fields: 9 
 namespace CPulseCell_Outflow_ScriptedSequence
 {
 	constexpr uint32_t m_szSyncGroup = 0x48;  // CUtlString 
@@ -1495,26 +1955,40 @@ namespace CPulseCell_Outflow_ScriptedSequence
 	constexpr uint32_t m_vecAdditionalActors = 0x90;  // CUtlVector< PulseScriptedSequenceData_t > 
 	constexpr uint32_t m_OnFinished = 0xA8;  // CPulse_ResumePoint 
 	constexpr uint32_t m_OnCanceled = 0xD8;  // CPulse_ResumePoint 
-	constexpr uint32_t m_Triggers = 0x108;  // CUtlVector< CPulse_OutflowConnection > 
 }
 
+// Offset: 0x7ffe058dc330 
+// N. Class: 152 
+// Fields: 1 
 namespace CPulseCell_Outflow_ScriptedSequence::CursorState_t
 {
 	constexpr uint32_t m_scriptedSequence = 0x0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x0 
+// N. Class: 153 
+// Fields: 0 
 namespace CPulseGraphInstance_GameBlackboard
 {
 }
 
+// Offset: 0x0 
+// N. Class: 154 
+// Fields: 0 
 namespace CPulseGraphComponentGameBlackboard
 {
 }
 
+// Offset: 0x0 
+// N. Class: 155 
+// Fields: 0 
 namespace CTouchExpansionComponent
 {
 }
 
+// Offset: 0x7ffe05831e60 
+// N. Class: 156 
+// Fields: 25 
 namespace dynpitchvol_base_t
 {
 	constexpr uint32_t preset = 0x0;  // int32 
@@ -1544,10 +2018,16 @@ namespace dynpitchvol_base_t
 	constexpr uint32_t lfomult = 0x60;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 157 
+// Fields: 0 
 namespace dynpitchvol_t
 {
 }
 
+// Offset: 0x7ffe058346d0 
+// N. Class: 158 
+// Fields: 3 
 namespace ResponseContext_t
 {
 	constexpr uint32_t m_iszName = 0x0;  // CUtlSymbolLarge 
@@ -1555,12 +2035,18 @@ namespace ResponseContext_t
 	constexpr uint32_t m_fExpirationTime = 0x10;  // GameTime_t 
 }
 
+// Offset: 0x7ffe058347d0 
+// N. Class: 159 
+// Fields: 2 
 namespace Relationship_t
 {
 	constexpr uint32_t disposition = 0x0;  // Disposition_t 
 	constexpr uint32_t priority = 0x4;  // int32 
 }
 
+// Offset: 0x7ffe0580c000 
+// N. Class: 160 
+// Fields: 4 
 namespace thinkfunc_t
 {
 	constexpr uint32_t m_hFn = 0x8;  // HSCRIPT 
@@ -1569,6 +2055,9 @@ namespace thinkfunc_t
 	constexpr uint32_t m_nLastThinkTick = 0x18;  // GameTick_t 
 }
 
+// Offset: 0x7ffe0583b160 
+// N. Class: 161 
+// Fields: 3 
 namespace CBaseFilter
 {
 	constexpr uint32_t m_bNegated = 0x4E0;  // bool 
@@ -1576,6 +2065,9 @@ namespace CBaseFilter
 	constexpr uint32_t m_OnFail = 0x510;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe05809710 
+// N. Class: 162 
+// Fields: 17 
 namespace CCollisionProperty
 {
 	constexpr uint32_t m_collisionAttribute = 0x10;  // VPhysicsCollisionAttribute_t 
@@ -1597,6 +2089,9 @@ namespace CCollisionProperty
 	constexpr uint32_t m_flCapsuleRadius = 0xAC;  // float32 
 }
 
+// Offset: 0x7ffe05870f70 
+// N. Class: 163 
+// Fields: 24 
 namespace CBasePlayerController
 {
 	constexpr uint32_t m_nInButtonsWhichAreToggles = 0x4E8;  // uint64 
@@ -1625,18 +2120,30 @@ namespace CBasePlayerController
 	constexpr uint32_t m_iDesiredFOV = 0x748;  // uint32 
 }
 
+// Offset: 0x0 
+// N. Class: 164 
+// Fields: 0 
 namespace CServerOnlyEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 165 
+// Fields: 0 
 namespace CServerOnlyPointEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 166 
+// Fields: 0 
 namespace CLogicalEntity
 {
 }
 
+// Offset: 0x7ffe05839e50 
+// N. Class: 167 
+// Fields: 11 
 namespace CEntityFlame
 {
 	constexpr uint32_t m_hEntAttached = 0x4E0;  // CHandle< CBaseEntity > 
@@ -1652,6 +2159,9 @@ namespace CEntityFlame
 	constexpr uint32_t m_iCustomDamageType = 0x508;  // int32 
 }
 
+// Offset: 0x7ffe0583b2b0 
+// N. Class: 168 
+// Fields: 4 
 namespace CFilterMultiple
 {
 	constexpr uint32_t m_nFilterType = 0x538;  // filter_t 
@@ -1660,20 +2170,32 @@ namespace CFilterMultiple
 	constexpr uint32_t m_nFilterCount = 0x5B8;  // int32 
 }
 
+// Offset: 0x7ffe0583b438 
+// N. Class: 169 
+// Fields: 1 
 namespace CFilterProximity
 {
 	constexpr uint32_t m_flRadius = 0x538;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 170 
+// Fields: 0 
 namespace CFilterLOS
 {
 }
 
+// Offset: 0x7ffe05837408 
+// N. Class: 171 
+// Fields: 1 
 namespace CFilterClass
 {
 	constexpr uint32_t m_iFilterClass = 0x538;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe05837bc0 
+// N. Class: 172 
+// Fields: 4 
 namespace CBaseFire
 {
 	constexpr uint32_t m_flScale = 0x4E0;  // float32 
@@ -1682,12 +2204,18 @@ namespace CBaseFire
 	constexpr uint32_t m_nFlags = 0x4EC;  // uint32 
 }
 
+// Offset: 0x7ffe05837e30 
+// N. Class: 173 
+// Fields: 2 
 namespace CFireSmoke
 {
 	constexpr uint32_t m_nFlameModelIndex = 0x4F0;  // int32 
 	constexpr uint32_t m_nFlameFromAboveModelIndex = 0x4F4;  // int32 
 }
 
+// Offset: 0x7ffe05839440 
+// N. Class: 174 
+// Fields: 24 
 namespace CFish
 {
 	constexpr uint32_t m_pool = 0x9A8;  // CHandle< CFishPool > 
@@ -1716,6 +2244,9 @@ namespace CFish
 	constexpr uint32_t m_visible = 0xA98;  // CUtlVector< CFish* > 
 }
 
+// Offset: 0x7ffe058397c0 
+// N. Class: 175 
+// Fields: 7 
 namespace CFishPool
 {
 	constexpr uint32_t m_fishCount = 0x4F0;  // int32 
@@ -1727,6 +2258,9 @@ namespace CFishPool
 	constexpr uint32_t m_visTimer = 0x520;  // CountdownTimer 
 }
 
+// Offset: 0x7ffe0583a740 
+// N. Class: 176 
+// Fields: 7 
 namespace CMoverPathNode
 {
 	constexpr uint32_t m_vInTangentLocal = 0x4E0;  // Vector 
@@ -1738,6 +2272,9 @@ namespace CMoverPathNode
 	constexpr uint32_t m_hMover = 0x578;  // CHandle< CPathMover > 
 }
 
+// Offset: 0x7ffe0583a8a0 
+// N. Class: 177 
+// Fields: 3 
 namespace CPathMover
 {
 	constexpr uint32_t m_vecPathNodes = 0x4E8;  // CUtlVector< CHandle< CMoverPathNode > > 
@@ -1745,14 +2282,23 @@ namespace CPathMover
 	constexpr uint32_t m_bClosedLoop = 0x504;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 178 
+// Fields: 0 
 namespace CFuncMoverAPI
 {
 }
 
+// Offset: 0x0 
+// N. Class: 179 
+// Fields: 0 
 namespace CInfoData
 {
 }
 
+// Offset: 0x7ffe0583c2f0 
+// N. Class: 180 
+// Fields: 3 
 namespace locksound_t
 {
 	constexpr uint32_t sLockedSound = 0x8;  // CUtlSymbolLarge 
@@ -1760,6 +2306,9 @@ namespace locksound_t
 	constexpr uint32_t flwaitSound = 0x18;  // GameTime_t 
 }
 
+// Offset: 0x7ffe0583c3c0 
+// N. Class: 181 
+// Fields: 4 
 namespace CLogicBranch
 {
 	constexpr uint32_t m_bInValue = 0x4E0;  // bool 
@@ -1768,6 +2317,9 @@ namespace CLogicBranch
 	constexpr uint32_t m_OnFalse = 0x528;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe0583c4f0 
+// N. Class: 182 
+// Fields: 7 
 namespace CLogicDistanceCheck
 {
 	constexpr uint32_t m_iszEntityA = 0x4E0;  // CUtlSymbolLarge 
@@ -1779,6 +2331,9 @@ namespace CLogicDistanceCheck
 	constexpr uint32_t m_InZone3 = 0x548;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe0583be60 
+// N. Class: 183 
+// Fields: 3 
 namespace VelocitySampler
 {
 	constexpr uint32_t m_prevSample = 0x0;  // Vector 
@@ -1786,6 +2341,9 @@ namespace VelocitySampler
 	constexpr uint32_t m_fIdealSampleRate = 0x10;  // float32 
 }
 
+// Offset: 0x7ffe0583bfa0 
+// N. Class: 184 
+// Fields: 3 
 namespace SimpleConstraintSoundProfile
 {
 	constexpr uint32_t eKeypoints = 0x8;  // SimpleConstraintSoundProfile::SimpleConstraintsSoundProfileKeypoints_t 
@@ -1793,6 +2351,9 @@ namespace SimpleConstraintSoundProfile
 	constexpr uint32_t m_reversalSoundThresholds = 0x14;  // float32[3] 
 }
 
+// Offset: 0x7ffe0583c180 
+// N. Class: 185 
+// Fields: 8 
 namespace ConstraintSoundInfo
 {
 	constexpr uint32_t m_vSampler = 0x8;  // VelocitySampler 
@@ -1805,6 +2366,9 @@ namespace ConstraintSoundInfo
 	constexpr uint32_t m_bPlayReversalSound = 0x81;  // bool 
 }
 
+// Offset: 0x7ffe0583f440 
+// N. Class: 186 
+// Fields: 5 
 namespace CSmoothFunc
 {
 	constexpr uint32_t m_flSmoothAmplitude = 0x8;  // float32 
@@ -1814,11 +2378,17 @@ namespace CSmoothFunc
 	constexpr uint32_t m_nSmoothDir = 0x18;  // int32 
 }
 
+// Offset: 0x7ffe0583f1b0 
+// N. Class: 187 
+// Fields: 1 
 namespace magnetted_objects_t
 {
 	constexpr uint32_t hEntity = 0x8;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe0583fc10 
+// N. Class: 188 
+// Fields: 6 
 namespace CPointPrefab
 {
 	constexpr uint32_t m_targetMapName = 0x4E0;  // CUtlSymbolLarge 
@@ -1829,6 +2399,9 @@ namespace CPointPrefab
 	constexpr uint32_t m_associatedRelayEntity = 0x4FC;  // CHandle< CPointPrefab > 
 }
 
+// Offset: 0x7ffe058404f0 
+// N. Class: 189 
+// Fields: 4 
 namespace CSkyCamera
 {
 	constexpr uint32_t m_skyboxData = 0x4E0;  // sky3dparams_t 
@@ -1837,12 +2410,18 @@ namespace CSkyCamera
 	constexpr uint32_t m_pNext = 0x578;  // CSkyCamera* 
 }
 
+// Offset: 0x7ffe05840400 
+// N. Class: 190 
+// Fields: 2 
 namespace CSkyboxReference
 {
 	constexpr uint32_t m_worldGroupId = 0x4E0;  // WorldGroupId_t 
 	constexpr uint32_t m_hSkyCamera = 0x4E4;  // CHandle< CSkyCamera > 
 }
 
+// Offset: 0x7ffe0580a060 
+// N. Class: 191 
+// Fields: 6 
 namespace sky3dparams_t
 {
 	constexpr uint32_t scale = 0x8;  // int16 
@@ -1853,12 +2432,18 @@ namespace sky3dparams_t
 	constexpr uint32_t m_nWorldGroupID = 0x88;  // WorldGroupId_t 
 }
 
+// Offset: 0x7ffe05840fa0 
+// N. Class: 192 
+// Fields: 2 
 namespace AISound_t
 {
 	constexpr uint32_t nType = 0x0;  // uint16 
 	constexpr uint32_t nFlags = 0x2;  // uint16 
 }
 
+// Offset: 0x7ffe05841370 
+// N. Class: 193 
+// Fields: 12 
 namespace CSound
 {
 	constexpr uint32_t m_hOwner = 0x0;  // CHandle< CBaseEntity > 
@@ -1875,6 +2460,9 @@ namespace CSound
 	constexpr uint32_t m_bHasOwner = 0x30;  // bool 
 }
 
+// Offset: 0x7ffe05840b90 
+// N. Class: 194 
+// Fields: 6 
 namespace lerpdata_t
 {
 	constexpr uint32_t m_hEnt = 0x0;  // CHandle< CBaseEntity > 
@@ -1885,12 +2473,18 @@ namespace lerpdata_t
 	constexpr uint32_t m_nFXIndex = 0x30;  // ParticleIndex_t 
 }
 
+// Offset: 0x7ffe05843f40 
+// N. Class: 195 
+// Fields: 2 
 namespace CNavLinkAnimgraphVar
 {
 	constexpr uint32_t m_sAnimGraphNavlinkType = 0x0;  // CGlobalSymbol 
 	constexpr uint32_t m_unAlignmentDegrees = 0x8;  // uint32 
 }
 
+// Offset: 0x7ffe05844030 
+// N. Class: 196 
+// Fields: 4 
 namespace CNavLinkMovementVData
 {
 	constexpr uint32_t m_sToolsOnlyOwnerModelName = 0x0;  // CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > 
@@ -1899,20 +2493,32 @@ namespace CNavLinkMovementVData
 	constexpr uint32_t m_vecAnimgraphVars = 0xE8;  // CUtlVector< CNavLinkAnimgraphVar > 
 }
 
+// Offset: 0x0 
+// N. Class: 197 
+// Fields: 0 
 namespace CNavVolumeMarkupVolume
 {
 }
 
+// Offset: 0x0 
+// N. Class: 198 
+// Fields: 0 
 namespace CNavVolumeCalculatedVector
 {
 }
 
+// Offset: 0x7ffe05843af0 
+// N. Class: 199 
+// Fields: 2 
 namespace CNavVolumeBreadthFirstSearch
 {
 	constexpr uint32_t m_vStartPos = 0xA0;  // Vector 
 	constexpr uint32_t m_flSearchDist = 0xAC;  // float32 
 }
 
+// Offset: 0x7ffe058090b0 
+// N. Class: 200 
+// Fields: 8 
 namespace VPhysicsCollisionAttribute_t
 {
 	constexpr uint32_t m_nInteractsAs = 0x8;  // uint64 
@@ -1925,6 +2531,9 @@ namespace VPhysicsCollisionAttribute_t
 	constexpr uint32_t m_nCollisionFunctionMask = 0x2B;  // uint8 
 }
 
+// Offset: 0x7ffe0580a2e0 
+// N. Class: 201 
+// Fields: 21 
 namespace CEffectData
 {
 	constexpr uint32_t m_vOrigin = 0x8;  // Vector 
@@ -1950,12 +2559,18 @@ namespace CEffectData
 	constexpr uint32_t m_nExplosionType = 0x6E;  // uint8 
 }
 
+// Offset: 0x7ffe0580a5f0 
+// N. Class: 202 
+// Fields: 2 
 namespace CEnvDetailController
 {
 	constexpr uint32_t m_flFadeStartDist = 0x4E0;  // float32 
 	constexpr uint32_t m_flFadeEndDist = 0x4E4;  // float32 
 }
 
+// Offset: 0x7ffe058077b0 
+// N. Class: 203 
+// Fields: 31 
 namespace CEnvWindShared
 {
 	constexpr uint32_t m_flStartTime = 0x8;  // GameTime_t 
@@ -1991,22 +2606,34 @@ namespace CEnvWindShared
 	constexpr uint32_t m_hEntOwner = 0xE0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe05807c00 
+// N. Class: 204 
+// Fields: 2 
 namespace CEnvWindShared::WindAveEvent_t
 {
 	constexpr uint32_t m_flStartWindSpeed = 0x0;  // float32 
 	constexpr uint32_t m_flAveWindSpeed = 0x4;  // float32 
 }
 
+// Offset: 0x7ffe05807cb0 
+// N. Class: 205 
+// Fields: 2 
 namespace CEnvWindShared::WindVariationEvent_t
 {
 	constexpr uint32_t m_flWindAngleVariation = 0x0;  // float32 
 	constexpr uint32_t m_flWindSpeedVariation = 0x4;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 206 
+// Fields: 0 
 namespace CInfoLadderDismount
 {
 }
 
+// Offset: 0x7ffe05807ed0 
+// N. Class: 207 
+// Fields: 13 
 namespace shard_model_desc_t
 {
 	constexpr uint32_t m_nModelID = 0x8;  // int32 
@@ -2024,6 +2651,9 @@ namespace shard_model_desc_t
 	constexpr uint32_t m_SurfacePropStringToken = 0x78;  // CUtlStringToken 
 }
 
+// Offset: 0x7ffe05808290 
+// N. Class: 208 
+// Fields: 28 
 namespace CShatterGlassShard
 {
 	constexpr uint32_t m_hShardHandle = 0x8;  // uint32 
@@ -2056,6 +2686,9 @@ namespace CShatterGlassShard
 	constexpr uint32_t m_vecNeighbors = 0xA0;  // CUtlVector< uint32 > 
 }
 
+// Offset: 0x7ffe058080f0 
+// N. Class: 209 
+// Fields: 3 
 namespace CShatterGlassShardPhysics
 {
 	constexpr uint32_t m_bDebris = 0xD00;  // bool 
@@ -2063,6 +2696,9 @@ namespace CShatterGlassShardPhysics
 	constexpr uint32_t m_ShardDesc = 0xD08;  // shard_model_desc_t 
 }
 
+// Offset: 0x7ffe058089f0 
+// N. Class: 210 
+// Fields: 26 
 namespace CFuncShatterglass
 {
 	constexpr uint32_t m_matPanelTransform = 0x790;  // matrix3x4_t 
@@ -2093,10 +2729,16 @@ namespace CFuncShatterglass
 	constexpr uint32_t m_hMaterialDamageBase = 0x8C8;  // CStrongHandle< InfoForResourceTypeIMaterial2 > 
 }
 
+// Offset: 0x0 
+// N. Class: 211 
+// Fields: 0 
 namespace CGameRulesProxy
 {
 }
 
+// Offset: 0x7ffe05808f80 
+// N. Class: 212 
+// Fields: 6 
 namespace CGameRules
 {
 	constexpr uint32_t __m_pChainEntity = 0x8;  // CNetworkVarChainer 
@@ -2107,6 +2749,9 @@ namespace CGameRules
 	constexpr uint32_t m_bGamePaused = 0xBC;  // bool 
 }
 
+// Offset: 0x7ffe058093d0 
+// N. Class: 213 
+// Fields: 11 
 namespace CGlowProperty
 {
 	constexpr uint32_t m_fGlowColor = 0x8;  // Vector 
@@ -2122,14 +2767,23 @@ namespace CGlowProperty
 	constexpr uint32_t m_bGlowing = 0x51;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 214 
+// Fields: 0 
 namespace CMultiplayRules
 {
 }
 
+// Offset: 0x0 
+// N. Class: 215 
+// Fields: 0 
 namespace WrappedPhysicsJoint_t
 {
 }
 
+// Offset: 0x7ffe05809a80 
+// N. Class: 216 
+// Fields: 25 
 namespace fogparams_t
 {
 	constexpr uint32_t dirPrimary = 0x8;  // Vector 
@@ -2159,6 +2813,9 @@ namespace fogparams_t
 	constexpr uint32_t m_bPadding = 0x67;  // bool 
 }
 
+// Offset: 0x7ffe057fa3a0 
+// N. Class: 217 
+// Fields: 3 
 namespace CFogController
 {
 	constexpr uint32_t m_fog = 0x4E0;  // fogparams_t 
@@ -2166,6 +2823,9 @@ namespace CFogController
 	constexpr uint32_t m_iChangedVariables = 0x54C;  // int32 
 }
 
+// Offset: 0x7ffe0580a190 
+// N. Class: 218 
+// Fields: 5 
 namespace sndopvarlatchdata_t
 {
 	constexpr uint32_t m_iszStack = 0x8;  // CUtlSymbolLarge 
@@ -2175,10 +2835,16 @@ namespace sndopvarlatchdata_t
 	constexpr uint32_t m_vPos = 0x24;  // Vector 
 }
 
+// Offset: 0x0 
+// N. Class: 219 
+// Fields: 0 
 namespace IRagdoll
 {
 }
 
+// Offset: 0x7ffe0580c4f0 
+// N. Class: 220 
+// Fields: 3 
 namespace ragdollelement_t
 {
 	constexpr uint32_t originParentSpace = 0x0;  // Vector 
@@ -2186,19 +2852,29 @@ namespace ragdollelement_t
 	constexpr uint32_t m_flRadius = 0x24;  // float32 
 }
 
+// Offset: 0x7ffe0580c630 
+// N. Class: 221 
+// Fields: 4 
 namespace ragdoll_t
 {
+	constexpr uint32_t list = 0x0;  // CUtlVector< ragdollelement_t > 
 	constexpr uint32_t boneIndex = 0x18;  // CUtlVector< int32 > 
 	constexpr uint32_t allowStretch = 0x30;  // bool 
 	constexpr uint32_t unused = 0x31;  // bool 
 }
 
+// Offset: 0x7ffe0580c890 
+// N. Class: 222 
+// Fields: 2 
 namespace PhysicsRagdollPose_t
 {
 	constexpr uint32_t m_Transforms = 0x8;  // CNetworkUtlVectorBase< CTransform > 
 	constexpr uint32_t m_hOwner = 0x20;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe0580afd0 
+// N. Class: 223 
+// Fields: 13 
 namespace CSceneEventInfo
 {
 	constexpr uint32_t m_iLayer = 0x0;  // int32 
@@ -2216,20 +2892,32 @@ namespace CSceneEventInfo
 	constexpr uint32_t m_bStarted = 0x4D;  // bool 
 }
 
+// Offset: 0x7ffe0580c1e0 
+// N. Class: 224 
+// Fields: 1 
 namespace SceneEventId_t
 {
 	constexpr uint32_t m_Value = 0x0;  // uint32 
 }
 
+// Offset: 0x7ffe0580b290 
+// N. Class: 225 
+// Fields: 1 
 namespace AmmoIndex_t
 {
 	constexpr uint32_t m_Value = 0x0;  // int8 
 }
 
+// Offset: 0x0 
+// N. Class: 226 
+// Fields: 0 
 namespace CEntitySubclassVDataBase
 {
 }
 
+// Offset: 0x7ffe0580c0f0 
+// N. Class: 227 
+// Fields: 4 
 namespace RagdollCreationParams_t
 {
 	constexpr uint32_t m_vForce = 0x0;  // Vector 
@@ -2238,6 +2926,9 @@ namespace RagdollCreationParams_t
 	constexpr uint32_t m_nHealthToGrant = 0x14;  // int32 
 }
 
+// Offset: 0x7ffe0580c270 
+// N. Class: 228 
+// Fields: 6 
 namespace hudtextparms_t
 {
 	constexpr uint32_t color1 = 0x0;  // Color 
@@ -2248,48 +2939,75 @@ namespace hudtextparms_t
 	constexpr uint32_t y = 0x10;  // float32 
 }
 
+// Offset: 0x7ffe0580c3a0 
+// N. Class: 229 
+// Fields: 2 
 namespace CSimpleSimTimer
 {
 	constexpr uint32_t m_next = 0x0;  // GameTime_t 
 	constexpr uint32_t m_nWorldGroupId = 0x4;  // WorldGroupId_t 
 }
 
+// Offset: 0x7ffe0580c4c0 
+// N. Class: 230 
+// Fields: 1 
 namespace CSimTimer
 {
 	constexpr uint32_t m_interval = 0x8;  // float32 
 }
 
+// Offset: 0x7ffe0580c6b0 
+// N. Class: 231 
+// Fields: 2 
 namespace CRandSimTimer
 {
 	constexpr uint32_t m_minInterval = 0x8;  // float32 
 	constexpr uint32_t m_maxInterval = 0xC;  // float32 
 }
 
+// Offset: 0x7ffe0580c7e0 
+// N. Class: 232 
+// Fields: 1 
 namespace CStopwatchBase
 {
 	constexpr uint32_t m_fIsRunning = 0x8;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 233 
+// Fields: 0 
 namespace CSimpleStopwatch
 {
 }
 
+// Offset: 0x7ffe0580c9c0 
+// N. Class: 234 
+// Fields: 1 
 namespace CStopwatch
 {
 	constexpr uint32_t m_interval = 0xC;  // float32 
 }
 
+// Offset: 0x7ffe0580ca60 
+// N. Class: 235 
+// Fields: 2 
 namespace CRandStopwatch
 {
 	constexpr uint32_t m_minInterval = 0xC;  // float32 
 	constexpr uint32_t m_maxInterval = 0x10;  // float32 
 }
 
+// Offset: 0x7ffe0580cb20 
+// N. Class: 236 
+// Fields: 1 
 namespace CSingleplayRules
 {
 	constexpr uint32_t m_bSinglePlayerGameEnding = 0xC0;  // bool 
 }
 
+// Offset: 0x7ffe0580cbc0 
+// N. Class: 237 
+// Fields: 9 
 namespace CSoundOpvarSetPointBase
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -2303,6 +3021,9 @@ namespace CSoundOpvarSetPointBase
 	constexpr uint32_t m_bUseAutoCompare = 0x574;  // bool 
 }
 
+// Offset: 0x7ffe0580cd60 
+// N. Class: 238 
+// Fields: 24 
 namespace CSoundOpvarSetPointEntity
 {
 	constexpr uint32_t m_OnEnter = 0x578;  // CEntityIOOutput 
@@ -2331,6 +3052,9 @@ namespace CSoundOpvarSetPointEntity
 	constexpr uint32_t m_nPathingSourceIndex = 0x680;  // int32 
 }
 
+// Offset: 0x7ffe0580d0e0 
+// N. Class: 239 
+// Fields: 9 
 namespace CSoundOpvarSetAABBEntity
 {
 	constexpr uint32_t m_vDistanceInnerMins = 0x688;  // Vector 
@@ -2344,10 +3068,16 @@ namespace CSoundOpvarSetAABBEntity
 	constexpr uint32_t m_vOuterMaxs = 0x6E0;  // Vector 
 }
 
+// Offset: 0x0 
+// N. Class: 240 
+// Fields: 0 
 namespace CSoundOpvarSetOBBEntity
 {
 }
 
+// Offset: 0x7ffe0580d300 
+// N. Class: 241 
+// Fields: 3 
 namespace CSoundOpvarSetPathCornerEntity
 {
 	constexpr uint32_t m_flDistMinSqr = 0x6A0;  // float32 
@@ -2355,6 +3085,9 @@ namespace CSoundOpvarSetPathCornerEntity
 	constexpr uint32_t m_iszPathCornerEntityName = 0x6A8;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe0580d3e0 
+// N. Class: 242 
+// Fields: 3 
 namespace SoundOpvarTraceResult_t
 {
 	constexpr uint32_t vPos = 0x0;  // Vector 
@@ -2362,12 +3095,18 @@ namespace SoundOpvarTraceResult_t
 	constexpr uint32_t flDistSqrToCenter = 0x10;  // float32 
 }
 
+// Offset: 0x7ffe0580d4b0 
+// N. Class: 243 
+// Fields: 2 
 namespace AutoRoomDoorwayPairs_t
 {
 	constexpr uint32_t vP1 = 0x0;  // Vector 
 	constexpr uint32_t vP2 = 0xC;  // Vector 
 }
 
+// Offset: 0x7ffe0580d560 
+// N. Class: 244 
+// Fields: 5 
 namespace CSoundOpvarSetAutoRoomEntity
 {
 	constexpr uint32_t m_traceResults = 0x688;  // CUtlVector< SoundOpvarTraceResult_t > 
@@ -2377,6 +3116,9 @@ namespace CSoundOpvarSetAutoRoomEntity
 	constexpr uint32_t m_flSizeSqr = 0x6C0;  // float32 
 }
 
+// Offset: 0x7ffe0580d680 
+// N. Class: 245 
+// Fields: 8 
 namespace CSoundOpvarSetOBBWindEntity
 {
 	constexpr uint32_t m_vMins = 0x578;  // Vector 
@@ -2389,6 +3131,9 @@ namespace CSoundOpvarSetOBBWindEntity
 	constexpr uint32_t m_flWindMapMax = 0x5B4;  // float32 
 }
 
+// Offset: 0x7ffe0580dc40 
+// N. Class: 246 
+// Fields: 22 
 namespace CTakeDamageInfo
 {
 	constexpr uint32_t m_vecDamageForce = 0x8;  // Vector 
@@ -2408,15 +3153,18 @@ namespace CTakeDamageInfo
 	constexpr uint32_t m_bShouldBleed = 0x6C;  // bool 
 	constexpr uint32_t m_bShouldSpark = 0x6D;  // bool 
 	constexpr uint32_t m_flDamageAbsorbed = 0x70;  // float32 
-	constexpr uint32_t m_nDamageFlags = 0x80;  // TakeDamageFlags_t 
 	constexpr uint32_t m_nNumObjectsPenetrated = 0x88;  // int32 
 	constexpr uint32_t m_flFriendlyFireDamageReductionRatio = 0x8C;  // float32 
 	constexpr uint32_t m_hScriptInstance = 0x90;  // HSCRIPT 
 	constexpr uint32_t m_bInTakeDamageFlow = 0xAC;  // bool 
 }
 
+// Offset: 0x7ffe0580b410 
+// N. Class: 247 
+// Fields: 6 
 namespace CTakeDamageResult
 {
+	constexpr uint32_t m_pOriginatingInfo = 0x0;  // CTakeDamageInfo* 
 	constexpr uint32_t m_nHealthLost = 0x8;  // int32 
 	constexpr uint32_t m_nDamageTaken = 0xC;  // int32 
 	constexpr uint32_t m_nTotalledHealthLost = 0x10;  // int32 
@@ -2424,6 +3172,9 @@ namespace CTakeDamageResult
 	constexpr uint32_t m_flTotalledDamageAbsorbed = 0x18;  // float32 
 }
 
+// Offset: 0x7ffe0580b720 
+// N. Class: 248 
+// Fields: 4 
 namespace SummaryTakeDamageInfo_t
 {
 	constexpr uint32_t nSummarisedCount = 0x0;  // int32 
@@ -2432,15 +3183,24 @@ namespace SummaryTakeDamageInfo_t
 	constexpr uint32_t hTarget = 0xE0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe0580b8a8 
+// N. Class: 249 
+// Fields: 1 
 namespace CTakeDamageSummaryScopeGuard
 {
 	constexpr uint32_t m_vecSummaries = 0x8;  // CUtlVector< SummaryTakeDamageInfo_t* > 
 }
 
+// Offset: 0x0 
+// N. Class: 250 
+// Fields: 0 
 namespace CTeamplayRules
 {
 }
 
+// Offset: 0x7ffe058fcf40 
+// N. Class: 251 
+// Fields: 5 
 namespace CEconItemAttribute
 {
 	constexpr uint32_t m_iAttributeDefinitionIndex = 0x30;  // uint16 
@@ -2450,6 +3210,9 @@ namespace CEconItemAttribute
 	constexpr uint32_t m_bSetBonus = 0x40;  // bool 
 }
 
+// Offset: 0x7ffe058fbec0 
+// N. Class: 252 
+// Fields: 6 
 namespace CAttributeManager
 {
 	constexpr uint32_t m_Providers = 0x8;  // CUtlVector< CHandle< CBaseEntity > > 
@@ -2460,16 +3223,25 @@ namespace CAttributeManager
 	constexpr uint32_t m_CachedResults = 0x30;  // CUtlVector< CAttributeManager::cached_attribute_float_t > 
 }
 
+// Offset: 0x7ffe058fce80 
+// N. Class: 253 
+// Fields: 2 
 namespace CAttributeList
 {
 	constexpr uint32_t m_Attributes = 0x8;  // CUtlVectorEmbeddedNetworkVar< CEconItemAttribute > 
 	constexpr uint32_t m_pManager = 0x58;  // CAttributeManager* 
 }
 
+// Offset: 0x0 
+// N. Class: 254 
+// Fields: 0 
 namespace IEconItemInterface
 {
 }
 
+// Offset: 0x7ffe058fbff0 
+// N. Class: 255 
+// Fields: 3 
 namespace CAttributeManager::cached_attribute_float_t
 {
 	constexpr uint32_t flIn = 0x0;  // float32 
@@ -2477,6 +3249,9 @@ namespace CAttributeManager::cached_attribute_float_t
 	constexpr uint32_t flOut = 0x10;  // float32 
 }
 
+// Offset: 0x7ffe058fd050 
+// N. Class: 256 
+// Fields: 13 
 namespace CEconItemView
 {
 	constexpr uint32_t m_iItemDefinitionIndex = 0x38;  // uint16 
@@ -2494,27 +3269,42 @@ namespace CEconItemView
 	constexpr uint32_t m_szCustomNameOverride = 0x1D1;  // char[161] 
 }
 
+// Offset: 0x7ffe058fc0e0 
+// N. Class: 257 
+// Fields: 1 
 namespace CAttributeContainer
 {
 	constexpr uint32_t m_Item = 0x50;  // CEconItemView 
 }
 
+// Offset: 0x0 
+// N. Class: 258 
+// Fields: 0 
 namespace IHasAttributes
 {
 }
 
+// Offset: 0x7ffe058517a0 
+// N. Class: 259 
+// Fields: 2 
 namespace GameAmmoTypeInfo_t
 {
 	constexpr uint32_t m_nBuySize = 0x38;  // int32 
 	constexpr uint32_t m_nCost = 0x3C;  // int32 
 }
 
+// Offset: 0x7ffe05853810 
+// N. Class: 260 
+// Fields: 2 
 namespace EntitySpottedState_t
 {
 	constexpr uint32_t m_bSpotted = 0x8;  // bool 
 	constexpr uint32_t m_bSpottedByMask = 0xC;  // uint32[2] 
 }
 
+// Offset: 0x7ffe05851670 
+// N. Class: 261 
+// Fields: 3 
 namespace SpawnPoint
 {
 	constexpr uint32_t m_iPriority = 0x4E0;  // int32 
@@ -2522,6 +3312,9 @@ namespace SpawnPoint
 	constexpr uint32_t m_nType = 0x4E8;  // int32 
 }
 
+// Offset: 0x7ffe058518c0 
+// N. Class: 262 
+// Fields: 189 
 namespace CCSGameRules
 {
 	constexpr uint32_t m_bFreezePeriod = 0xC8;  // bool 
@@ -2715,16 +3508,25 @@ namespace CCSGameRules
 	constexpr uint32_t m_flLastPerfSampleTime = 0x5800;  // float64 
 }
 
+// Offset: 0x7ffe058516f0 
+// N. Class: 263 
+// Fields: 1 
 namespace CCSGameRulesProxy
 {
 	constexpr uint32_t m_pGameRules = 0x4E0;  // CCSGameRules* 
 }
 
+// Offset: 0x7ffe058538c0 
+// N. Class: 264 
+// Fields: 1 
 namespace CCSGameModeRules
 {
 	constexpr uint32_t __m_pChainEntity = 0x8;  // CNetworkVarChainer 
 }
 
+// Offset: 0x7ffe05853a30 
+// N. Class: 265 
+// Fields: 5 
 namespace CRetakeGameRules
 {
 	constexpr uint32_t m_nMatchSeed = 0xF8;  // int32 
@@ -2734,15 +3536,24 @@ namespace CRetakeGameRules
 	constexpr uint32_t m_iBombSite = 0x104;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 266 
+// Fields: 0 
 namespace CCSGameModeRules_Noop
 {
 }
 
+// Offset: 0x7ffe05853070 
+// N. Class: 267 
+// Fields: 1 
 namespace CCSGameModeRules_ArmsRace
 {
 	constexpr uint32_t m_WeaponSequence = 0x30;  // CNetworkUtlVectorBase< CUtlString > 
 }
 
+// Offset: 0x7ffe058536b0 
+// N. Class: 268 
+// Fields: 3 
 namespace CCSGameModeRules_Deathmatch
 {
 	constexpr uint32_t m_flDMBonusStartTime = 0x30;  // GameTime_t 
@@ -2750,10 +3561,16 @@ namespace CCSGameModeRules_Deathmatch
 	constexpr uint32_t m_sDMBonusWeapon = 0x38;  // CUtlString 
 }
 
+// Offset: 0x0 
+// N. Class: 269 
+// Fields: 0 
 namespace QuestProgress
 {
 }
 
+// Offset: 0x7ffe0585bae0 
+// N. Class: 270 
+// Fields: 13 
 namespace CSPerRoundStats_t
 {
 	constexpr uint32_t m_iKills = 0x30;  // int32 
@@ -2771,6 +3588,9 @@ namespace CSPerRoundStats_t
 	constexpr uint32_t m_iEnemiesFlashed = 0x60;  // int32 
 }
 
+// Offset: 0x7ffe0585bcf0 
+// N. Class: 271 
+// Fields: 21 
 namespace CSMatchStats_t
 {
 	constexpr uint32_t m_iEnemy5Ks = 0x68;  // int32 
@@ -2796,6 +3616,9 @@ namespace CSMatchStats_t
 	constexpr uint32_t m_iEntryWins = 0xB8;  // int32 
 }
 
+// Offset: 0x7ffe0585c370 
+// N. Class: 272 
+// Fields: 8 
 namespace CCSGO_TeamPreviewCharacterPosition
 {
 	constexpr uint32_t m_nVariant = 0x4E0;  // int32 
@@ -2808,87 +3631,150 @@ namespace CCSGO_TeamPreviewCharacterPosition
 	constexpr uint32_t m_weaponItem = 0x9F0;  // CEconItemView 
 }
 
+// Offset: 0x0 
+// N. Class: 273 
+// Fields: 0 
 namespace CCSGO_TeamSelectCharacterPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 274 
+// Fields: 0 
 namespace CCSGO_TeamSelectTerroristPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 275 
+// Fields: 0 
 namespace CCSGO_TeamSelectCounterTerroristPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 276 
+// Fields: 0 
 namespace CCSGO_TeamIntroCharacterPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 277 
+// Fields: 0 
 namespace CCSGO_TeamIntroTerroristPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 278 
+// Fields: 0 
 namespace CCSGO_TeamIntroCounterTerroristPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 279 
+// Fields: 0 
 namespace CCSGO_WingmanIntroCharacterPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 280 
+// Fields: 0 
 namespace CCSGO_WingmanIntroTerroristPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 281 
+// Fields: 0 
 namespace CCSGO_WingmanIntroCounterTerroristPosition
 {
 }
 
+// Offset: 0x0 
+// N. Class: 282 
+// Fields: 0 
 namespace CCSMinimapBoundary
 {
 }
 
+// Offset: 0x0 
+// N. Class: 283 
+// Fields: 0 
 namespace CCSPointScriptEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 284 
+// Fields: 0 
 namespace CCSServerPointScriptEntity
 {
 }
 
+// Offset: 0x7ffe0585c228 
+// N. Class: 285 
+// Fields: 1 
 namespace CCSPointScript
 {
 	constexpr uint32_t m_pParent = 0xF8;  // CCSPointScriptEntity* 
 }
 
+// Offset: 0x0 
+// N. Class: 286 
+// Fields: 0 
 namespace CCSPointScriptExtensions_entity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 287 
+// Fields: 0 
 namespace CCSPointScriptExtensions_player
 {
 }
 
+// Offset: 0x0 
+// N. Class: 288 
+// Fields: 0 
 namespace CCSPointScriptExtensions_observer
 {
 }
 
+// Offset: 0x0 
+// N. Class: 289 
+// Fields: 0 
 namespace CCSPointScriptExtensions_player_controller
 {
 }
 
+// Offset: 0x0 
+// N. Class: 290 
+// Fields: 0 
 namespace CCSPointScriptExtensions_weapon_cs_base
 {
 }
 
+// Offset: 0x0 
+// N. Class: 291 
+// Fields: 0 
 namespace CCSPointScriptExtensions_CCSWeaponBaseVData
 {
 }
 
+// Offset: 0x0 
+// N. Class: 292 
+// Fields: 0 
 namespace CCSGOPlayerAnimGraphState
 {
 }
 
+// Offset: 0x7ffe0586dfc0 
+// N. Class: 293 
+// Fields: 4 
 namespace PredictedDamageTag_t
 {
 	constexpr uint32_t nTagTick = 0x30;  // GameTick_t 
@@ -2897,6 +3783,9 @@ namespace PredictedDamageTag_t
 	constexpr uint32_t flFriendlyFireDamageReductionRatio = 0x3C;  // float32 
 }
 
+// Offset: 0x7ffe057e53a0 
+// N. Class: 294 
+// Fields: 118 
 namespace CCSPlayerPawn
 {
 	constexpr uint32_t m_pBulletServices = 0xDD0;  // CCSPlayer_BulletServices* 
@@ -3019,6 +3908,9 @@ namespace CCSPlayerPawn
 	constexpr uint32_t m_nHighestAppliedDamageTagTick = 0x1B20;  // int32 
 }
 
+// Offset: 0x7ffe0586db90 
+// N. Class: 295 
+// Fields: 5 
 namespace CPlayerPing
 {
 	constexpr uint32_t m_hPlayer = 0x4E8;  // CHandle< CCSPlayerPawn > 
@@ -3028,12 +3920,18 @@ namespace CPlayerPing
 	constexpr uint32_t m_szPlaceName = 0x4F5;  // char[18] 
 }
 
+// Offset: 0x7ffe0586de20 
+// N. Class: 296 
+// Fields: 2 
 namespace CCSPlayer_PingServices
 {
 	constexpr uint32_t m_flPlayerPingTokens = 0x40;  // GameTime_t[5] 
 	constexpr uint32_t m_hPlayerPing = 0x54;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe0586e0e0 
+// N. Class: 297 
+// Fields: 10 
 namespace CCSPlayerResource
 {
 	constexpr uint32_t m_bHostageAlive = 0x4E0;  // bool[12] 
@@ -3048,14 +3946,23 @@ namespace CCSPlayerResource
 	constexpr uint32_t m_foundGoalPositions = 0x571;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 298 
+// Fields: 0 
 namespace CCSPlayer_DamageReactServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 299 
+// Fields: 0 
 namespace CPlayer_ViewModelServices
 {
 }
 
+// Offset: 0x7ffe05868fa0 
+// N. Class: 300 
+// Fields: 7 
 namespace CCSPlayerBase_CameraServices
 {
 	constexpr uint32_t m_iFOV = 0x170;  // uint32 
@@ -3067,17 +3974,26 @@ namespace CCSPlayerBase_CameraServices
 	constexpr uint32_t m_hLastFogTrigger = 0x1A0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe05868cf0 
+// N. Class: 301 
+// Fields: 2 
 namespace WeaponPurchaseCount_t
 {
 	constexpr uint32_t m_nItemDefIndex = 0x30;  // uint16 
 	constexpr uint32_t m_nCount = 0x32;  // uint16 
 }
 
+// Offset: 0x7ffe05868da0 
+// N. Class: 302 
+// Fields: 1 
 namespace WeaponPurchaseTracker_t
 {
 	constexpr uint32_t m_weaponPurchases = 0x8;  // CUtlVectorEmbeddedNetworkVar< WeaponPurchaseCount_t > 
 }
 
+// Offset: 0x7ffe05868e30 
+// N. Class: 303 
+// Fields: 4 
 namespace CCSPlayer_ActionTrackingServices
 {
 	constexpr uint32_t m_hLastWeaponBeforeC4AutoSwitch = 0x200;  // CHandle< CBasePlayerWeapon > 
@@ -3086,11 +4002,17 @@ namespace CCSPlayer_ActionTrackingServices
 	constexpr uint32_t m_weaponPurchasesThisRound = 0x288;  // WeaponPurchaseTracker_t 
 }
 
+// Offset: 0x7ffe05869e50 
+// N. Class: 304 
+// Fields: 1 
 namespace CCSPlayer_BulletServices
 {
 	constexpr uint32_t m_totalHitsOnServer = 0x40;  // int32 
 }
 
+// Offset: 0x7ffe0586b080 
+// N. Class: 305 
+// Fields: 5 
 namespace SellbackPurchaseEntry_t
 {
 	constexpr uint32_t m_unDefIdx = 0x30;  // uint16 
@@ -3100,21 +4022,33 @@ namespace SellbackPurchaseEntry_t
 	constexpr uint32_t m_hItem = 0x40;  // CEntityHandle 
 }
 
+// Offset: 0x7ffe0586b190 
+// N. Class: 306 
+// Fields: 1 
 namespace CCSPlayer_BuyServices
 {
 	constexpr uint32_t m_vecSellbackPurchaseEntries = 0xC8;  // CUtlVectorEmbeddedNetworkVar< SellbackPurchaseEntry_t > 
 }
 
+// Offset: 0x0 
+// N. Class: 307 
+// Fields: 0 
 namespace CCSPlayer_CameraServices
 {
 }
 
+// Offset: 0x7ffe05869d90 
+// N. Class: 308 
+// Fields: 2 
 namespace CCSPlayer_HostageServices
 {
 	constexpr uint32_t m_hCarriedHostage = 0x40;  // CHandle< CBaseEntity > 
 	constexpr uint32_t m_hCarriedHostageProp = 0x44;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe0586a110 
+// N. Class: 309 
+// Fields: 3 
 namespace CCSPlayer_ItemServices
 {
 	constexpr uint32_t m_bHasDefuser = 0x40;  // bool 
@@ -3122,6 +4056,9 @@ namespace CCSPlayer_ItemServices
 	constexpr uint32_t m_bHasHeavyArmor = 0x42;  // bool 
 }
 
+// Offset: 0x7ffe0586b3c0 
+// N. Class: 310 
+// Fields: 40 
 namespace CCSPlayer_MovementServices
 {
 	constexpr uint32_t m_vecLadderNormal = 0x228;  // Vector 
@@ -3166,6 +4103,9 @@ namespace CCSPlayer_MovementServices
 	constexpr uint32_t m_flAccumulatedJumpError = 0x4F4;  // float32 
 }
 
+// Offset: 0x7ffe0586e300 
+// N. Class: 311 
+// Fields: 3 
 namespace CCSPlayer_UseServices
 {
 	constexpr uint32_t m_hLastKnownUseEntity = 0x40;  // CHandle< CBaseEntity > 
@@ -3173,6 +4113,9 @@ namespace CCSPlayer_UseServices
 	constexpr uint32_t m_flTimeLastUsedWindow = 0x48;  // GameTime_t 
 }
 
+// Offset: 0x7ffe058607a0 
+// N. Class: 312 
+// Fields: 11 
 namespace CBaseViewModel
 {
 	constexpr uint32_t m_vecLastFacing = 0x9B0;  // Vector 
@@ -3188,11 +4131,17 @@ namespace CBaseViewModel
 	constexpr uint32_t m_hControlPanel = 0x9EC;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe0586dae8 
+// N. Class: 313 
+// Fields: 1 
 namespace CCSPlayer_ViewModelServices
 {
 	constexpr uint32_t m_hViewModel = 0x40;  // CHandle< CBaseViewModel >[3] 
 }
 
+// Offset: 0x7ffe0586dcb0 
+// N. Class: 314 
+// Fields: 6 
 namespace CCSPlayer_WaterServices
 {
 	constexpr uint32_t m_NextDrownDamageTime = 0x40;  // float32 
@@ -3203,6 +4152,9 @@ namespace CCSPlayer_WaterServices
 	constexpr uint32_t m_flSwimSoundTime = 0x5C;  // float32 
 }
 
+// Offset: 0x7ffe0586ed80 
+// N. Class: 315 
+// Fields: 15 
 namespace CCSPlayer_WeaponServices
 {
 	constexpr uint32_t m_flNextAttack = 0xA8;  // GameTime_t 
@@ -3222,26 +4174,44 @@ namespace CCSPlayer_WeaponServices
 	constexpr uint32_t m_nOldInputHistoryCount = 0x468;  // uint32 
 }
 
+// Offset: 0x0 
+// N. Class: 316 
+// Fields: 0 
 namespace CCSObserver_ObserverServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 317 
+// Fields: 0 
 namespace CCSObserver_CameraServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 318 
+// Fields: 0 
 namespace CCSObserver_MovementServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 319 
+// Fields: 0 
 namespace CCSObserver_UseServices
 {
 }
 
+// Offset: 0x0 
+// N. Class: 320 
+// Fields: 0 
 namespace CCSObserver_ViewModelServices
 {
 }
 
+// Offset: 0x7ffe0586f010 
+// N. Class: 321 
+// Fields: 6 
 namespace CSAdditionalPerRoundStats_t
 {
 	constexpr uint32_t m_numChickensKilled = 0x0;  // int32 
@@ -3252,6 +4222,9 @@ namespace CSAdditionalPerRoundStats_t
 	constexpr uint32_t m_iDinks = 0x14;  // int32 
 }
 
+// Offset: 0x7ffe0586f140 
+// N. Class: 322 
+// Fields: 12 
 namespace CSAdditionalMatchStats_t
 {
 	constexpr uint32_t m_numRoundsSurvived = 0x18;  // int32 
@@ -3268,6 +4241,9 @@ namespace CSAdditionalMatchStats_t
 	constexpr uint32_t m_iTeamDamage = 0x44;  // int32 
 }
 
+// Offset: 0x7ffe0586f3c0 
+// N. Class: 323 
+// Fields: 5 
 namespace CCSPlayerController_ActionTrackingServices
 {
 	constexpr uint32_t m_perRoundStats = 0x40;  // CUtlVectorEmbeddedNetworkVar< CSPerRoundStats_t > 
@@ -3277,6 +4253,9 @@ namespace CCSPlayerController_ActionTrackingServices
 	constexpr uint32_t m_unTotalRoundDamageDealt = 0x178;  // uint32 
 }
 
+// Offset: 0x7ffe0586a250 
+// N. Class: 324 
+// Fields: 89 
 namespace CCSPlayerController
 {
 	constexpr uint32_t m_pInGameMoneyServices = 0x788;  // CCSPlayerController_InGameMoneyServices* 
@@ -3370,6 +4349,9 @@ namespace CCSPlayerController
 	constexpr uint32_t m_bFireBulletsSeedSynchronized = 0xFA79;  // bool 
 }
 
+// Offset: 0x7ffe0586f820 
+// N. Class: 325 
+// Fields: 15 
 namespace CDamageRecord
 {
 	constexpr uint32_t m_PlayerDamager = 0x28;  // CHandle< CCSPlayerPawn > 
@@ -3389,12 +4371,18 @@ namespace CDamageRecord
 	constexpr uint32_t m_killType = 0x6D;  // EKillTypes_t 
 }
 
+// Offset: 0x7ffe0586fa90 
+// N. Class: 326 
+// Fields: 2 
 namespace CCSPlayerController_DamageServices
 {
 	constexpr uint32_t m_nSendUpdate = 0x40;  // int32 
 	constexpr uint32_t m_DamageList = 0x48;  // CUtlVectorEmbeddedNetworkVar< CDamageRecord > 
 }
 
+// Offset: 0x7ffe0586ec00 
+// N. Class: 327 
+// Fields: 6 
 namespace CCSPlayerController_InGameMoneyServices
 {
 	constexpr uint32_t m_bReceivesMoneyNextRound = 0x40;  // bool 
@@ -3405,6 +4393,9 @@ namespace CCSPlayerController_InGameMoneyServices
 	constexpr uint32_t m_iCashSpentThisRound = 0x54;  // int32 
 }
 
+// Offset: 0x7ffe0586f550 
+// N. Class: 328 
+// Fields: 3 
 namespace ServerAuthoritativeWeaponSlot_t
 {
 	constexpr uint32_t unClass = 0x28;  // uint16 
@@ -3412,6 +4403,9 @@ namespace ServerAuthoritativeWeaponSlot_t
 	constexpr uint32_t unItemDefIdx = 0x2C;  // uint16 
 }
 
+// Offset: 0x7ffe0586f630 
+// N. Class: 329 
+// Fields: 9 
 namespace CCSPlayerController_InventoryServices
 {
 	constexpr uint32_t m_unMusicID = 0x40;  // uint16 
@@ -3425,21 +4419,33 @@ namespace CCSPlayerController_InventoryServices
 	constexpr uint32_t m_vecServerAuthoritativeWeaponSlots = 0xF50;  // CUtlVectorEmbeddedNetworkVar< ServerAuthoritativeWeaponSlot_t > 
 }
 
+// Offset: 0x7ffe05860130 
+// N. Class: 330 
+// Fields: 1 
 namespace CCSGOViewModel_GraphController
 {
 	constexpr uint32_t m_sReloadComplete = 0x60;  // CAnimGraphTagOptionalRef 
 }
 
+// Offset: 0x7ffe05862980 
+// N. Class: 331 
+// Fields: 1 
 namespace CFiringModeFloat
 {
 	constexpr uint32_t m_flValues = 0x0;  // float32[2] 
 }
 
+// Offset: 0x7ffe05862a18 
+// N. Class: 332 
+// Fields: 1 
 namespace CFiringModeInt
 {
 	constexpr uint32_t m_nValues = 0x0;  // int32[2] 
 }
 
+// Offset: 0x7ffe058664a0 
+// N. Class: 333 
+// Fields: 4 
 namespace CIronSightController
 {
 	constexpr uint32_t m_bIronSightAvailable = 0x8;  // bool 
@@ -3448,6 +4454,9 @@ namespace CIronSightController
 	constexpr uint32_t m_flIronSightAmountBiased = 0x14;  // float32 
 }
 
+// Offset: 0x7ffe058b5690 
+// N. Class: 334 
+// Fields: 3 
 namespace CHintMessage
 {
 	constexpr uint32_t m_hintString = 0x0;  // char* 
@@ -3455,6 +4464,9 @@ namespace CHintMessage
 	constexpr uint32_t m_duration = 0x20;  // float32 
 }
 
+// Offset: 0x7ffe058b5760 
+// N. Class: 335 
+// Fields: 3 
 namespace CHintMessageQueue
 {
 	constexpr uint32_t m_tmMessageEnd = 0x0;  // float32 
@@ -3462,6 +4474,9 @@ namespace CHintMessageQueue
 	constexpr uint32_t m_pPlayerController = 0x20;  // CBasePlayerController* 
 }
 
+// Offset: 0x7ffe057e6810 
+// N. Class: 336 
+// Fields: 5 
 namespace CCSPlayer_RadioServices
 {
 	constexpr uint32_t m_flGotHostageTalkTimer = 0x40;  // GameTime_t 
@@ -3471,6 +4486,9 @@ namespace CCSPlayer_RadioServices
 	constexpr uint32_t m_bIgnoreRadio = 0x58;  // bool 
 }
 
+// Offset: 0x7ffe057e6970 
+// N. Class: 337 
+// Fields: 6 
 namespace CBaseIssue
 {
 	constexpr uint32_t m_szTypeString = 0x20;  // char[64] 
@@ -3481,6 +4499,9 @@ namespace CBaseIssue
 	constexpr uint32_t m_pVoteController = 0x170;  // CVoteController* 
 }
 
+// Offset: 0x7ffe057e6aa0 
+// N. Class: 338 
+// Fields: 14 
 namespace CVoteController
 {
 	constexpr uint32_t m_iActiveIssueIndex = 0x4E0;  // int32 
@@ -3499,6 +4520,9 @@ namespace CVoteController
 	constexpr uint32_t m_VoteOptions = 0x678;  // CUtlVector< char* > 
 }
 
+// Offset: 0x7ffe057e6d10 
+// N. Class: 339 
+// Fields: 24 
 namespace CMapVetoPickController
 {
 	constexpr uint32_t m_bPlayedIntroVcd = 0x4E0;  // bool 
@@ -3527,6 +4551,9 @@ namespace CMapVetoPickController
 	constexpr uint32_t m_OnLevelTransition = 0xEE0;  // CEntityOutputTemplate< int32 > 
 }
 
+// Offset: 0x7ffe057e9670 
+// N. Class: 340 
+// Fields: 4 
 namespace CLogicEventListener
 {
 	constexpr uint32_t m_strEventName = 0x4F0;  // CUtlString 
@@ -3535,6 +4562,9 @@ namespace CLogicEventListener
 	constexpr uint32_t m_OnEventFired = 0x500;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe057ee870 
+// N. Class: 341 
+// Fields: 4 
 namespace CChicken_GraphController
 {
 	constexpr uint32_t m_paramActivity = 0x60;  // CAnimGraphParamRef< char* > 
@@ -3543,10 +4573,16 @@ namespace CChicken_GraphController
 	constexpr uint32_t m_paramTurnAngle = 0xC0;  // CAnimGraphParamRef< float32 > 
 }
 
+// Offset: 0x0 
+// N. Class: 342 
+// Fields: 0 
 namespace CCSPointPulseAPI
 {
 }
 
+// Offset: 0x7ffe057ee080 
+// N. Class: 343 
+// Fields: 13 
 namespace CBot
 {
 	constexpr uint32_t m_pController = 0x10;  // CCSPlayerController* 
@@ -3564,18 +4600,30 @@ namespace CBot
 	constexpr uint32_t m_postureStackIndex = 0xF8;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 344 
+// Fields: 0 
 namespace CBtNode
 {
 }
 
+// Offset: 0x0 
+// N. Class: 345 
+// Fields: 0 
 namespace CBtNodeDecorator
 {
 }
 
+// Offset: 0x0 
+// N. Class: 346 
+// Fields: 0 
 namespace CBtNodeComposite
 {
 }
 
+// Offset: 0x7ffe057ed9d0 
+// N. Class: 347 
+// Fields: 12 
 namespace CBtActionAim
 {
 	constexpr uint32_t m_szSensorInputKey = 0x68;  // CUtlString 
@@ -3592,6 +4640,9 @@ namespace CBtActionAim
 	constexpr uint32_t m_bAcquired = 0xF0;  // bool 
 }
 
+// Offset: 0x7ffe057ed8d0 
+// N. Class: 348 
+// Fields: 4 
 namespace CBtActionCombatPositioning
 {
 	constexpr uint32_t m_szSensorInputKey = 0x68;  // CUtlString 
@@ -3600,6 +4651,9 @@ namespace CBtActionCombatPositioning
 	constexpr uint32_t m_bCrouching = 0xA0;  // bool 
 }
 
+// Offset: 0x7ffe057edbd0 
+// N. Class: 349 
+// Fields: 14 
 namespace CBtActionMoveTo
 {
 	constexpr uint32_t m_szDestinationInputKey = 0x60;  // CUtlString 
@@ -3618,16 +4672,25 @@ namespace CBtActionMoveTo
 	constexpr uint32_t m_flNearestAreaDistanceThreshold = 0xE4;  // float32 
 }
 
+// Offset: 0x7ffe057ede10 
+// N. Class: 350 
+// Fields: 1 
 namespace CBtActionParachutePositioning
 {
 	constexpr uint32_t m_ActionTimer = 0x58;  // CountdownTimer 
 }
 
+// Offset: 0x7ffe057edeb0 
+// N. Class: 351 
+// Fields: 1 
 namespace CBtNodeCondition
 {
 	constexpr uint32_t m_bNegated = 0x58;  // bool 
 }
 
+// Offset: 0x7ffe057edf60 
+// N. Class: 352 
+// Fields: 3 
 namespace CBtNodeConditionInactive
 {
 	constexpr uint32_t m_flRoundStartThresholdSeconds = 0x78;  // float32 
@@ -3635,10 +4698,16 @@ namespace CBtNodeConditionInactive
 	constexpr uint32_t m_SensorInactivityTimer = 0x80;  // CountdownTimer 
 }
 
+// Offset: 0x0 
+// N. Class: 353 
+// Fields: 0 
 namespace CPointEntity
 {
 }
 
+// Offset: 0x7ffe057f52f0 
+// N. Class: 354 
+// Fields: 24 
 namespace CEnvCombinedLightProbeVolume
 {
 	constexpr uint32_t m_Entity_Color = 0x1540;  // Color 
@@ -3667,6 +4736,9 @@ namespace CEnvCombinedLightProbeVolume
 	constexpr uint32_t m_Entity_bEnabled = 0x15E1;  // bool 
 }
 
+// Offset: 0x7ffe057f4600 
+// N. Class: 355 
+// Fields: 18 
 namespace CEnvCubemap
 {
 	constexpr uint32_t m_Entity_hCubemapTexture = 0x560;  // CStrongHandle< InfoForResourceTypeCTextureBase > 
@@ -3689,10 +4761,16 @@ namespace CEnvCubemap
 	constexpr uint32_t m_Entity_bEnabled = 0x5C0;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 356 
+// Fields: 0 
 namespace CEnvCubemapBox
 {
 }
 
+// Offset: 0x7ffe057f4c30 
+// N. Class: 357 
+// Fields: 18 
 namespace CEnvCubemapFog
 {
 	constexpr uint32_t m_flEndDistance = 0x4E0;  // float32 
@@ -3715,6 +4793,9 @@ namespace CEnvCubemapFog
 	constexpr uint32_t m_bFirstTime = 0x529;  // bool 
 }
 
+// Offset: 0x7ffe057f5000 
+// N. Class: 358 
+// Fields: 16 
 namespace CGradientFog
 {
 	constexpr uint32_t m_hGradientFogTexture = 0x4E0;  // CStrongHandle< InfoForResourceTypeCTextureBase > 
@@ -3735,6 +4816,9 @@ namespace CGradientFog
 	constexpr uint32_t m_bGradientFogNeedsTextures = 0x51A;  // bool 
 }
 
+// Offset: 0x7ffe057f4040 
+// N. Class: 359 
+// Fields: 17 
 namespace CEnvLightProbeVolume
 {
 	constexpr uint32_t m_Entity_hLightProbeTexture = 0x14C0;  // CStrongHandle< InfoForResourceTypeCTextureBase > 
@@ -3756,6 +4840,9 @@ namespace CEnvLightProbeVolume
 	constexpr uint32_t m_Entity_bEnabled = 0x1529;  // bool 
 }
 
+// Offset: 0x7ffe057f44c0 
+// N. Class: 360 
+// Fields: 6 
 namespace CPlayerVisibility
 {
 	constexpr uint32_t m_flVisibilityStrength = 0x4E0;  // float32 
@@ -3766,6 +4853,9 @@ namespace CPlayerVisibility
 	constexpr uint32_t m_bIsEnabled = 0x4F1;  // bool 
 }
 
+// Offset: 0x7ffe057fad40 
+// N. Class: 361 
+// Fields: 34 
 namespace CEnvVolumetricFogController
 {
 	constexpr uint32_t m_flScattering = 0x4E0;  // float32 
@@ -3804,6 +4894,9 @@ namespace CEnvVolumetricFogController
 	constexpr uint32_t m_bFirstTime = 0x578;  // bool 
 }
 
+// Offset: 0x7ffe057f9ce0 
+// N. Class: 362 
+// Fields: 16 
 namespace CEnvVolumetricFogVolume
 {
 	constexpr uint32_t m_bActive = 0x4E0;  // bool 
@@ -3824,18 +4917,30 @@ namespace CEnvVolumetricFogVolume
 	constexpr uint32_t m_bAllowLPVIndirect = 0x523;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 363 
+// Fields: 0 
 namespace CInfoTarget
 {
 }
 
+// Offset: 0x0 
+// N. Class: 364 
+// Fields: 0 
 namespace CInfoTargetServerOnly
 {
 }
 
+// Offset: 0x0 
+// N. Class: 365 
+// Fields: 0 
 namespace CInfoParticleTarget
 {
 }
 
+// Offset: 0x7ffe057fa6c0 
+// N. Class: 366 
+// Fields: 3 
 namespace CInfoVisibilityBox
 {
 	constexpr uint32_t m_nMode = 0x4E4;  // int32 
@@ -3843,6 +4948,9 @@ namespace CInfoVisibilityBox
 	constexpr uint32_t m_bEnabled = 0x4F4;  // bool 
 }
 
+// Offset: 0x7ffe057fabe0 
+// N. Class: 367 
+// Fields: 7 
 namespace CInfoWorldLayer
 {
 	constexpr uint32_t m_pOutputOnEntitiesSpawned = 0x4E0;  // CEntityIOOutput 
@@ -3854,11 +4962,17 @@ namespace CInfoWorldLayer
 	constexpr uint32_t m_hLayerSpawnGroup = 0x51C;  // uint32 
 }
 
+// Offset: 0x7ffe057fb248 
+// N. Class: 368 
+// Fields: 1 
 namespace CLightEntity
 {
 	constexpr uint32_t m_CLightComponent = 0x790;  // CLightComponent* 
 }
 
+// Offset: 0x7ffe057fb550 
+// N. Class: 369 
+// Fields: 8 
 namespace CMultiLightProxy
 {
 	constexpr uint32_t m_iszLightNameFilter = 0x4E0;  // CUtlSymbolLarge 
@@ -3871,16 +4985,25 @@ namespace CMultiLightProxy
 	constexpr uint32_t m_vecLights = 0x508;  // CUtlVector< CHandle< CLightEntity > > 
 }
 
+// Offset: 0x7ffe05802f70 
+// N. Class: 370 
+// Fields: 1 
 namespace CPointChildModifier
 {
 	constexpr uint32_t m_bOrphanInsteadOfDeletingChildrenOnRemove = 0x4E0;  // bool 
 }
 
+// Offset: 0x7ffe05802c30 
+// N. Class: 371 
+// Fields: 1 
 namespace CPointCameraVFOV
 {
 	constexpr uint32_t m_flVerticalFOV = 0x540;  // float32 
 }
 
+// Offset: 0x7ffe058039f0 
+// N. Class: 372 
+// Fields: 12 
 namespace CPointTemplate
 {
 	constexpr uint32_t m_iszWorldName = 0x4E0;  // CUtlSymbolLarge 
@@ -3892,11 +5015,13 @@ namespace CPointTemplate
 	constexpr uint32_t m_clientOnlyEntityBehavior = 0x528;  // PointTemplateClientOnlyEntityBehavior_t 
 	constexpr uint32_t m_ownerSpawnGroupType = 0x52C;  // PointTemplateOwnerSpawnGroupType_t 
 	constexpr uint32_t m_createdSpawnGroupHandles = 0x530;  // CUtlVector< uint32 > 
-	constexpr uint32_t m_SpawnedEntityHandles = 0x548;  // CUtlVector< CEntityHandle > 
 	constexpr uint32_t m_ScriptSpawnCallback = 0x560;  // HSCRIPT 
 	constexpr uint32_t m_ScriptCallbackScope = 0x568;  // HSCRIPT 
 }
 
+// Offset: 0x7ffe05801eb0 
+// N. Class: 373 
+// Fields: 4 
 namespace CGameGibManager
 {
 	constexpr uint32_t m_bAllowNewGibs = 0x500;  // bool 
@@ -3905,6 +5030,9 @@ namespace CGameGibManager
 	constexpr uint32_t m_iLastFrame = 0x50C;  // int32 
 }
 
+// Offset: 0x7ffe058023c0 
+// N. Class: 374 
+// Fields: 4 
 namespace CRagdollManager
 {
 	constexpr uint32_t m_iCurrentMaxRagdollCount = 0x4E0;  // int8 
@@ -3913,6 +5041,9 @@ namespace CRagdollManager
 	constexpr uint32_t m_bCanTakeDamage = 0x4E9;  // bool 
 }
 
+// Offset: 0x7ffe05802d00 
+// N. Class: 375 
+// Fields: 3 
 namespace CSoundAreaEntityBase
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -3920,22 +5051,34 @@ namespace CSoundAreaEntityBase
 	constexpr uint32_t m_vPos = 0x4F0;  // Vector 
 }
 
+// Offset: 0x7ffe05802e10 
+// N. Class: 376 
+// Fields: 1 
 namespace CSoundAreaEntitySphere
 {
 	constexpr uint32_t m_flRadius = 0x500;  // float32 
 }
 
+// Offset: 0x7ffe05802eb0 
+// N. Class: 377 
+// Fields: 2 
 namespace CSoundAreaEntityOrientedBox
 {
 	constexpr uint32_t m_vMin = 0x500;  // Vector 
 	constexpr uint32_t m_vMax = 0x50C;  // Vector 
 }
 
+// Offset: 0x7ffe05803250 
+// N. Class: 378 
+// Fields: 1 
 namespace CSoundStackSave
 {
 	constexpr uint32_t m_iszStackName = 0x4E0;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058033c0 
+// N. Class: 379 
+// Fields: 14 
 namespace CSoundEventEntity
 {
 	constexpr uint32_t m_bStartOnSpawn = 0x4E0;  // bool 
@@ -3954,27 +5097,42 @@ namespace CSoundEventEntity
 	constexpr uint32_t m_nEntityIndexSelection = 0x594;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 380 
+// Fields: 0 
 namespace CSoundEventEntityAlias_snd_event_point
 {
 }
 
+// Offset: 0x7ffe05803680 
+// N. Class: 381 
+// Fields: 2 
 namespace CSoundEventAABBEntity
 {
 	constexpr uint32_t m_vMins = 0x598;  // Vector 
 	constexpr uint32_t m_vMaxs = 0x5A4;  // Vector 
 }
 
+// Offset: 0x7ffe05803760 
+// N. Class: 382 
+// Fields: 2 
 namespace CSoundEventOBBEntity
 {
 	constexpr uint32_t m_vMins = 0x598;  // Vector 
 	constexpr uint32_t m_vMaxs = 0x5A4;  // Vector 
 }
 
+// Offset: 0x7ffe05803820 
+// N. Class: 383 
+// Fields: 1 
 namespace CSoundEventSphereEntity
 {
 	constexpr uint32_t m_flRadius = 0x598;  // float32 
 }
 
+// Offset: 0x7ffe05803cc0 
+// N. Class: 384 
+// Fields: 7 
 namespace CSoundEventPathCornerEntity
 {
 	constexpr uint32_t m_iszPathCorner = 0x598;  // CUtlSymbolLarge 
@@ -3986,12 +5144,18 @@ namespace CSoundEventPathCornerEntity
 	constexpr uint32_t m_vecCornerPairsNetworked = 0x5D8;  // CNetworkUtlVectorBase< SoundeventPathCornerPairNetworked_t > 
 }
 
+// Offset: 0x7ffe05803ec0 
+// N. Class: 385 
+// Fields: 2 
 namespace CSoundEventParameter
 {
 	constexpr uint32_t m_iszParamName = 0x4E8;  // CUtlSymbolLarge 
 	constexpr uint32_t m_flFloatValue = 0x4F0;  // float32 
 }
 
+// Offset: 0x7ffe058348f0 
+// N. Class: 386 
+// Fields: 25 
 namespace CBasePlayerPawn
 {
 	constexpr uint32_t m_pWeaponServices = 0xAC0;  // CPlayer_WeaponServices* 
@@ -4021,6 +5185,9 @@ namespace CBasePlayerPawn
 	constexpr uint32_t m_sndOpvarLatchData = 0xC40;  // CUtlVector< sndopvarlatchdata_t > 
 }
 
+// Offset: 0x7ffe058021f0 
+// N. Class: 387 
+// Fields: 4 
 namespace CTeam
 {
 	constexpr uint32_t m_aPlayerControllers = 0x4E0;  // CNetworkUtlVectorBase< CHandle< CBasePlayerController > > 
@@ -4029,6 +5196,9 @@ namespace CTeam
 	constexpr uint32_t m_szTeamname = 0x514;  // char[129] 
 }
 
+// Offset: 0x7ffe058707d0 
+// N. Class: 388 
+// Fields: 14 
 namespace CBasePlayerVData
 {
 	constexpr uint32_t m_sModelName = 0x28;  // CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > 
@@ -4047,6 +5217,9 @@ namespace CBasePlayerVData
 	constexpr uint32_t m_flCrouchTime = 0x174;  // float32 
 }
 
+// Offset: 0x7ffe05885890 
+// N. Class: 389 
+// Fields: 22 
 namespace CBasePlayerWeaponVData
 {
 	constexpr uint32_t m_szWorldModel = 0x28;  // CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > 
@@ -4073,26 +5246,41 @@ namespace CBasePlayerWeaponVData
 	constexpr uint32_t m_aShootSounds = 0x320;  // CUtlOrderedMap< WeaponSound_t, CSoundEventName > 
 }
 
+// Offset: 0x7ffe05885db0 
+// N. Class: 390 
+// Fields: 2 
 namespace CInfoGameEventProxy
 {
 	constexpr uint32_t m_iszEventName = 0x4E0;  // CUtlSymbolLarge 
 	constexpr uint32_t m_flRange = 0x4E8;  // float32 
 }
 
+// Offset: 0x7ffe05885ea0 
+// N. Class: 391 
+// Fields: 2 
 namespace CProjectedDecal
 {
 	constexpr uint32_t m_nTexture = 0x4E0;  // int32 
 	constexpr uint32_t m_flDistance = 0x4E4;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 392 
+// Fields: 0 
 namespace CServerOnlyModelEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 393 
+// Fields: 0 
 namespace CModelPointEntity
 {
 }
 
+// Offset: 0x7ffe0583c650 
+// N. Class: 394 
+// Fields: 7 
 namespace CLogicRelay
 {
 	constexpr uint32_t m_OnTrigger = 0x4E0;  // CEntityIOOutput 
@@ -4104,6 +5292,9 @@ namespace CLogicRelay
 	constexpr uint32_t m_bPassthoughCaller = 0x534;  // bool 
 }
 
+// Offset: 0x7ffe0583d250 
+// N. Class: 395 
+// Fields: 22 
 namespace CParticleSystem
 {
 	constexpr uint32_t m_szSnapshotFileName = 0x790;  // char[512] 
@@ -4130,6 +5321,9 @@ namespace CParticleSystem
 	constexpr uint32_t m_clrTint = 0xD04;  // Color 
 }
 
+// Offset: 0x7ffe0583d740 
+// N. Class: 396 
+// Fields: 16 
 namespace CPathParticleRope
 {
 	constexpr uint32_t m_bStartActive = 0x4E8;  // bool 
@@ -4150,15 +5344,24 @@ namespace CPathParticleRope
 	constexpr uint32_t m_PathNodes_RadiusScale = 0x5A8;  // CNetworkUtlVectorBase< float32 > 
 }
 
+// Offset: 0x0 
+// N. Class: 397 
+// Fields: 0 
 namespace CPathParticleRopeAlias_path_particle_rope_clientside
 {
 }
 
+// Offset: 0x7ffe0583cc10 
+// N. Class: 398 
+// Fields: 1 
 namespace CPathSimple
 {
 	constexpr uint32_t m_pathString = 0x538;  // CUtlString 
 }
 
+// Offset: 0x7ffe058422d0 
+// N. Class: 399 
+// Fields: 11 
 namespace CEnvSoundscape
 {
 	constexpr uint32_t m_OnPlay = 0x4E0;  // CEntityIOOutput 
@@ -4167,38 +5370,61 @@ namespace CEnvSoundscape
 	constexpr uint32_t m_bOverrideWithEvent = 0x518;  // bool 
 	constexpr uint32_t m_soundscapeIndex = 0x51C;  // int32 
 	constexpr uint32_t m_soundscapeEntityListId = 0x520;  // int32 
+	constexpr uint32_t m_positionNames = 0x528;  // CUtlSymbolLarge[8] 
+	constexpr uint32_t m_hProxySoundscape = 0x568;  // CHandle< CEnvSoundscape > 
 	constexpr uint32_t m_bDisabled = 0x56C;  // bool 
 	constexpr uint32_t m_soundscapeName = 0x570;  // CUtlSymbolLarge 
 	constexpr uint32_t m_soundEventHash = 0x578;  // uint32 
 }
 
+// Offset: 0x7ffe05842670 
+// N. Class: 400 
+// Fields: 1 
 namespace CEnvSoundscapeProxy
 {
 	constexpr uint32_t m_MainSoundscapeName = 0x580;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe05889148 
+// N. Class: 401 
+// Fields: 1 
 namespace CFuncWall
 {
 	constexpr uint32_t m_nState = 0x790;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 402 
+// Fields: 0 
 namespace CFuncWallToggle
 {
 }
 
+// Offset: 0x0 
+// N. Class: 403 
+// Fields: 0 
 namespace CFuncVehicleClip
 {
 }
 
+// Offset: 0x0 
+// N. Class: 404 
+// Fields: 0 
 namespace CFuncIllusionary
 {
 }
 
+// Offset: 0x7ffe05889680 
+// N. Class: 405 
+// Fields: 1 
 namespace CFuncVPhysicsClip
 {
 	constexpr uint32_t m_bDisabled = 0x790;  // bool 
 }
 
+// Offset: 0x7ffe05889750 
+// N. Class: 406 
+// Fields: 3 
 namespace CFuncInteractionLayerClip
 {
 	constexpr uint32_t m_bDisabled = 0x790;  // bool 
@@ -4206,18 +5432,30 @@ namespace CFuncInteractionLayerClip
 	constexpr uint32_t m_iszInteractsWith = 0x7A0;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 407 
+// Fields: 0 
 namespace CPointClientCommand
 {
 }
 
+// Offset: 0x0 
+// N. Class: 408 
+// Fields: 0 
 namespace CPointServerCommand
 {
 }
 
+// Offset: 0x0 
+// N. Class: 409 
+// Fields: 0 
 namespace CPointBroadcastClientCommand
 {
 }
 
+// Offset: 0x7ffe058989b0 
+// N. Class: 410 
+// Fields: 3 
 namespace CCommentaryAuto
 {
 	constexpr uint32_t m_OnCommentaryNewGame = 0x4E0;  // CEntityIOOutput 
@@ -4225,6 +5463,9 @@ namespace CCommentaryAuto
 	constexpr uint32_t m_OnCommentaryMultiplayerSpawn = 0x530;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058980b0 
+// N. Class: 411 
+// Fields: 9 
 namespace CDynamicLight
 {
 	constexpr uint32_t m_ActualFlags = 0x790;  // uint8 
@@ -4238,6 +5479,9 @@ namespace CDynamicLight
 	constexpr uint32_t m_SpotRadius = 0x7A4;  // float32 
 }
 
+// Offset: 0x7ffe05898ce0 
+// N. Class: 412 
+// Fields: 3 
 namespace CBubbling
 {
 	constexpr uint32_t m_density = 0x790;  // int32 
@@ -4245,12 +5489,18 @@ namespace CBubbling
 	constexpr uint32_t m_state = 0x798;  // int32 
 }
 
+// Offset: 0x7ffe05898dc0 
+// N. Class: 413 
+// Fields: 2 
 namespace CEnvTracer
 {
 	constexpr uint32_t m_vecEnd = 0x4E0;  // Vector 
 	constexpr uint32_t m_flDelay = 0x4EC;  // float32 
 }
 
+// Offset: 0x7ffe058086f0 
+// N. Class: 414 
+// Fields: 24 
 namespace CBeam
 {
 	constexpr uint32_t m_flFrameRate = 0x790;  // float32 
@@ -4279,6 +5529,9 @@ namespace CBeam
 	constexpr uint32_t m_nDissolveType = 0x82C;  // int32 
 }
 
+// Offset: 0x7ffe05898e80 
+// N. Class: 415 
+// Fields: 5 
 namespace CTestEffect
 {
 	constexpr uint32_t m_iLoop = 0x4E0;  // int32 
@@ -4288,6 +5541,9 @@ namespace CTestEffect
 	constexpr uint32_t m_flStartTime = 0x608;  // GameTime_t 
 }
 
+// Offset: 0x7ffe05898fd0 
+// N. Class: 416 
+// Fields: 4 
 namespace CBlood
 {
 	constexpr uint32_t m_vecSprayAngles = 0x4E0;  // QAngle 
@@ -4296,57 +5552,90 @@ namespace CBlood
 	constexpr uint32_t m_Color = 0x4FC;  // BloodType 
 }
 
+// Offset: 0x0 
+// N. Class: 417 
+// Fields: 0 
 namespace CEnvFunnel
 {
 }
 
+// Offset: 0x7ffe05899250 
+// N. Class: 418 
+// Fields: 2 
 namespace CEnvBeverage
 {
 	constexpr uint32_t m_CanInDispenser = 0x4E0;  // bool 
 	constexpr uint32_t m_nBeverageType = 0x4E4;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 419 
+// Fields: 0 
 namespace CPrecipitationBlocker
 {
 }
 
+// Offset: 0x7ffe058994f0 
+// N. Class: 420 
+// Fields: 1 
 namespace CEnvWind
 {
 	constexpr uint32_t m_EnvWindShared = 0x4E0;  // CEnvWindShared 
 }
 
+// Offset: 0x7ffe05899640 
+// N. Class: 421 
+// Fields: 1 
 namespace CPhysicsWire
 {
 	constexpr uint32_t m_nDensity = 0x4E0;  // int32 
 }
 
+// Offset: 0x7ffe05899710 
+// N. Class: 422 
+// Fields: 2 
 namespace CEnvMuzzleFlash
 {
 	constexpr uint32_t m_flScale = 0x4E0;  // float32 
 	constexpr uint32_t m_iszParentAttachment = 0x4E8;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058997d0 
+// N. Class: 423 
+// Fields: 1 
 namespace CEnvSplash
 {
 	constexpr uint32_t m_flScale = 0x4E0;  // float32 
 }
 
+// Offset: 0x7ffe05899870 
+// N. Class: 424 
+// Fields: 2 
 namespace CEnvViewPunch
 {
 	constexpr uint32_t m_flRadius = 0x4E0;  // float32 
 	constexpr uint32_t m_angViewPunch = 0x4E4;  // QAngle 
 }
 
+// Offset: 0x7ffe05899110 
+// N. Class: 425 
+// Fields: 1 
 namespace CEnvEntityIgniter
 {
 	constexpr uint32_t m_flLifetime = 0x4E0;  // float32 
 }
 
+// Offset: 0x7ffe05899590 
+// N. Class: 426 
+// Fields: 1 
 namespace CDebugHistory
 {
 	constexpr uint32_t m_nNpcEvents = 0x3E8520;  // int32 
 }
 
+// Offset: 0x7ffe05897d20 
+// N. Class: 427 
+// Fields: 12 
 namespace CEnvEntityMaker
 {
 	constexpr uint32_t m_vecEntityMins = 0x4E0;  // Vector 
@@ -4363,10 +5652,16 @@ namespace CEnvEntityMaker
 	constexpr uint32_t m_pOutputOnFailedSpawn = 0x558;  // CEntityIOOutput 
 }
 
+// Offset: 0x0 
+// N. Class: 428 
+// Fields: 0 
 namespace CInfoInstructorHintTarget
 {
 }
 
+// Offset: 0x7ffe058a19b0 
+// N. Class: 429 
+// Fields: 24 
 namespace CEnvInstructorHint
 {
 	constexpr uint32_t m_iszName = 0x4E0;  // CUtlSymbolLarge 
@@ -4395,6 +5690,9 @@ namespace CEnvInstructorHint
 	constexpr uint32_t m_bLocalPlayerOnly = 0x54A;  // bool 
 }
 
+// Offset: 0x7ffe058a1d90 
+// N. Class: 430 
+// Fields: 9 
 namespace CEnvInstructorVRHint
 {
 	constexpr uint32_t m_iszName = 0x4E0;  // CUtlSymbolLarge 
@@ -4408,6 +5706,9 @@ namespace CEnvInstructorVRHint
 	constexpr uint32_t m_flHeightOffset = 0x51C;  // float32 
 }
 
+// Offset: 0x7ffe058a1f60 
+// N. Class: 431 
+// Fields: 3 
 namespace CInstructorEventEntity
 {
 	constexpr uint32_t m_iszName = 0x4E0;  // CUtlSymbolLarge 
@@ -4415,6 +5716,9 @@ namespace CInstructorEventEntity
 	constexpr uint32_t m_hTargetPlayer = 0x4F0;  // CHandle< CBasePlayerPawn > 
 }
 
+// Offset: 0x7ffe058a34b0 
+// N. Class: 432 
+// Fields: 5 
 namespace CEnvScreenOverlay
 {
 	constexpr uint32_t m_iszOverlayNames = 0x4E0;  // CUtlSymbolLarge[10] 
@@ -4424,6 +5728,9 @@ namespace CEnvScreenOverlay
 	constexpr uint32_t m_bIsActive = 0x560;  // bool 
 }
 
+// Offset: 0x7ffe058a3370 
+// N. Class: 433 
+// Fields: 4 
 namespace CEnvFade
 {
 	constexpr uint32_t m_fadeColor = 0x4E0;  // Color 
@@ -4432,6 +5739,9 @@ namespace CEnvFade
 	constexpr uint32_t m_OnBeginFade = 0x4F0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058a22d0 
+// N. Class: 434 
+// Fields: 3 
 namespace CCredits
 {
 	constexpr uint32_t m_OnCreditsDone = 0x4E0;  // CEntityIOOutput 
@@ -4439,6 +5749,9 @@ namespace CCredits
 	constexpr uint32_t m_flLogoLength = 0x50C;  // float32 
 }
 
+// Offset: 0x7ffe058a2ba0 
+// N. Class: 435 
+// Fields: 10 
 namespace CEnvShake
 {
 	constexpr uint32_t m_limitToEntity = 0x4E0;  // CUtlSymbolLarge 
@@ -4453,6 +5766,9 @@ namespace CEnvShake
 	constexpr uint32_t m_shakeCallback = 0x518;  // CPhysicsShake 
 }
 
+// Offset: 0x7ffe058a2d60 
+// N. Class: 436 
+// Fields: 4 
 namespace CEnvTilt
 {
 	constexpr uint32_t m_Duration = 0x4E0;  // float32 
@@ -4461,6 +5777,9 @@ namespace CEnvTilt
 	constexpr uint32_t m_stopTime = 0x4EC;  // GameTime_t 
 }
 
+// Offset: 0x7ffe058a31f0 
+// N. Class: 437 
+// Fields: 5 
 namespace CEnvSpark
 {
 	constexpr uint32_t m_flDelay = 0x4E0;  // float32 
@@ -4470,10 +5789,16 @@ namespace CEnvSpark
 	constexpr uint32_t m_OnSpark = 0x4F0;  // CEntityIOOutput 
 }
 
+// Offset: 0x0 
+// N. Class: 438 
+// Fields: 0 
 namespace CShower
 {
 }
 
+// Offset: 0x7ffe058a1650 
+// N. Class: 439 
+// Fields: 16 
 namespace CEnvExplosion
 {
 	constexpr uint32_t m_iMagnitude = 0x790;  // int32 
@@ -4494,36 +5819,57 @@ namespace CEnvExplosion
 	constexpr uint32_t m_hEntityIgnore = 0x7E0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe058a2190 
+// N. Class: 440 
+// Fields: 1 
 namespace CFilterName
 {
 	constexpr uint32_t m_iFilterName = 0x538;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058a2230 
+// N. Class: 441 
+// Fields: 1 
 namespace CFilterModel
 {
 	constexpr uint32_t m_iFilterModel = 0x538;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058a23b0 
+// N. Class: 442 
+// Fields: 1 
 namespace CFilterContext
 {
 	constexpr uint32_t m_iFilterContext = 0x538;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058a2450 
+// N. Class: 443 
+// Fields: 1 
 namespace FilterTeam
 {
 	constexpr uint32_t m_iFilterTeam = 0x538;  // int32 
 }
 
+// Offset: 0x7ffe058a24f0 
+// N. Class: 444 
+// Fields: 1 
 namespace CFilterMassGreater
 {
 	constexpr uint32_t m_fFilterMass = 0x538;  // float32 
 }
 
+// Offset: 0x7ffe058a2590 
+// N. Class: 445 
+// Fields: 1 
 namespace FilterDamageType
 {
 	constexpr uint32_t m_iDamageType = 0x538;  // int32 
 }
 
+// Offset: 0x7ffe058a2630 
+// N. Class: 446 
+// Fields: 3 
 namespace FilterHealth
 {
 	constexpr uint32_t m_bAdrenalineActive = 0x538;  // bool 
@@ -4531,6 +5877,9 @@ namespace FilterHealth
 	constexpr uint32_t m_iHealthMax = 0x540;  // int32 
 }
 
+// Offset: 0x7ffe058a2710 
+// N. Class: 447 
+// Fields: 5 
 namespace CFilterEnemy
 {
 	constexpr uint32_t m_iszEnemyName = 0x538;  // CUtlSymbolLarge 
@@ -4540,11 +5889,17 @@ namespace CFilterEnemy
 	constexpr uint32_t m_iszPlayerName = 0x550;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058a2890 
+// N. Class: 448 
+// Fields: 1 
 namespace CFilterAttributeInt
 {
 	constexpr uint32_t m_sAttributeName = 0x538;  // CUtlStringToken 
 }
 
+// Offset: 0x7ffe058a0f50 
+// N. Class: 449 
+// Fields: 19 
 namespace CFire
 {
 	constexpr uint32_t m_hEffect = 0x790;  // CHandle< CBaseFire > 
@@ -4568,6 +5923,9 @@ namespace CFire
 	constexpr uint32_t m_OnExtinguished = 0x7F8;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058a1290 
+// N. Class: 450 
+// Fields: 3 
 namespace CEnvFireSource
 {
 	constexpr uint32_t m_bEnabled = 0x4E0;  // bool 
@@ -4575,6 +5933,9 @@ namespace CEnvFireSource
 	constexpr uint32_t m_damage = 0x4E8;  // float32 
 }
 
+// Offset: 0x7ffe058a1370 
+// N. Class: 451 
+// Fields: 8 
 namespace CEnvFireSensor
 {
 	constexpr uint32_t m_bEnabled = 0x4E0;  // bool 
@@ -4587,6 +5948,9 @@ namespace CEnvFireSensor
 	constexpr uint32_t m_OnHeatLevelEnd = 0x520;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058ad7b0 
+// N. Class: 452 
+// Fields: 5 
 namespace CFuncTimescale
 {
 	constexpr uint32_t m_flDesiredTimescale = 0x4E0;  // float32 
@@ -4596,6 +5960,9 @@ namespace CFuncTimescale
 	constexpr uint32_t m_isStarted = 0x4F0;  // bool 
 }
 
+// Offset: 0x7ffe058b5d80 
+// N. Class: 453 
+// Fields: 7 
 namespace CLightGlow
 {
 	constexpr uint32_t m_nHorizontalSize = 0x790;  // uint32 
@@ -4607,6 +5974,9 @@ namespace CLightGlow
 	constexpr uint32_t m_flHDRColorScale = 0x7A8;  // float32 
 }
 
+// Offset: 0x7ffe058b5f70 
+// N. Class: 454 
+// Fields: 3 
 namespace CLogicAchievement
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -4614,6 +5984,9 @@ namespace CLogicAchievement
 	constexpr uint32_t m_OnFired = 0x4F0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058b6140 
+// N. Class: 455 
+// Fields: 5 
 namespace CLogicGameEventListener
 {
 	constexpr uint32_t m_OnEventFired = 0x4F0;  // CEntityIOOutput 
@@ -4623,6 +5996,9 @@ namespace CLogicGameEventListener
 	constexpr uint32_t m_bStartDisabled = 0x529;  // bool 
 }
 
+// Offset: 0x7ffe058b64a0 
+// N. Class: 456 
+// Fields: 9 
 namespace CLogicMeasureMovement
 {
 	constexpr uint32_t m_strMeasureTarget = 0x4E0;  // CUtlSymbolLarge 
@@ -4636,12 +6012,18 @@ namespace CLogicMeasureMovement
 	constexpr uint32_t m_nMeasureType = 0x50C;  // int32 
 }
 
+// Offset: 0x7ffe058b6760 
+// N. Class: 457 
+// Fields: 2 
 namespace CLogicNavigation
 {
 	constexpr uint32_t m_isOn = 0x4E8;  // bool 
 	constexpr uint32_t m_navProperty = 0x4EC;  // navproperties_t 
 }
 
+// Offset: 0x7ffe058b7320 
+// N. Class: 458 
+// Fields: 48 
 namespace CLogicNPCCounter
 {
 	constexpr uint32_t m_OnMinCountAll = 0x4E0;  // CEntityIOOutput 
@@ -4694,6 +6076,9 @@ namespace CLogicNPCCounter
 	constexpr uint32_t m_flDefaultDist_3 = 0x804;  // float32 
 }
 
+// Offset: 0x7ffe058b7b70 
+// N. Class: 459 
+// Fields: 4 
 namespace CLogicNPCCounterAABB
 {
 	constexpr uint32_t m_vDistanceOuterMins = 0x820;  // Vector 
@@ -4702,10 +6087,16 @@ namespace CLogicNPCCounterAABB
 	constexpr uint32_t m_vOuterMaxs = 0x844;  // Vector 
 }
 
+// Offset: 0x0 
+// N. Class: 460 
+// Fields: 0 
 namespace CLogicNPCCounterOBB
 {
 }
 
+// Offset: 0x7ffe058b4f40 
+// N. Class: 461 
+// Fields: 5 
 namespace CLogicPlayerProxy
 {
 	constexpr uint32_t m_hPlayer = 0x4E0;  // CHandle< CBaseEntity > 
@@ -4715,6 +6106,9 @@ namespace CLogicPlayerProxy
 	constexpr uint32_t m_RequestedPlayerHealth = 0x560;  // CEntityOutputTemplate< int32 > 
 }
 
+// Offset: 0x7ffe058b58d0 
+// N. Class: 462 
+// Fields: 11 
 namespace CLogicAuto
 {
 	constexpr uint32_t m_OnMapSpawn = 0x4E0;  // CEntityIOOutput 
@@ -4730,10 +6124,16 @@ namespace CLogicAuto
 	constexpr uint32_t m_globalstate = 0x670;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 463 
+// Fields: 0 
 namespace CLogicScript
 {
 }
 
+// Offset: 0x7ffe058b6a60 
+// N. Class: 464 
+// Fields: 13 
 namespace CTimerEntity
 {
 	constexpr uint32_t m_OnTimer = 0x4E0;  // CEntityIOOutput 
@@ -4751,6 +6151,9 @@ namespace CTimerEntity
 	constexpr uint32_t m_bPaused = 0x57C;  // bool 
 }
 
+// Offset: 0x7ffe058b6e90 
+// N. Class: 465 
+// Fields: 4 
 namespace CLogicLineToEntity
 {
 	constexpr uint32_t m_Line = 0x4E0;  // CEntityOutputTemplate< Vector > 
@@ -4759,6 +6162,9 @@ namespace CLogicLineToEntity
 	constexpr uint32_t m_EndEntity = 0x514;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe058b6ff0 
+// N. Class: 466 
+// Fields: 11 
 namespace CMathRemap
 {
 	constexpr uint32_t m_flInMin = 0x4E0;  // float32 
@@ -4774,6 +6180,9 @@ namespace CMathRemap
 	constexpr uint32_t m_OnFellBelowMax = 0x598;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058b7200 
+// N. Class: 467 
+// Fields: 5 
 namespace CMathColorBlend
 {
 	constexpr uint32_t m_flInMin = 0x4E0;  // float32 
@@ -4783,6 +6192,9 @@ namespace CMathColorBlend
 	constexpr uint32_t m_OutValue = 0x4F0;  // CEntityOutputTemplate< Color > 
 }
 
+// Offset: 0x7ffe058b7920 
+// N. Class: 468 
+// Fields: 5 
 namespace CEnvGlobal
 {
 	constexpr uint32_t m_outCounter = 0x4E0;  // CEntityOutputTemplate< int32 > 
@@ -4792,15 +6204,20 @@ namespace CEnvGlobal
 	constexpr uint32_t m_counter = 0x518;  // int32 
 }
 
+// Offset: 0x7ffe058b7ac0 
+// N. Class: 469 
+// Fields: 5 
 namespace CMultiSource
 {
 	constexpr uint32_t m_rgEntities = 0x4E0;  // CHandle< CBaseEntity >[32] 
-	constexpr uint32_t m_rgTriggered = 0x560;  // int32[32] 
 	constexpr uint32_t m_OnTrigger = 0x5E0;  // CEntityIOOutput 
 	constexpr uint32_t m_iTotal = 0x608;  // int32 
 	constexpr uint32_t m_globalstate = 0x610;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058b7ce0 
+// N. Class: 470 
+// Fields: 11 
 namespace CMathCounter
 {
 	constexpr uint32_t m_flMin = 0x4E0;  // float32 
@@ -4816,6 +6233,9 @@ namespace CMathCounter
 	constexpr uint32_t m_OnChangedFromMax = 0x5B8;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058b7f40 
+// N. Class: 471 
+// Fields: 6 
 namespace CLogicCase
 {
 	constexpr uint32_t m_nCase = 0x4E0;  // CUtlSymbolLarge[32] 
@@ -4826,6 +6246,9 @@ namespace CLogicCase
 	constexpr uint32_t m_OnDefault = 0xB08;  // CEntityOutputTemplate< CVariantBase< CVariantDefaultAllocator > > 
 }
 
+// Offset: 0x7ffe058b4e80 
+// N. Class: 472 
+// Fields: 6 
 namespace CLogicCompare
 {
 	constexpr uint32_t m_flInValue = 0x4E0;  // float32 
@@ -4836,6 +6259,9 @@ namespace CLogicCompare
 	constexpr uint32_t m_OnGreaterThan = 0x560;  // CEntityOutputTemplate< float32 > 
 }
 
+// Offset: 0x7ffe058b50e0 
+// N. Class: 473 
+// Fields: 3 
 namespace CLogicAutosave
 {
 	constexpr uint32_t m_bForceNewLevelUnit = 0x4E0;  // bool 
@@ -4843,6 +6269,9 @@ namespace CLogicAutosave
 	constexpr uint32_t m_minHitPointsToCommit = 0x4E8;  // int32 
 }
 
+// Offset: 0x7ffe058b51c0 
+// N. Class: 474 
+// Fields: 4 
 namespace CLogicActiveAutosave
 {
 	constexpr uint32_t m_TriggerHitPoints = 0x4F0;  // int32 
@@ -4851,6 +6280,9 @@ namespace CLogicActiveAutosave
 	constexpr uint32_t m_flDangerousTime = 0x4FC;  // float32 
 }
 
+// Offset: 0x7ffe058b52c0 
+// N. Class: 475 
+// Fields: 6 
 namespace CLogicDistanceAutosave
 {
 	constexpr uint32_t m_iszTargetEntity = 0x4E0;  // CUtlSymbolLarge 
@@ -4861,6 +6293,9 @@ namespace CLogicDistanceAutosave
 	constexpr uint32_t m_flDangerousTime = 0x4F0;  // float32 
 }
 
+// Offset: 0x7ffe058b5400 
+// N. Class: 476 
+// Fields: 5 
 namespace CLogicCollisionPair
 {
 	constexpr uint32_t m_nameAttach1 = 0x4E0;  // CUtlSymbolLarge 
@@ -4870,6 +6305,9 @@ namespace CLogicCollisionPair
 	constexpr uint32_t m_succeeded = 0x4F2;  // bool 
 }
 
+// Offset: 0x7ffe058b5520 
+// N. Class: 477 
+// Fields: 6 
 namespace CLogicBranchList
 {
 	constexpr uint32_t m_nLogicBranchNames = 0x4E0;  // CUtlSymbolLarge[16] 
@@ -4880,11 +6318,17 @@ namespace CLogicBranchList
 	constexpr uint32_t m_OnMixed = 0x5D0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058b57c0 
+// N. Class: 478 
+// Fields: 1 
 namespace CLogicGameEvent
 {
 	constexpr uint32_t m_iszEventName = 0x4E0;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058c1ba0 
+// N. Class: 479 
+// Fields: 5 
 namespace CMessageEntity
 {
 	constexpr uint32_t m_radius = 0x4E0;  // int32 
@@ -4894,6 +6338,9 @@ namespace CMessageEntity
 	constexpr uint32_t m_bEnabled = 0x4F2;  // bool 
 }
 
+// Offset: 0x7ffe058c1e20 
+// N. Class: 480 
+// Fields: 5 
 namespace CTriggerBrush
 {
 	constexpr uint32_t m_OnStartTouch = 0x790;  // CEntityIOOutput 
@@ -4903,6 +6350,9 @@ namespace CTriggerBrush
 	constexpr uint32_t m_iDontMessageParent = 0x80C;  // int32 
 }
 
+// Offset: 0x7ffe058c22e0 
+// N. Class: 481 
+// Fields: 8 
 namespace CPathKeyFrame
 {
 	constexpr uint32_t m_Origin = 0x4E0;  // Vector 
@@ -4915,6 +6365,9 @@ namespace CPathKeyFrame
 	constexpr uint32_t m_flMoveSpeed = 0x530;  // float32 
 }
 
+// Offset: 0x7ffe058c2760 
+// N. Class: 482 
+// Fields: 11 
 namespace CBaseMoveBehavior
 {
 	constexpr uint32_t m_iPositionInterpolator = 0x540;  // int32 
@@ -4930,6 +6383,9 @@ namespace CBaseMoveBehavior
 	constexpr uint32_t m_iDirection = 0x57C;  // int32 
 }
 
+// Offset: 0x7ffe058c2630 
+// N. Class: 483 
+// Fields: 3 
 namespace CPathCorner
 {
 	constexpr uint32_t m_flWait = 0x4E0;  // float32 
@@ -4937,6 +6393,9 @@ namespace CPathCorner
 	constexpr uint32_t m_OnPass = 0x4E8;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058c2f00 
+// N. Class: 484 
+// Fields: 6 
 namespace CPhysForce
 {
 	constexpr uint32_t m_nameAttach = 0x4E8;  // CUtlSymbolLarge 
@@ -4947,16 +6406,25 @@ namespace CPhysForce
 	constexpr uint32_t m_integrator = 0x500;  // CConstantForceController 
 }
 
+// Offset: 0x7ffe058c3400 
+// N. Class: 485 
+// Fields: 1 
 namespace CPhysThruster
 {
 	constexpr uint32_t m_localOrigin = 0x540;  // Vector 
 }
 
+// Offset: 0x7ffe058c35a0 
+// N. Class: 486 
+// Fields: 1 
 namespace CPhysTorque
 {
 	constexpr uint32_t m_axis = 0x540;  // Vector 
 }
 
+// Offset: 0x7ffe058c3950 
+// N. Class: 487 
+// Fields: 7 
 namespace CPhysMotor
 {
 	constexpr uint32_t m_nameAttach = 0x4E0;  // CUtlSymbolLarge 
@@ -4968,6 +6436,9 @@ namespace CPhysMotor
 	constexpr uint32_t m_motor = 0x510;  // CMotorController 
 }
 
+// Offset: 0x7ffe058c3d00 
+// N. Class: 488 
+// Fields: 7 
 namespace CKeepUpright
 {
 	constexpr uint32_t m_worldGoalAxis = 0x4E8;  // Vector 
@@ -4979,6 +6450,9 @@ namespace CKeepUpright
 	constexpr uint32_t m_bDampAllRotation = 0x519;  // bool 
 }
 
+// Offset: 0x7ffe058c3640 
+// N. Class: 489 
+// Fields: 13 
 namespace CPhysConstraint
 {
 	constexpr uint32_t m_nameAttach1 = 0x4E8;  // CUtlSymbolLarge 
@@ -4996,6 +6470,9 @@ namespace CPhysConstraint
 	constexpr uint32_t m_OnBreak = 0x530;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058c3a40 
+// N. Class: 490 
+// Fields: 18 
 namespace CPhysHinge
 {
 	constexpr uint32_t m_soundInfo = 0x560;  // ConstraintSoundInfo 
@@ -5018,10 +6495,16 @@ namespace CPhysHinge
 	constexpr uint32_t m_OnStopMoving = 0x6D0;  // CEntityIOOutput 
 }
 
+// Offset: 0x0 
+// N. Class: 491 
+// Fields: 0 
 namespace CPhysHingeAlias_phys_hinge_local
 {
 }
 
+// Offset: 0x7ffe058c3f80 
+// N. Class: 492 
+// Fields: 6 
 namespace CPhysBallSocket
 {
 	constexpr uint32_t m_flJointFriction = 0x558;  // float32 
@@ -5032,6 +6515,9 @@ namespace CPhysBallSocket
 	constexpr uint32_t m_flMaxTwistAngle = 0x56C;  // float32 
 }
 
+// Offset: 0x7ffe058c40f0 
+// N. Class: 493 
+// Fields: 10 
 namespace CPhysSlideConstraint
 {
 	constexpr uint32_t m_axisEnd = 0x560;  // Vector 
@@ -5046,6 +6532,9 @@ namespace CPhysSlideConstraint
 	constexpr uint32_t m_soundInfo = 0x588;  // ConstraintSoundInfo 
 }
 
+// Offset: 0x7ffe058c42b0 
+// N. Class: 494 
+// Fields: 6 
 namespace CPhysFixed
 {
 	constexpr uint32_t m_flLinearFrequency = 0x558;  // float32 
@@ -5056,6 +6545,9 @@ namespace CPhysFixed
 	constexpr uint32_t m_bEnableAngularConstraint = 0x569;  // bool 
 }
 
+// Offset: 0x7ffe058c43f0 
+// N. Class: 495 
+// Fields: 4 
 namespace CPhysPulley
 {
 	constexpr uint32_t m_position2 = 0x558;  // Vector 
@@ -5064,6 +6556,9 @@ namespace CPhysPulley
 	constexpr uint32_t m_gearRatio = 0x580;  // float32 
 }
 
+// Offset: 0x7ffe058c44f0 
+// N. Class: 496 
+// Fields: 6 
 namespace CPhysLength
 {
 	constexpr uint32_t m_offset = 0x558;  // Vector[2] 
@@ -5074,6 +6569,9 @@ namespace CPhysLength
 	constexpr uint32_t m_bEnableCollision = 0x588;  // bool 
 }
 
+// Offset: 0x7ffe058c4630 
+// N. Class: 497 
+// Fields: 9 
 namespace CRagdollConstraint
 {
 	constexpr uint32_t m_xmin = 0x558;  // float32 
@@ -5087,6 +6585,9 @@ namespace CRagdollConstraint
 	constexpr uint32_t m_zfriction = 0x578;  // float32 
 }
 
+// Offset: 0x7ffe058c47d0 
+// N. Class: 498 
+// Fields: 48 
 namespace CGenericConstraint
 {
 	constexpr uint32_t m_nLinearMotionX = 0x560;  // JointMotion_t 
@@ -5139,11 +6640,17 @@ namespace CGenericConstraint
 	constexpr uint32_t m_NotifyForceReachedZ = 0x660;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058c4e50 
+// N. Class: 499 
+// Fields: 1 
 namespace CSplineConstraint
 {
 	constexpr uint32_t m_vAnchorOffsetRestore = 0x5A0;  // Vector 
 }
 
+// Offset: 0x7ffe058c4ef0 
+// N. Class: 500 
+// Fields: 11 
 namespace CPhysWheelConstraint
 {
 	constexpr uint32_t m_flSuspensionFrequency = 0x558;  // float32 
@@ -5159,6 +6666,9 @@ namespace CPhysWheelConstraint
 	constexpr uint32_t m_flSpinAxisFriction = 0x580;  // float32 
 }
 
+// Offset: 0x7ffe058d0670 
+// N. Class: 501 
+// Fields: 4 
 namespace CPhysicsEntitySolver
 {
 	constexpr uint32_t m_hMovingEntity = 0x4E8;  // CHandle< CBaseEntity > 
@@ -5167,6 +6677,9 @@ namespace CPhysicsEntitySolver
 	constexpr uint32_t m_cancelTime = 0x4F4;  // GameTime_t 
 }
 
+// Offset: 0x7ffe058ce8d0 
+// N. Class: 502 
+// Fields: 8 
 namespace CPhysicsSpring
 {
 	constexpr uint32_t m_flFrequency = 0x4E8;  // float32 
@@ -5179,6 +6692,9 @@ namespace CPhysicsSpring
 	constexpr uint32_t m_teleportTick = 0x520;  // uint32 
 }
 
+// Offset: 0x7ffe058cea60 
+// N. Class: 503 
+// Fields: 7 
 namespace CPointPush
 {
 	constexpr uint32_t m_bEnabled = 0x4E0;  // bool 
@@ -5190,6 +6706,9 @@ namespace CPointPush
 	constexpr uint32_t m_hFilter = 0x500;  // CHandle< CBaseFilter > 
 }
 
+// Offset: 0x7ffe058b6430 
+// N. Class: 504 
+// Fields: 3 
 namespace CInfoPlayerStart
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -5197,6 +6716,9 @@ namespace CInfoPlayerStart
 	constexpr uint32_t m_pPawnSubclass = 0x4E8;  // CGlobalSymbol 
 }
 
+// Offset: 0x7ffe058cfbd0 
+// N. Class: 505 
+// Fields: 7 
 namespace CPointEntityFinder
 {
 	constexpr uint32_t m_hEntity = 0x4E0;  // CHandle< CBaseEntity > 
@@ -5208,6 +6730,9 @@ namespace CPointEntityFinder
 	constexpr uint32_t m_OnFoundEntity = 0x508;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058cf4d0 
+// N. Class: 506 
+// Fields: 44 
 namespace CPointValueRemapper
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -5256,6 +6781,9 @@ namespace CPointValueRemapper
 	constexpr uint32_t m_OnDisengage = 0x6B0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058cfe60 
+// N. Class: 507 
+// Fields: 16 
 namespace CPointWorldText
 {
 	constexpr uint32_t m_messageText = 0x790;  // char[512] 
@@ -5276,6 +6804,9 @@ namespace CPointWorldText
 	constexpr uint32_t m_nReorientMode = 0xA3C;  // PointWorldTextReorientMode_t 
 }
 
+// Offset: 0x7ffe058d02c0 
+// N. Class: 508 
+// Fields: 12 
 namespace CPointAngleSensor
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -5292,6 +6823,9 @@ namespace CPointAngleSensor
 	constexpr uint32_t m_FacingPercentage = 0x580;  // CEntityOutputTemplate< float32 > 
 }
 
+// Offset: 0x7ffe058d04c0 
+// N. Class: 509 
+// Fields: 3 
 namespace CPointProximitySensor
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -5299,6 +6833,9 @@ namespace CPointProximitySensor
 	constexpr uint32_t m_Distance = 0x4E8;  // CEntityOutputTemplate< float32 > 
 }
 
+// Offset: 0x7ffe058ceb50 
+// N. Class: 510 
+// Fields: 16 
 namespace CPointAngularVelocitySensor
 {
 	constexpr uint32_t m_hTargetEntity = 0x4E0;  // CHandle< CBaseEntity > 
@@ -5319,6 +6856,9 @@ namespace CPointAngularVelocitySensor
 	constexpr uint32_t m_OnEqualTo = 0x5E0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058cee50 
+// N. Class: 511 
+// Fields: 6 
 namespace CPointVelocitySensor
 {
 	constexpr uint32_t m_hTargetEntity = 0x4E0;  // CHandle< CBaseEntity > 
@@ -5329,6 +6869,9 @@ namespace CPointVelocitySensor
 	constexpr uint32_t m_Velocity = 0x500;  // CEntityOutputTemplate< float32 > 
 }
 
+// Offset: 0x7ffe058da050 
+// N. Class: 512 
+// Fields: 6 
 namespace CPointHurt
 {
 	constexpr uint32_t m_nDamage = 0x4E0;  // int32 
@@ -5339,6 +6882,9 @@ namespace CPointHurt
 	constexpr uint32_t m_pActivator = 0x4F8;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe058da960 
+// N. Class: 513 
+// Fields: 4 
 namespace CPointTeleport
 {
 	constexpr uint32_t m_vSaveOrigin = 0x4E0;  // Vector 
@@ -5347,14 +6893,23 @@ namespace CPointTeleport
 	constexpr uint32_t m_bTeleportUseCurrentAngle = 0x4F9;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 514 
+// Fields: 0 
 namespace CEnableMotionFixup
 {
 }
 
+// Offset: 0x0 
+// N. Class: 515 
+// Fields: 0 
 namespace CFuncPropRespawnZone
 {
 }
 
+// Offset: 0x7ffe058e1350 
+// N. Class: 516 
+// Fields: 3 
 namespace CRevertSaved
 {
 	constexpr uint32_t m_loadTime = 0x790;  // float32 
@@ -5362,6 +6917,9 @@ namespace CRevertSaved
 	constexpr uint32_t m_HoldTime = 0x798;  // float32 
 }
 
+// Offset: 0x7ffe058e2b50 
+// N. Class: 517 
+// Fields: 3 
 namespace CSceneListManager
 {
 	constexpr uint32_t m_hListManagers = 0x4E0;  // CUtlVector< CHandle< CSceneListManager > > 
@@ -5369,6 +6927,9 @@ namespace CSceneListManager
 	constexpr uint32_t m_hScenes = 0x578;  // CHandle< CBaseEntity >[16] 
 }
 
+// Offset: 0x7ffe058e2ce0 
+// N. Class: 518 
+// Fields: 66 
 namespace CSceneEntity
 {
 	constexpr uint32_t m_iszSceneFile = 0x4E8;  // CUtlSymbolLarge 
@@ -5439,6 +7000,9 @@ namespace CSceneEntity
 	constexpr uint32_t m_iPlayerDeathBehavior = 0xA34;  // SceneOnPlayerDeath_t 
 }
 
+// Offset: 0x7ffe058e17a0 
+// N. Class: 519 
+// Fields: 8 
 namespace CSoundOpvarSetEntity
 {
 	constexpr uint32_t m_iszStackName = 0x4E8;  // CUtlSymbolLarge 
@@ -5451,6 +7015,9 @@ namespace CSoundOpvarSetEntity
 	constexpr uint32_t m_bSetOnSpawn = 0x518;  // bool 
 }
 
+// Offset: 0x7ffe058e14d0 
+// N. Class: 520 
+// Fields: 8 
 namespace CCitadelSoundOpvarSetOBB
 {
 	constexpr uint32_t m_iszStackName = 0x4E0;  // CUtlSymbolLarge 
@@ -5463,6 +7030,9 @@ namespace CCitadelSoundOpvarSetOBB
 	constexpr uint32_t m_nAABBDirection = 0x528;  // int32 
 }
 
+// Offset: 0x7ffe058e2980 
+// N. Class: 521 
+// Fields: 6 
 namespace CAISound
 {
 	constexpr uint32_t m_iSoundType = 0x4E0;  // SoundTypes_t 
@@ -5473,19 +7043,31 @@ namespace CAISound
 	constexpr uint32_t m_iszProxyEntityName = 0x4F0;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 522 
+// Fields: 0 
 namespace CNullEntity
 {
 }
 
+// Offset: 0x7ffe058ee950 
+// N. Class: 523 
+// Fields: 1 
 namespace CBaseDMStart
 {
 	constexpr uint32_t m_Master = 0x4E0;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 524 
+// Fields: 0 
 namespace CInfoLandmark
 {
 }
 
+// Offset: 0x7ffe058ef130 
+// N. Class: 525 
+// Fields: 14 
 namespace CSun
 {
 	constexpr uint32_t m_vDirection = 0x790;  // Vector 
@@ -5504,12 +7086,18 @@ namespace CSun
 	constexpr uint32_t m_flFarZScale = 0x7D0;  // float32 
 }
 
+// Offset: 0x7ffe058effd0 
+// N. Class: 526 
+// Fields: 2 
 namespace CTankTargetChange
 {
 	constexpr uint32_t m_newTarget = 0x4E0;  // CVariantBase< CVariantDefaultAllocator > 
 	constexpr uint32_t m_newTargetName = 0x4F0;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe0583e7d0 
+// N. Class: 527 
+// Fields: 37 
 namespace CFuncTrackTrain
 {
 	constexpr uint32_t m_ppath = 0x790;  // CHandle< CPathTrack > 
@@ -5551,6 +7139,9 @@ namespace CFuncTrackTrain
 	constexpr uint32_t m_flNextMPSoundTime = 0x8D8;  // GameTime_t 
 }
 
+// Offset: 0x7ffe058f0120 
+// N. Class: 528 
+// Fields: 7 
 namespace CTankTrainAI
 {
 	constexpr uint32_t m_hTrain = 0x4E0;  // CHandle< CFuncTrackTrain > 
@@ -5562,40 +7153,64 @@ namespace CTankTrainAI
 	constexpr uint32_t m_targetEntityName = 0x518;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058ee600 
+// N. Class: 529 
+// Fields: 2 
 namespace CHandleTest
 {
 	constexpr uint32_t m_Handle = 0x4E0;  // CHandle< CBaseEntity > 
 	constexpr uint32_t m_bSendHandle = 0x4E4;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 530 
+// Fields: 0 
 namespace CHandleDummy
 {
 }
 
+// Offset: 0x7ffe058f06b0 
+// N. Class: 531 
+// Fields: 1 
 namespace CFuncPlat
 {
 	constexpr uint32_t m_sNoise = 0x838;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058f0800 
+// N. Class: 532 
+// Fields: 1 
 namespace CPlatTrigger
 {
 	constexpr uint32_t m_pPlatform = 0x790;  // CHandle< CFuncPlat > 
 }
 
+// Offset: 0x0 
+// N. Class: 533 
+// Fields: 0 
 namespace CFuncTrainControls
 {
 }
 
+// Offset: 0x7ffe058efce0 
+// N. Class: 534 
+// Fields: 2 
 namespace CTriggerVolume
 {
 	constexpr uint32_t m_iFilterName = 0x790;  // CUtlSymbolLarge 
 	constexpr uint32_t m_hFilter = 0x798;  // CHandle< CBaseFilter > 
 }
 
+// Offset: 0x0 
+// N. Class: 535 
+// Fields: 0 
 namespace CInfoTeleportDestination
 {
 }
 
+// Offset: 0x7ffe058f0830 
+// N. Class: 536 
+// Fields: 4 
 namespace CAI_ChangeHintGroup
 {
 	constexpr uint32_t m_iSearchType = 0x4E0;  // int32 
@@ -5604,14 +7219,23 @@ namespace CAI_ChangeHintGroup
 	constexpr uint32_t m_flRadius = 0x4F8;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 537 
+// Fields: 0 
 namespace CLogicProximity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 538 
+// Fields: 0 
 namespace CInfoSpawnGroupLandmark
 {
 }
 
+// Offset: 0x7ffe058b6c10 
+// N. Class: 539 
+// Fields: 11 
 namespace CInfoSpawnGroupLoadUnload
 {
 	constexpr uint32_t m_OnSpawnGroupLoadStarted = 0x4E0;  // CEntityIOOutput 
@@ -5627,15 +7251,24 @@ namespace CInfoSpawnGroupLoadUnload
 	constexpr uint32_t m_bUnloadingStarted = 0x5A5;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 540 
+// Fields: 0 
 namespace CPointPulse
 {
 }
 
+// Offset: 0x7ffe058fdb00 
+// N. Class: 541 
+// Fields: 1 
 namespace CFuncNavObstruction
 {
 	constexpr uint32_t m_bDisabled = 0x798;  // bool 
 }
 
+// Offset: 0x7ffe05832270 
+// N. Class: 542 
+// Fields: 10 
 namespace CAmbientGeneric
 {
 	constexpr uint32_t m_radius = 0x4E0;  // float32 
@@ -5650,12 +7283,18 @@ namespace CAmbientGeneric
 	constexpr uint32_t m_nSoundSourceEntIndex = 0x56C;  // CEntityIndex 
 }
 
+// Offset: 0x7ffe05833c80 
+// N. Class: 543 
+// Fields: 2 
 namespace RelationshipOverride_t
 {
 	constexpr uint32_t entity = 0x8;  // CHandle< CBaseEntity > 
 	constexpr uint32_t classType = 0xC;  // Class_T 
 }
 
+// Offset: 0x7ffe05835340 
+// N. Class: 544 
+// Fields: 16 
 namespace CBaseToggle
 {
 	constexpr uint32_t m_toggle_state = 0x790;  // TOGGLE_STATE 
@@ -5676,6 +7315,9 @@ namespace CBaseToggle
 	constexpr uint32_t m_sMaster = 0x808;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058364a0 
+// N. Class: 545 
+// Fields: 25 
 namespace CBaseButton
 {
 	constexpr uint32_t m_angMoveEntitySpace = 0x810;  // QAngle 
@@ -5705,14 +7347,23 @@ namespace CBaseButton
 	constexpr uint32_t m_szDisplayText = 0x958;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 546 
+// Fields: 0 
 namespace CPhysicalButton
 {
 }
 
+// Offset: 0x0 
+// N. Class: 547 
+// Fields: 0 
 namespace CRotButton
 {
 }
 
+// Offset: 0x7ffe05831c20 
+// N. Class: 548 
+// Fields: 14 
 namespace CMomentaryRotButton
 {
 	constexpr uint32_t m_Position = 0x960;  // CEntityOutputTemplate< float32 > 
@@ -5731,6 +7382,9 @@ namespace CMomentaryRotButton
 	constexpr uint32_t m_flStartPosition = 0xA5C;  // float32 
 }
 
+// Offset: 0x7ffe05832b70 
+// N. Class: 549 
+// Fields: 4 
 namespace CRagdollMagnet
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -5739,6 +7393,9 @@ namespace CRagdollMagnet
 	constexpr uint32_t m_axis = 0x4EC;  // Vector 
 }
 
+// Offset: 0x7ffe058385d0 
+// N. Class: 550 
+// Fields: 27 
 namespace CBaseDoor
 {
 	constexpr uint32_t m_angMoveEntitySpace = 0x820;  // QAngle 
@@ -5770,10 +7427,16 @@ namespace CBaseDoor
 	constexpr uint32_t m_bIsUsable = 0xA12;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 551 
+// Fields: 0 
 namespace CEntityBlocker
 {
 }
 
+// Offset: 0x7ffe05839a10 
+// N. Class: 552 
+// Fields: 10 
 namespace CEntityDissolve
 {
 	constexpr uint32_t m_flFadeInStart = 0x790;  // float32 
@@ -5788,6 +7451,9 @@ namespace CEntityDissolve
 	constexpr uint32_t m_nMagnitude = 0x7BC;  // uint32 
 }
 
+// Offset: 0x7ffe05838940 
+// N. Class: 553 
+// Fields: 30 
 namespace CEnvProjectedTexture
 {
 	constexpr uint32_t m_hTargetEntity = 0x790;  // CHandle< CBaseEntity > 
@@ -5822,6 +7488,9 @@ namespace CEnvProjectedTexture
 	constexpr uint32_t m_bFlipHorizontal = 0x9F0;  // bool 
 }
 
+// Offset: 0x7ffe0583a490 
+// N. Class: 554 
+// Fields: 9 
 namespace CEnvDecal
 {
 	constexpr uint32_t m_hDecalMaterial = 0x790;  // CStrongHandle< InfoForResourceTypeIMaterial2 > 
@@ -5835,6 +7504,9 @@ namespace CEnvDecal
 	constexpr uint32_t m_flDepthSortBias = 0x7AC;  // float32 
 }
 
+// Offset: 0x7ffe0583a150 
+// N. Class: 555 
+// Fields: 6 
 namespace CMessage
 {
 	constexpr uint32_t m_iszMessage = 0x4E0;  // CUtlSymbolLarge 
@@ -5845,6 +7517,9 @@ namespace CMessage
 	constexpr uint32_t m_OnShowMessage = 0x500;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe0583a980 
+// N. Class: 556 
+// Fields: 18 
 namespace CEnvMicrophone
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -5867,6 +7542,9 @@ namespace CEnvMicrophone
 	constexpr uint32_t m_iLastRoutedFrame = 0x698;  // int32 
 }
 
+// Offset: 0x7ffe05839b80 
+// N. Class: 557 
+// Fields: 15 
 namespace CBreakable
 {
 	constexpr uint32_t m_CPropDataComponent = 0x798;  // CPropDataComponent 
@@ -5886,6 +7564,9 @@ namespace CBreakable
 	constexpr uint32_t m_flLastPhysicsInfluenceTime = 0x860;  // GameTime_t 
 }
 
+// Offset: 0x7ffe0583a2f0 
+// N. Class: 558 
+// Fields: 12 
 namespace CFuncMoveLinear
 {
 	constexpr uint32_t m_authoredPosition = 0x810;  // MoveLinearAuthoredPos_t 
@@ -5902,6 +7583,9 @@ namespace CFuncMoveLinear
 	constexpr uint32_t m_bCreateNavObstacle = 0x8A9;  // bool 
 }
 
+// Offset: 0x7ffe0583ac40 
+// N. Class: 559 
+// Fields: 38 
 namespace CFuncMover
 {
 	constexpr uint32_t m_bCreateMovableNavMesh = 0x790;  // bool 
@@ -5944,6 +7628,9 @@ namespace CFuncMover
 	constexpr uint32_t m_qOriginalOrientation = 0x880;  // Quaternion 
 }
 
+// Offset: 0x7ffe058374b0 
+// N. Class: 560 
+// Fields: 18 
 namespace CFuncRotating
 {
 	constexpr uint32_t m_OnStopped = 0x790;  // CEntityIOOutput 
@@ -5966,6 +7653,9 @@ namespace CFuncRotating
 	constexpr uint32_t m_vecClientAngles = 0x86C;  // QAngle 
 }
 
+// Offset: 0x7ffe0583dc50 
+// N. Class: 561 
+// Fields: 32 
 namespace CItemGeneric
 {
 	constexpr uint32_t m_bHasTriggerRadius = 0xA88;  // bool 
@@ -6002,30 +7692,48 @@ namespace CItemGeneric
 	constexpr uint32_t m_hTriggerHelper = 0xBE8;  // CHandle< CItemGenericTriggerHelper > 
 }
 
+// Offset: 0x7ffe0583d988 
+// N. Class: 562 
+// Fields: 1 
 namespace CItemGenericTriggerHelper
 {
 	constexpr uint32_t m_hParentItem = 0x790;  // CHandle< CItemGeneric > 
 }
 
+// Offset: 0x7ffe0583c7b0 
+// N. Class: 563 
+// Fields: 1 
 namespace CRuleEntity
 {
 	constexpr uint32_t m_iszMaster = 0x790;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe0583c850 
+// N. Class: 564 
+// Fields: 1 
 namespace CRulePointEntity
 {
 	constexpr uint32_t m_Score = 0x798;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 565 
+// Fields: 0 
 namespace CGamePlayerEquip
 {
 }
 
+// Offset: 0x7ffe0583c970 
+// N. Class: 566 
+// Fields: 1 
 namespace CMarkupVolume
 {
 	constexpr uint32_t m_bDisabled = 0x790;  // bool 
 }
 
+// Offset: 0x7ffe0583ca10 
+// N. Class: 567 
+// Fields: 5 
 namespace CMarkupVolumeTagged
 {
 	constexpr uint32_t m_bIsGroup = 0x7C8;  // bool 
@@ -6035,6 +7743,9 @@ namespace CMarkupVolumeTagged
 	constexpr uint32_t m_bIsInGroup = 0x7CC;  // bool 
 }
 
+// Offset: 0x7ffe0583cb30 
+// N. Class: 568 
+// Fields: 3 
 namespace CMarkupVolumeWithRef
 {
 	constexpr uint32_t m_bUseRef = 0x7D0;  // bool 
@@ -6042,6 +7753,9 @@ namespace CMarkupVolumeWithRef
 	constexpr uint32_t m_flRefDot = 0x7E0;  // float32 
 }
 
+// Offset: 0x7ffe0583cf10 
+// N. Class: 569 
+// Fields: 6 
 namespace CFuncBrush
 {
 	constexpr uint32_t m_iSolidity = 0x790;  // BrushSolidities_e 
@@ -6052,6 +7766,9 @@ namespace CFuncBrush
 	constexpr uint32_t m_bScriptedMovement = 0x7A9;  // bool 
 }
 
+// Offset: 0x7ffe0583d9d0 
+// N. Class: 570 
+// Fields: 9 
 namespace CPathTrack
 {
 	constexpr uint32_t m_pnext = 0x4E0;  // CPathTrack* 
@@ -6065,6 +7782,9 @@ namespace CPathTrack
 	constexpr uint32_t m_OnPass = 0x510;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe0583ecf0 
+// N. Class: 571 
+// Fields: 14 
 namespace CPhysBox
 {
 	constexpr uint32_t m_damageType = 0x868;  // int32 
@@ -6083,6 +7803,9 @@ namespace CPhysBox
 	constexpr uint32_t m_hCarryingPlayer = 0x958;  // CHandle< CBasePlayerPawn > 
 }
 
+// Offset: 0x7ffe0583ef30 
+// N. Class: 572 
+// Fields: 9 
 namespace CPhysExplosion
 {
 	constexpr uint32_t m_bExplodeOnSpawn = 0x4E0;  // bool 
@@ -6096,6 +7819,9 @@ namespace CPhysExplosion
 	constexpr uint32_t m_OnPushedPlayer = 0x508;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe0583f0d0 
+// N. Class: 573 
+// Fields: 3 
 namespace CPhysImpact
 {
 	constexpr uint32_t m_damage = 0x4E0;  // float32 
@@ -6103,6 +7829,9 @@ namespace CPhysImpact
 	constexpr uint32_t m_directionEntityName = 0x4E8;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe05841060 
+// N. Class: 574 
+// Fields: 21 
 namespace CRopeKeyframe
 {
 	constexpr uint32_t m_RopeFlags = 0x798;  // uint16 
@@ -6128,6 +7857,9 @@ namespace CRopeKeyframe
 	constexpr uint32_t m_iEndAttachment = 0x7E1;  // AttachmentHandle_t 
 }
 
+// Offset: 0x7ffe05841ba0 
+// N. Class: 575 
+// Fields: 4 
 namespace CSoundEnt
 {
 	constexpr uint32_t m_iFreeSound = 0x4E0;  // int32 
@@ -6136,6 +7868,9 @@ namespace CSoundEnt
 	constexpr uint32_t m_SoundPool = 0x4EC;  // CSound[128] 
 }
 
+// Offset: 0x7ffe0583e630 
+// N. Class: 576 
+// Fields: 4 
 namespace CSpotlightEnd
 {
 	constexpr uint32_t m_flLightScale = 0x790;  // float32 
@@ -6144,6 +7879,9 @@ namespace CSpotlightEnd
 	constexpr uint32_t m_vSpotlightOrg = 0x7A4;  // Vector 
 }
 
+// Offset: 0x7ffe05840200 
+// N. Class: 577 
+// Fields: 12 
 namespace CBaseTrigger
 {
 	constexpr uint32_t m_bDisabled = 0x810;  // bool 
@@ -6160,11 +7898,17 @@ namespace CBaseTrigger
 	constexpr uint32_t m_bClientSidePredicted = 0x958;  // bool 
 }
 
+// Offset: 0x7ffe058404c0 
+// N. Class: 578 
+// Fields: 1 
 namespace CTriggerMultiple
 {
 	constexpr uint32_t m_OnTrigger = 0x960;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe05840660 
+// N. Class: 579 
+// Fields: 14 
 namespace CTriggerSndSosOpvar
 {
 	constexpr uint32_t m_hTouchingPlayers = 0x960;  // CUtlVector< CHandle< CBaseEntity > > 
@@ -6183,6 +7927,9 @@ namespace CTriggerSndSosOpvar
 	constexpr uint32_t m_flNormCenterSize = 0xCB8;  // float32 
 }
 
+// Offset: 0x7ffe058408a0 
+// N. Class: 580 
+// Fields: 14 
 namespace CTriggerHurt
 {
 	constexpr uint32_t m_flOriginalDamage = 0x960;  // float32 
@@ -6201,10 +7948,16 @@ namespace CTriggerHurt
 	constexpr uint32_t m_hurtEntities = 0x9E8;  // CUtlVector< CHandle< CBaseEntity > > 
 }
 
+// Offset: 0x0 
+// N. Class: 581 
+// Fields: 0 
 namespace CTriggerCallback
 {
 }
 
+// Offset: 0x7ffe05840de0 
+// N. Class: 582 
+// Fields: 14 
 namespace CTriggerLerpObject
 {
 	constexpr uint32_t m_iszLerpTarget = 0x960;  // CUtlSymbolLarge 
@@ -6223,6 +7976,9 @@ namespace CTriggerLerpObject
 	constexpr uint32_t m_OnLerpFinished = 0x9E0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe05841ac0 
+// N. Class: 583 
+// Fields: 7 
 namespace CChangeLevel
 {
 	constexpr uint32_t m_sMapName = 0x960;  // CUtlString 
@@ -6234,6 +7990,9 @@ namespace CChangeLevel
 	constexpr uint32_t m_bOnChangeLevelFired = 0x99B;  // bool 
 }
 
+// Offset: 0x7ffe05841da0 
+// N. Class: 584 
+// Fields: 4 
 namespace CTriggerTeleport
 {
 	constexpr uint32_t m_iLandmark = 0x960;  // CUtlSymbolLarge 
@@ -6242,6 +8001,9 @@ namespace CTriggerTeleport
 	constexpr uint32_t m_bCheckDestIfClearForPlayer = 0x96A;  // bool 
 }
 
+// Offset: 0x7ffe05841ea0 
+// N. Class: 585 
+// Fields: 12 
 namespace CTriggerFan
 {
 	constexpr uint32_t m_vFanOrigin = 0x960;  // Vector 
@@ -6258,16 +8020,25 @@ namespace CTriggerFan
 	constexpr uint32_t m_RampTimer = 0x998;  // CountdownTimer 
 }
 
+// Offset: 0x0 
+// N. Class: 586 
+// Fields: 0 
 namespace CNavWalkable
 {
 }
 
+// Offset: 0x7ffe05843c30 
+// N. Class: 587 
+// Fields: 2 
 namespace CFuncNavBlocker
 {
 	constexpr uint32_t m_bDisabled = 0x790;  // bool 
 	constexpr uint32_t m_nBlockedTeamNumber = 0x794;  // int32 
 }
 
+// Offset: 0x7ffe05843cf0 
+// N. Class: 588 
+// Fields: 13 
 namespace CNavLinkAreaEntity
 {
 	constexpr uint32_t m_flWidth = 0x4E0;  // float32 
@@ -6285,11 +8056,17 @@ namespace CNavLinkAreaEntity
 	constexpr uint32_t m_bIsTerminus = 0x580;  // bool 
 }
 
+// Offset: 0x7ffe05844120 
+// N. Class: 589 
+// Fields: 1 
 namespace CNavSpaceInfo
 {
 	constexpr uint32_t m_bCreateFlightSpace = 0x4E0;  // bool 
 }
 
+// Offset: 0x7ffe05809250 
+// N. Class: 590 
+// Fields: 12 
 namespace CFuncLadder
 {
 	constexpr uint32_t m_vecLadderDir = 0x790;  // Vector 
@@ -6306,6 +8083,9 @@ namespace CFuncLadder
 	constexpr uint32_t m_OnPlayerGotOffLadder = 0x818;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe0580be30 
+// N. Class: 591 
+// Fields: 7 
 namespace CPrecipitationVData
 {
 	constexpr uint32_t m_szParticlePrecipitationEffect = 0x28;  // CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > 
@@ -6317,6 +8097,9 @@ namespace CPrecipitationVData
 	constexpr uint32_t m_szModifier = 0x120;  // CUtlString 
 }
 
+// Offset: 0x7ffe0580d860 
+// N. Class: 592 
+// Fields: 23 
 namespace CSprite
 {
 	constexpr uint32_t m_hSpriteMaterial = 0x790;  // CStrongHandle< InfoForResourceTypeIMaterial2 > 
@@ -6344,10 +8127,16 @@ namespace CSprite
 	constexpr uint32_t m_nSpriteHeight = 0x7F8;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 593 
+// Fields: 0 
 namespace CSpriteOriented
 {
 }
 
+// Offset: 0x7ffe057dd1e0 
+// N. Class: 594 
+// Fields: 14 
 namespace CBaseClientUIEntity
 {
 	constexpr uint32_t m_bEnabled = 0x790;  // bool 
@@ -6366,12 +8155,18 @@ namespace CBaseClientUIEntity
 	constexpr uint32_t m_CustomOutput9 = 0x918;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe057dd0f0 
+// N. Class: 595 
+// Fields: 2 
 namespace CPointClientUIDialog
 {
 	constexpr uint32_t m_hActivator = 0x940;  // CHandle< CBaseEntity > 
 	constexpr uint32_t m_bStartEnabled = 0x944;  // bool 
 }
 
+// Offset: 0x7ffe057dd450 
+// N. Class: 596 
+// Fields: 23 
 namespace CPointClientUIWorldPanel
 {
 	constexpr uint32_t m_bIgnoreInput = 0x940;  // bool 
@@ -6399,11 +8194,17 @@ namespace CPointClientUIWorldPanel
 	constexpr uint32_t m_nExplicitImageLayout = 0x990;  // int32 
 }
 
+// Offset: 0x7ffe057dd8c8 
+// N. Class: 597 
+// Fields: 1 
 namespace CPointClientUIWorldTextPanel
 {
 	constexpr uint32_t m_messageText = 0x998;  // char[512] 
 }
 
+// Offset: 0x7ffe057dd970 
+// N. Class: 598 
+// Fields: 10 
 namespace CInfoOffscreenPanoramaTexture
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -6418,23 +8219,38 @@ namespace CInfoOffscreenPanoramaTexture
 	constexpr uint32_t m_AdditionalTargetEntities = 0x540;  // CUtlVector< CHandle< CBaseModelEntity > > 
 }
 
+// Offset: 0x0 
+// N. Class: 599 
+// Fields: 0 
 namespace CInfoPlayerTerrorist
 {
 }
 
+// Offset: 0x0 
+// N. Class: 600 
+// Fields: 0 
 namespace CInfoPlayerCounterterrorist
 {
 }
 
+// Offset: 0x0 
+// N. Class: 601 
+// Fields: 0 
 namespace CInfoDeathmatchSpawn
 {
 }
 
+// Offset: 0x7ffe058515a0 
+// N. Class: 602 
+// Fields: 1 
 namespace CPointGiveAmmo
 {
 	constexpr uint32_t m_pActivator = 0x4E0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe0585f050 
+// N. Class: 603 
+// Fields: 9 
 namespace CBombTarget
 {
 	constexpr uint32_t m_OnBombExplode = 0x960;  // CEntityIOOutput 
@@ -6448,51 +8264,84 @@ namespace CBombTarget
 	constexpr uint32_t m_nBombSiteDesignation = 0x9EC;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 604 
+// Fields: 0 
 namespace CInfoInstructorHintBombTargetA
 {
 }
 
+// Offset: 0x0 
+// N. Class: 605 
+// Fields: 0 
 namespace CInfoInstructorHintBombTargetB
 {
 }
 
+// Offset: 0x0 
+// N. Class: 606 
+// Fields: 0 
 namespace CHostageRescueZoneShim
 {
 }
 
+// Offset: 0x0 
+// N. Class: 607 
+// Fields: 0 
 namespace CHostageRescueZone
 {
 }
 
+// Offset: 0x0 
+// N. Class: 608 
+// Fields: 0 
 namespace CInfoInstructorHintHostageRescueZone
 {
 }
 
+// Offset: 0x7ffe0585f320 
+// N. Class: 609 
+// Fields: 2 
 namespace CTriggerBuoyancy
 {
 	constexpr uint32_t m_BuoyancyHelper = 0x960;  // CBuoyancyHelper 
 	constexpr uint32_t m_flFluidDensity = 0x9E0;  // float32 
 }
 
+// Offset: 0x7ffe0585f410 
+// N. Class: 610 
+// Fields: 1 
 namespace CFuncWater
 {
 	constexpr uint32_t m_BuoyancyHelper = 0x790;  // CBuoyancyHelper 
 }
 
+// Offset: 0x0 
+// N. Class: 611 
+// Fields: 0 
 namespace CCSSprite
 {
 }
 
+// Offset: 0x0 
+// N. Class: 612 
+// Fields: 0 
 namespace CCSObserverPawn
 {
 }
 
+// Offset: 0x7ffe0586b290 
+// N. Class: 613 
+// Fields: 2 
 namespace CFootstepControl
 {
 	constexpr uint32_t m_source = 0x960;  // CUtlSymbolLarge 
 	constexpr uint32_t m_destination = 0x968;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe05862c00 
+// N. Class: 614 
+// Fields: 92 
 namespace CCSWeaponBaseVData
 {
 	constexpr uint32_t m_WeaponType = 0x348;  // CSWeaponType 
@@ -6589,26 +8438,41 @@ namespace CCSWeaponBaseVData
 	constexpr uint32_t m_szAnimClass = 0xE88;  // CGlobalSymbol 
 }
 
+// Offset: 0x0 
+// N. Class: 615 
+// Fields: 0 
 namespace CTriggerTripWire
 {
 }
 
+// Offset: 0x7ffe0587afc0 
+// N. Class: 616 
+// Fields: 2 
 namespace CPointGamestatsCounter
 {
 	constexpr uint32_t m_strStatisticName = 0x4E0;  // CUtlSymbolLarge 
 	constexpr uint32_t m_bDisabled = 0x4E8;  // bool 
 }
 
+// Offset: 0x7ffe057e9770 
+// N. Class: 617 
+// Fields: 1 
 namespace CEnvHudHint
 {
 	constexpr uint32_t m_iszMessage = 0x4E0;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe057e90c0 
+// N. Class: 618 
+// Fields: 1 
 namespace CBuyZone
 {
 	constexpr uint32_t m_LegacyTeamNum = 0x960;  // int32 
 }
 
+// Offset: 0x7ffe057e91d0 
+// N. Class: 619 
+// Fields: 9 
 namespace CFuncConveyor
 {
 	constexpr uint32_t m_szConveyorModels = 0x790;  // CUtlSymbolLarge 
@@ -6622,19 +8486,31 @@ namespace CFuncConveyor
 	constexpr uint32_t m_hConveyorModels = 0x7C8;  // CNetworkUtlVectorBase< CHandle< CBaseEntity > > 
 }
 
+// Offset: 0x0 
+// N. Class: 620 
+// Fields: 0 
 namespace CTriggerBombReset
 {
 }
 
+// Offset: 0x0 
+// N. Class: 621 
+// Fields: 0 
 namespace CTriggerHostageReset
 {
 }
 
+// Offset: 0x7ffe057e4760 
+// N. Class: 622 
+// Fields: 1 
 namespace CCSPlace
 {
 	constexpr uint32_t m_name = 0x798;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe057e9810 
+// N. Class: 623 
+// Fields: 4 
 namespace CGameMoney
 {
 	constexpr uint32_t m_OnMoneySpent = 0x7A0;  // CEntityIOOutput 
@@ -6643,6 +8519,9 @@ namespace CGameMoney
 	constexpr uint32_t m_strAwardText = 0x7F8;  // CUtlString 
 }
 
+// Offset: 0x7ffe057e9370 
+// N. Class: 624 
+// Fields: 15 
 namespace CPlayerSprayDecal
 {
 	constexpr uint32_t m_nUniqueID = 0x790;  // int32 
@@ -6662,6 +8541,9 @@ namespace CPlayerSprayDecal
 	constexpr uint32_t m_ubSignature = 0x7E5;  // uint8[128] 
 }
 
+// Offset: 0x7ffe057eedf0 
+// N. Class: 625 
+// Fields: 25 
 namespace CInferno
 {
 	constexpr uint32_t m_firePositions = 0x7A0;  // Vector[64] 
@@ -6691,10 +8573,16 @@ namespace CInferno
 	constexpr uint32_t m_nSourceItemDefIndex = 0x13C8;  // uint16 
 }
 
+// Offset: 0x0 
+// N. Class: 626 
+// Fields: 0 
 namespace CFireCrackerBlast
 {
 }
 
+// Offset: 0x7ffe057f0610 
+// N. Class: 627 
+// Fields: 73 
 namespace CBarnLight
 {
 	constexpr uint32_t m_bEnabled = 0x790;  // bool 
@@ -6772,11 +8660,17 @@ namespace CBarnLight
 	constexpr uint32_t m_VisClusters = 0xA90;  // CNetworkUtlVectorBase< uint16 > 
 }
 
+// Offset: 0x7ffe057f0fb8 
+// N. Class: 628 
+// Fields: 1 
 namespace CRectLight
 {
 	constexpr uint32_t m_bShowLight = 0xAB0;  // bool 
 }
 
+// Offset: 0x7ffe057f1080 
+// N. Class: 629 
+// Fields: 3 
 namespace COmniLight
 {
 	constexpr uint32_t m_flInnerAngle = 0xAB0;  // float32 
@@ -6784,6 +8678,9 @@ namespace COmniLight
 	constexpr uint32_t m_bShowLight = 0xAB8;  // bool 
 }
 
+// Offset: 0x7ffe057e5160 
+// N. Class: 630 
+// Fields: 14 
 namespace CCSTeam
 {
 	constexpr uint32_t m_nLastRecievedShorthandedRoundBonus = 0x598;  // int32 
@@ -6802,6 +8699,9 @@ namespace CCSTeam
 	constexpr uint32_t m_iLastUpdateSentAt = 0x850;  // int32 
 }
 
+// Offset: 0x7ffe057e9940 
+// N. Class: 631 
+// Fields: 9 
 namespace CMapInfo
 {
 	constexpr uint32_t m_iBuyingStatus = 0x4E0;  // int32 
@@ -6815,6 +8715,9 @@ namespace CMapInfo
 	constexpr uint32_t m_bRainTraceToSkyEnabled = 0x4F9;  // bool 
 }
 
+// Offset: 0x7ffe057ebf80 
+// N. Class: 632 
+// Fields: 139 
 namespace CCSBot
 {
 	constexpr uint32_t m_eyePosition = 0x108;  // Vector 
@@ -6958,6 +8861,9 @@ namespace CCSBot
 	constexpr uint32_t m_lastValidReactionQueueFrame = 0x6540;  // int32 
 }
 
+// Offset: 0x7ffe058441f0 
+// N. Class: 633 
+// Fields: 5 
 namespace CFogVolume
 {
 	constexpr uint32_t m_fogName = 0x790;  // CUtlSymbolLarge 
@@ -6967,6 +8873,9 @@ namespace CFogVolume
 	constexpr uint32_t m_bInFogVolumesList = 0x7B1;  // bool 
 }
 
+// Offset: 0x7ffe057e08b0 
+// N. Class: 634 
+// Fields: 5 
 namespace CInfoDynamicShadowHint
 {
 	constexpr uint32_t m_bDisabled = 0x4E0;  // bool 
@@ -6976,12 +8885,18 @@ namespace CInfoDynamicShadowHint
 	constexpr uint32_t m_hLight = 0x4F0;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x7ffe057e09d0 
+// N. Class: 635 
+// Fields: 2 
 namespace CInfoDynamicShadowHintBox
 {
 	constexpr uint32_t m_vBoxMins = 0x4F8;  // Vector 
 	constexpr uint32_t m_vBoxMaxs = 0x504;  // Vector 
 }
 
+// Offset: 0x7ffe057fa020 
+// N. Class: 636 
+// Fields: 12 
 namespace CEnvSky
 {
 	constexpr uint32_t m_hSkyMaterial = 0x790;  // CStrongHandle< InfoForResourceTypeIMaterial2 > 
@@ -6998,49 +8913,82 @@ namespace CEnvSky
 	constexpr uint32_t m_bEnabled = 0x7C4;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 637 
+// Fields: 0 
 namespace CTonemapController2Alias_env_tonemap_controller2
 {
 }
 
+// Offset: 0x7ffe057fb900 
+// N. Class: 638 
+// Fields: 2 
 namespace CTonemapTrigger
 {
 	constexpr uint32_t m_tonemapControllerName = 0x960;  // CUtlSymbolLarge 
 	constexpr uint32_t m_hTonemapController = 0x968;  // CEntityHandle 
 }
 
+// Offset: 0x7ffe057fa2c8 
+// N. Class: 639 
+// Fields: 1 
 namespace CFogTrigger
 {
 	constexpr uint32_t m_fog = 0x960;  // fogparams_t 
 }
 
+// Offset: 0x0 
+// N. Class: 640 
+// Fields: 0 
 namespace CLightSpotEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 641 
+// Fields: 0 
 namespace CLightOrthoEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 642 
+// Fields: 0 
 namespace CLightDirectionalEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 643 
+// Fields: 0 
 namespace CLightEnvironmentEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 644 
+// Fields: 0 
 namespace CEnvSoundscapeProxyAlias_snd_soundscape_proxy
 {
 }
 
+// Offset: 0x0 
+// N. Class: 645 
+// Fields: 0 
 namespace CEnvSoundscapeAlias_snd_soundscape
 {
 }
 
+// Offset: 0x0 
+// N. Class: 646 
+// Fields: 0 
 namespace CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable
 {
 }
 
+// Offset: 0x7ffe0580f8e0 
+// N. Class: 647 
+// Fields: 3 
 namespace CTriggerSoundscape
 {
 	constexpr uint32_t m_hSoundscape = 0x960;  // CHandle< CEnvSoundscapeTriggerable > 
@@ -7048,6 +8996,9 @@ namespace CTriggerSoundscape
 	constexpr uint32_t m_spectators = 0x970;  // CUtlVector< CHandle< CBasePlayerPawn > > 
 }
 
+// Offset: 0x7ffe0587ffc0 
+// N. Class: 648 
+// Fields: 5 
 namespace CEnvParticleGlow
 {
 	constexpr uint32_t m_flAlphaScale = 0xD08;  // float32 
@@ -7057,6 +9008,9 @@ namespace CEnvParticleGlow
 	constexpr uint32_t m_hTextureOverride = 0xD18;  // CStrongHandle< InfoForResourceTypeCTextureBase > 
 }
 
+// Offset: 0x7ffe058853d0 
+// N. Class: 649 
+// Fields: 8 
 namespace CTextureBasedAnimatable
 {
 	constexpr uint32_t m_bLoop = 0x790;  // bool 
@@ -7069,10 +9023,16 @@ namespace CTextureBasedAnimatable
 	constexpr uint32_t m_flStartFrame = 0x7C4;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 650 
+// Fields: 0 
 namespace CWorld
 {
 }
 
+// Offset: 0x7ffe058338a0 
+// N. Class: 651 
+// Fields: 4 
 namespace CBaseProp
 {
 	constexpr uint32_t m_bModelOverrodeBlockLOS = 0x9A8;  // bool 
@@ -7081,6 +9041,9 @@ namespace CBaseProp
 	constexpr uint32_t m_mPreferredCatchTransform = 0x9B4;  // matrix3x4_t 
 }
 
+// Offset: 0x7ffe05835f90 
+// N. Class: 652 
+// Fields: 33 
 namespace CBreakableProp
 {
 	constexpr uint32_t m_CPropDataComponent = 0x9F0;  // CPropDataComponent 
@@ -7118,6 +9081,9 @@ namespace CBreakableProp
 	constexpr uint32_t m_noGhostCollision = 0xB50;  // bool 
 }
 
+// Offset: 0x7ffe05838e50 
+// N. Class: 653 
+// Fields: 22 
 namespace CDynamicProp
 {
 	constexpr uint32_t m_bCreateNavObstacle = 0xB60;  // bool 
@@ -7144,18 +9110,30 @@ namespace CDynamicProp
 	constexpr uint32_t m_nGlowTeam = 0xC54;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 654 
+// Fields: 0 
 namespace CDynamicPropAlias_dynamic_prop
 {
 }
 
+// Offset: 0x0 
+// N. Class: 655 
+// Fields: 0 
 namespace CDynamicPropAlias_prop_dynamic_override
 {
 }
 
+// Offset: 0x0 
+// N. Class: 656 
+// Fields: 0 
 namespace CDynamicPropAlias_cable_dynamic
 {
 }
 
+// Offset: 0x7ffe05899930 
+// N. Class: 657 
+// Fields: 10 
 namespace CColorCorrectionVolume
 {
 	constexpr uint32_t m_bEnabled = 0x960;  // bool 
@@ -7170,23 +9148,38 @@ namespace CColorCorrectionVolume
 	constexpr uint32_t m_LastExitTime = 0xB80;  // GameTime_t 
 }
 
+// Offset: 0x0 
+// N. Class: 658 
+// Fields: 0 
 namespace CCommentaryViewPosition
 {
 }
 
+// Offset: 0x7ffe05897f50 
+// N. Class: 659 
+// Fields: 1 
 namespace CRotDoor
 {
 	constexpr uint32_t m_bSolidBsp = 0xA18;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 660 
+// Fields: 0 
 namespace CItemSoda
 {
 }
 
+// Offset: 0x0 
+// N. Class: 661 
+// Fields: 0 
 namespace CPrecipitation
 {
 }
 
+// Offset: 0x7ffe058a2eb0 
+// N. Class: 662 
+// Fields: 19 
 namespace CEnvBeam
 {
 	constexpr uint32_t m_active = 0x830;  // int32 
@@ -7210,14 +9203,23 @@ namespace CEnvBeam
 	constexpr uint32_t m_OnTouchedByEntity = 0x8B0;  // CEntityIOOutput 
 }
 
+// Offset: 0x0 
+// N. Class: 663 
+// Fields: 0 
 namespace CPushable
 {
 }
 
+// Offset: 0x0 
+// N. Class: 664 
+// Fields: 0 
 namespace CFuncLadderAlias_func_useableladder
 {
 }
 
+// Offset: 0x7ffe058ad230 
+// N. Class: 665 
+// Fields: 9 
 namespace CFuncMonitor
 {
 	constexpr uint32_t m_targetCamera = 0x7B0;  // CUtlString 
@@ -7231,10 +9233,16 @@ namespace CFuncMonitor
 	constexpr uint32_t m_bStartEnabled = 0x7CE;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 666 
+// Fields: 0 
 namespace CFuncMoveLinearAlias_momentary_door
 {
 }
 
+// Offset: 0x7ffe058adf10 
+// N. Class: 667 
+// Fields: 3 
 namespace CGunTarget
 {
 	constexpr uint32_t m_on = 0x810;  // bool 
@@ -7242,6 +9250,9 @@ namespace CGunTarget
 	constexpr uint32_t m_OnDeath = 0x818;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058b6260 
+// N. Class: 668 
+// Fields: 3 
 namespace CTriggerGameEvent
 {
 	constexpr uint32_t m_strStartTouchEventName = 0x960;  // CUtlString 
@@ -7249,20 +9260,32 @@ namespace CTriggerGameEvent
 	constexpr uint32_t m_strTriggerID = 0x970;  // CUtlString 
 }
 
+// Offset: 0x0 
+// N. Class: 669 
+// Fields: 0 
 namespace CRuleBrushEntity
 {
 }
 
+// Offset: 0x0 
+// N. Class: 670 
+// Fields: 0 
 namespace CGameEnd
 {
 }
 
+// Offset: 0x7ffe058c2500 
+// N. Class: 671 
+// Fields: 2 
 namespace CGameText
 {
 	constexpr uint32_t m_iszMessage = 0x7A0;  // CUtlSymbolLarge 
 	constexpr uint32_t m_textParms = 0x7A8;  // hudtextparms_t 
 }
 
+// Offset: 0x7ffe058c26a0 
+// N. Class: 672 
+// Fields: 4 
 namespace CGamePlayerZone
 {
 	constexpr uint32_t m_OnPlayerInZone = 0x798;  // CEntityIOOutput 
@@ -7271,19 +9294,31 @@ namespace CGamePlayerZone
 	constexpr uint32_t m_PlayersOutCount = 0x810;  // CEntityOutputTemplate< int32 > 
 }
 
+// Offset: 0x0 
+// N. Class: 673 
+// Fields: 0 
 namespace CSimpleMarkupVolumeTagged
 {
 }
 
+// Offset: 0x0 
+// N. Class: 674 
+// Fields: 0 
 namespace CMarkupVolumeTagged_Nav
 {
 }
 
+// Offset: 0x7ffe058c51e0 
+// N. Class: 675 
+// Fields: 1 
 namespace CMarkupVolumeTagged_NavGame
 {
 	constexpr uint32_t m_bFloodFillAttribute = 0x7E8;  // bool 
 }
 
+// Offset: 0x7ffe058c1cf0 
+// N. Class: 676 
+// Fields: 4 
 namespace CFuncElectrifiedVolume
 {
 	constexpr uint32_t m_EffectName = 0x7B0;  // CUtlSymbolLarge 
@@ -7292,28 +9327,46 @@ namespace CFuncElectrifiedVolume
 	constexpr uint32_t m_iszEffectSource = 0x7C8;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 677 
+// Fields: 0 
 namespace CPathCornerCrash
 {
 }
 
+// Offset: 0x7ffe058c3500 
+// N. Class: 678 
+// Fields: 1 
 namespace CConstraintAnchor
 {
 	constexpr uint32_t m_massScale = 0x9A8;  // float32 
 }
 
+// Offset: 0x7ffe058db120 
+// N. Class: 679 
+// Fields: 1 
 namespace COrnamentProp
 {
 	constexpr uint32_t m_initialOwner = 0xC58;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x0 
+// N. Class: 680 
+// Fields: 0 
 namespace CRopeKeyframeAlias_move_rope
 {
 }
 
+// Offset: 0x0 
+// N. Class: 681 
+// Fields: 0 
 namespace CSceneEntityAlias_logic_choreographed_scene
 {
 }
 
+// Offset: 0x7ffe058e27b0 
+// N. Class: 682 
+// Fields: 7 
 namespace CInstancedSceneEntity
 {
 	constexpr uint32_t m_hOwner = 0xA40;  // CHandle< CBaseEntity > 
@@ -7325,15 +9378,24 @@ namespace CInstancedSceneEntity
 	constexpr uint32_t m_hTarget = 0xA54;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x0 
+// N. Class: 683 
+// Fields: 0 
 namespace CSpriteAlias_env_glow
 {
 }
 
+// Offset: 0x7ffe058efdd0 
+// N. Class: 684 
+// Fields: 1 
 namespace CFuncTankTrain
 {
 	constexpr uint32_t m_OnDeath = 0x8E0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058f0440 
+// N. Class: 685 
+// Fields: 5 
 namespace CBasePlatTrain
 {
 	constexpr uint32_t m_NoiseMoving = 0x810;  // CUtlSymbolLarge 
@@ -7343,12 +9405,18 @@ namespace CBasePlatTrain
 	constexpr uint32_t m_flTLength = 0x830;  // float32 
 }
 
+// Offset: 0x7ffe058f09a0 
+// N. Class: 686 
+// Fields: 2 
 namespace CFuncPlatRot
 {
 	constexpr uint32_t m_end = 0x840;  // QAngle 
 	constexpr uint32_t m_start = 0x84C;  // QAngle 
 }
 
+// Offset: 0x7ffe058ed800 
+// N. Class: 687 
+// Fields: 6 
 namespace CFuncTrain
 {
 	constexpr uint32_t m_hCurrentTarget = 0x838;  // CHandle< CBaseEntity > 
@@ -7359,6 +9427,9 @@ namespace CFuncTrain
 	constexpr uint32_t m_iszLastTarget = 0x850;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058edbd0 
+// N. Class: 688 
+// Fields: 9 
 namespace CFuncTrackChange
 {
 	constexpr uint32_t m_trackTop = 0x858;  // CPathTrack* 
@@ -7372,34 +9443,55 @@ namespace CFuncTrackChange
 	constexpr uint32_t m_use = 0x890;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 689 
+// Fields: 0 
 namespace CFuncTrackAuto
 {
 }
 
+// Offset: 0x7ffe058ef5e8 
+// N. Class: 690 
+// Fields: 1 
 namespace CTriggerRemove
 {
 	constexpr uint32_t m_OnRemove = 0x960;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058ef6c0 
+// N. Class: 691 
+// Fields: 1 
 namespace CScriptTriggerHurt
 {
 	constexpr uint32_t m_vExtent = 0xA00;  // Vector 
 }
 
+// Offset: 0x7ffe058ef790 
+// N. Class: 692 
+// Fields: 1 
 namespace CScriptTriggerMultiple
 {
 	constexpr uint32_t m_vExtent = 0x988;  // Vector 
 }
 
+// Offset: 0x0 
+// N. Class: 693 
+// Fields: 0 
 namespace CTriggerOnce
 {
 }
 
+// Offset: 0x7ffe058ef940 
+// N. Class: 694 
+// Fields: 1 
 namespace CScriptTriggerOnce
 {
 	constexpr uint32_t m_vExtent = 0x988;  // Vector 
 }
 
+// Offset: 0x7ffe058efa70 
+// N. Class: 695 
+// Fields: 14 
 namespace CTriggerLook
 {
 	constexpr uint32_t m_hLookTarget = 0x988;  // CHandle< CBaseEntity > 
@@ -7418,6 +9510,9 @@ namespace CTriggerLook
 	constexpr uint32_t m_OnEndLook = 0x9F8;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058efe70 
+// N. Class: 696 
+// Fields: 7 
 namespace CTriggerPush
 {
 	constexpr uint32_t m_angPushEntitySpace = 0x960;  // QAngle 
@@ -7429,15 +9524,24 @@ namespace CTriggerPush
 	constexpr uint32_t m_splinePushType = 0x990;  // uint32 
 }
 
+// Offset: 0x7ffe058f00f0 
+// N. Class: 697 
+// Fields: 1 
 namespace CScriptTriggerPush
 {
 	constexpr uint32_t m_vExtent = 0x998;  // Vector 
 }
 
+// Offset: 0x0 
+// N. Class: 698 
+// Fields: 0 
 namespace CTriggerToggleSave
 {
 }
 
+// Offset: 0x7ffe058f05d0 
+// N. Class: 699 
+// Fields: 3 
 namespace CTriggerSave
 {
 	constexpr uint32_t m_bForceNewLevelUnit = 0x960;  // bool 
@@ -7445,10 +9549,16 @@ namespace CTriggerSave
 	constexpr uint32_t m_minHitPoints = 0x968;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 700 
+// Fields: 0 
 namespace CTriggerGravity
 {
 }
 
+// Offset: 0x7ffe058ed630 
+// N. Class: 701 
+// Fields: 5 
 namespace CTriggerProximity
 {
 	constexpr uint32_t m_hMeasureTarget = 0x960;  // CHandle< CBaseEntity > 
@@ -7458,6 +9568,9 @@ namespace CTriggerProximity
 	constexpr uint32_t m_NearestEntityDistance = 0x978;  // CEntityOutputTemplate< float32 > 
 }
 
+// Offset: 0x7ffe058ed9e0 
+// N. Class: 702 
+// Fields: 4 
 namespace CTriggerImpact
 {
 	constexpr uint32_t m_flMagnitude = 0x988;  // float32 
@@ -7466,16 +9579,25 @@ namespace CTriggerImpact
 	constexpr uint32_t m_pOutputForce = 0x998;  // CEntityOutputTemplate< Vector > 
 }
 
+// Offset: 0x0 
+// N. Class: 703 
+// Fields: 0 
 namespace CServerRagdollTrigger
 {
 }
 
+// Offset: 0x7ffe058eddb0 
+// N. Class: 704 
+// Fields: 2 
 namespace CTriggerActiveWeaponDetect
 {
 	constexpr uint32_t m_OnTouchedActiveWeapon = 0x960;  // CEntityIOOutput 
 	constexpr uint32_t m_iszWeaponClassName = 0x988;  // CUtlSymbolLarge 
 }
 
+// Offset: 0x7ffe058edff0 
+// N. Class: 705 
+// Fields: 13 
 namespace CTriggerPhysics
 {
 	constexpr uint32_t m_gravityScale = 0x970;  // float32 
@@ -7493,22 +9615,34 @@ namespace CTriggerPhysics
 	constexpr uint32_t m_bConvertToDebrisWhenPossible = 0x9B8;  // bool 
 }
 
+// Offset: 0x7ffe058ee240 
+// N. Class: 706 
+// Fields: 2 
 namespace CTriggerDetectBulletFire
 {
 	constexpr uint32_t m_bPlayerFireOnly = 0x960;  // bool 
 	constexpr uint32_t m_OnDetectedBulletFire = 0x968;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058ee3e0 
+// N. Class: 707 
+// Fields: 1 
 namespace CTriggerDetectExplosion
 {
 	constexpr uint32_t m_OnDetectedExplosion = 0x988;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe058fda58 
+// N. Class: 708 
+// Fields: 1 
 namespace CScriptNavBlocker
 {
 	constexpr uint32_t m_vExtent = 0x7A0;  // Vector 
 }
 
+// Offset: 0x7ffe05834c90 
+// N. Class: 709 
+// Fields: 37 
 namespace CBasePropDoor
 {
 	constexpr uint32_t m_flAutoReturnDelay = 0xC68;  // float32 
@@ -7550,6 +9684,9 @@ namespace CBasePropDoor
 	constexpr uint32_t m_OnAjarOpen = 0xEC0;  // CEntityIOOutput 
 }
 
+// Offset: 0x7ffe05839fc0 
+// N. Class: 710 
+// Fields: 5 
 namespace CEnvLaser
 {
 	constexpr uint32_t m_iszLaserTarget = 0x830;  // CUtlSymbolLarge 
@@ -7559,6 +9696,9 @@ namespace CEnvLaser
 	constexpr uint32_t m_flStartFrame = 0x854;  // float32 
 }
 
+// Offset: 0x7ffe0583c000 
+// N. Class: 711 
+// Fields: 8 
 namespace CItem
 {
 	constexpr uint32_t m_OnPlayerTouch = 0x9B0;  // CEntityIOOutput 
@@ -7571,6 +9711,9 @@ namespace CItem
 	constexpr uint32_t m_bPhysStartAsleep = 0xA70;  // bool 
 }
 
+// Offset: 0x7ffe0583f570 
+// N. Class: 712 
+// Fields: 27 
 namespace CRagdollProp
 {
 	constexpr uint32_t m_ragdoll = 0x9B0;  // ragdoll_t 
@@ -7602,6 +9745,9 @@ namespace CRagdollProp
 	constexpr uint32_t m_bValidatePoweredRagdollPose = 0xB08;  // bool 
 }
 
+// Offset: 0x7ffe0583f240 
+// N. Class: 713 
+// Fields: 12 
 namespace CPhysMagnet
 {
 	constexpr uint32_t m_OnMagnetAttach = 0x9A8;  // CEntityIOOutput 
@@ -7618,6 +9764,9 @@ namespace CPhysMagnet
 	constexpr uint32_t m_iMaxObjectsAttached = 0xA30;  // int32 
 }
 
+// Offset: 0x7ffe05841540 
+// N. Class: 714 
+// Fields: 37 
 namespace CPhysicsProp
 {
 	constexpr uint32_t m_MotionEnabled = 0xB60;  // CEntityIOOutput 
@@ -7659,10 +9808,16 @@ namespace CPhysicsProp
 	constexpr uint32_t m_bAwake = 0xCF9;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 715 
+// Fields: 0 
 namespace CPhysicsPropOverride
 {
 }
 
+// Offset: 0x7ffe05842220 
+// N. Class: 716 
+// Fields: 5 
 namespace CPhysicsPropRespawnable
 {
 	constexpr uint32_t m_vOriginalSpawnOrigin = 0xD00;  // Vector 
@@ -7672,10 +9827,16 @@ namespace CPhysicsPropRespawnable
 	constexpr uint32_t m_flRespawnDuration = 0xD30;  // float32 
 }
 
+// Offset: 0x0 
+// N. Class: 717 
+// Fields: 0 
 namespace CWaterBullet
 {
 }
 
+// Offset: 0x7ffe058fc1d0 
+// N. Class: 718 
+// Fields: 9 
 namespace CEconEntity
 {
 	constexpr uint32_t m_AttributeManager = 0xA48;  // CAttributeContainer 
@@ -7689,12 +9850,18 @@ namespace CEconEntity
 	constexpr uint32_t m_iOldOwnerClass = 0xD2C;  // int32 
 }
 
+// Offset: 0x7ffe058fd2a0 
+// N. Class: 719 
+// Fields: 2 
 namespace CEconWearable
 {
 	constexpr uint32_t m_nForceSkin = 0xD30;  // int32 
 	constexpr uint32_t m_bAlwaysAllow = 0xD34;  // bool 
 }
 
+// Offset: 0x7ffe058534e0 
+// N. Class: 720 
+// Fields: 14 
 namespace CBaseGrenade
 {
 	constexpr uint32_t m_OnPlayerPickup = 0xA40;  // CEntityIOOutput 
@@ -7713,14 +9880,23 @@ namespace CBaseGrenade
 	constexpr uint32_t m_hOriginalThrower = 0xAD8;  // CHandle< CCSPlayerPawn > 
 }
 
+// Offset: 0x0 
+// N. Class: 721 
+// Fields: 0 
 namespace CPhysicsPropMultiplayer
 {
 }
 
+// Offset: 0x0 
+// N. Class: 722 
+// Fields: 0 
 namespace CPredictedViewModel
 {
 }
 
+// Offset: 0x7ffe05864730 
+// N. Class: 723 
+// Fields: 27 
 namespace CPlantedC4
 {
 	constexpr uint32_t m_bBombTicking = 0x9B0;  // bool 
@@ -7752,6 +9928,9 @@ namespace CPlantedC4
 	constexpr uint32_t m_flLastSpinDetectionTime = 0xD70;  // GameTime_t 
 }
 
+// Offset: 0x7ffe058609e0 
+// N. Class: 724 
+// Fields: 17 
 namespace CBaseCSGrenadeProjectile
 {
 	constexpr uint32_t m_vInitialPosition = 0xAE0;  // Vector 
@@ -7773,12 +9952,18 @@ namespace CBaseCSGrenadeProjectile
 	constexpr uint32_t m_bClearFromPlayers = 0xB4D;  // bool 
 }
 
+// Offset: 0x7ffe0585fd20 
+// N. Class: 725 
+// Fields: 2 
 namespace CItemDogtags
 {
 	constexpr uint32_t m_OwningPlayer = 0xA80;  // CHandle< CCSPlayerPawn > 
 	constexpr uint32_t m_KillingPlayer = 0xA84;  // CHandle< CCSPlayerPawn > 
 }
 
+// Offset: 0x7ffe058626d0 
+// N. Class: 726 
+// Fields: 3 
 namespace CSensorGrenadeProjectile
 {
 	constexpr uint32_t m_fExpireTime = 0xB50;  // GameTime_t 
@@ -7786,18 +9971,30 @@ namespace CSensorGrenadeProjectile
 	constexpr uint32_t m_hDisplayGrenade = 0xB58;  // CHandle< CBaseEntity > 
 }
 
+// Offset: 0x0 
+// N. Class: 727 
+// Fields: 0 
 namespace CBreachChargeProjectile
 {
 }
 
+// Offset: 0x0 
+// N. Class: 728 
+// Fields: 0 
 namespace CBumpMineProjectile
 {
 }
 
+// Offset: 0x0 
+// N. Class: 729 
+// Fields: 0 
 namespace CTripWireFireProjectile
 {
 }
 
+// Offset: 0x7ffe057f3b80 
+// N. Class: 730 
+// Fields: 3 
 namespace CFlashbangProjectile
 {
 	constexpr uint32_t m_flTimeToDetonate = 0xB50;  // float32 
@@ -7805,10 +10002,16 @@ namespace CFlashbangProjectile
 	constexpr uint32_t m_numTeammatesHit = 0xB55;  // uint8 
 }
 
+// Offset: 0x0 
+// N. Class: 731 
+// Fields: 0 
 namespace CHEGrenadeProjectile
 {
 }
 
+// Offset: 0x7ffe057ee970 
+// N. Class: 732 
+// Fields: 28 
 namespace CChicken
 {
 	constexpr uint32_t m_AttributeManager = 0xC78;  // CAttributeContainer 
@@ -7841,41 +10044,68 @@ namespace CChicken
 	constexpr uint32_t m_BlockDirectionTimer = 0x3148;  // CountdownTimer 
 }
 
+// Offset: 0x0 
+// N. Class: 733 
+// Fields: 0 
 namespace CHostageCarriableProp
 {
 }
 
+// Offset: 0x0 
+// N. Class: 734 
+// Fields: 0 
 namespace CItemAssaultSuit
 {
 }
 
+// Offset: 0x0 
+// N. Class: 735 
+// Fields: 0 
 namespace CItemHeavyAssaultSuit
 {
 }
 
+// Offset: 0x0 
+// N. Class: 736 
+// Fields: 0 
 namespace CItemKevlar
 {
 }
 
+// Offset: 0x7ffe057e3e20 
+// N. Class: 737 
+// Fields: 2 
 namespace CItemDefuser
 {
 	constexpr uint32_t m_entitySpottedState = 0xA80;  // EntitySpottedState_t 
 	constexpr uint32_t m_nSpotRules = 0xA98;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 738 
+// Fields: 0 
 namespace CBaseFlexAlias_funCBaseFlex
 {
 }
 
+// Offset: 0x7ffe058b5b80 
+// N. Class: 739 
+// Fields: 1 
 namespace CScriptItem
 {
 	constexpr uint32_t m_MoveTypeOverride = 0xA80;  // MoveType_t 
 }
 
+// Offset: 0x0 
+// N. Class: 740 
+// Fields: 0 
 namespace CRagdollPropAlias_physics_prop_ragdoll
 {
 }
 
+// Offset: 0x7ffe058cf1d0 
+// N. Class: 741 
+// Fields: 6 
 namespace CRagdollPropAttached
 {
 	constexpr uint32_t m_boneIndexAttached = 0xB48;  // uint32 
@@ -7886,6 +10116,9 @@ namespace CRagdollPropAttached
 	constexpr uint32_t m_bShouldDeleteAttachedActivationRecord = 0xB78;  // bool 
 }
 
+// Offset: 0x7ffe058da570 
+// N. Class: 742 
+// Fields: 17 
 namespace CPropDoorRotating
 {
 	constexpr uint32_t m_vecAxis = 0xEE8;  // Vector 
@@ -7907,6 +10140,9 @@ namespace CPropDoorRotating
 	constexpr uint32_t m_hEntityBlocker = 0xF78;  // CHandle< CEntityBlocker > 
 }
 
+// Offset: 0x7ffe058da8d0 
+// N. Class: 743 
+// Fields: 4 
 namespace CPropDoorRotatingBreakable
 {
 	constexpr uint32_t m_bBreakable = 0xF80;  // bool 
@@ -7915,6 +10151,9 @@ namespace CPropDoorRotatingBreakable
 	constexpr uint32_t m_damageStates = 0xF88;  // CUtlVector< CUtlSymbolLarge > 
 }
 
+// Offset: 0x7ffe05833f10 
+// N. Class: 744 
+// Fields: 9 
 namespace CBaseCombatCharacter
 {
 	constexpr uint32_t m_bForceServerRagdoll = 0xA38;  // bool 
@@ -7928,11 +10167,17 @@ namespace CBaseCombatCharacter
 	constexpr uint32_t m_nNavHullIdx = 0xABC;  // uint32 
 }
 
+// Offset: 0x7ffe05860250 
+// N. Class: 745 
+// Fields: 1 
 namespace CCSGOViewModel
 {
 	constexpr uint32_t m_bShouldIgnoreOffsetAndAccuracy = 0x9F0;  // bool 
 }
 
+// Offset: 0x7ffe05863880 
+// N. Class: 746 
+// Fields: 65 
 namespace CCSWeaponBase
 {
 	constexpr uint32_t m_bRemoveable = 0xDA0;  // bool 
@@ -8002,6 +10247,9 @@ namespace CCSWeaponBase
 	constexpr uint32_t m_flWatTickOffset = 0xF5C;  // float32 
 }
 
+// Offset: 0x7ffe05865c00 
+// N. Class: 747 
+// Fields: 9 
 namespace CCSWeaponBaseGun
 {
 	constexpr uint32_t m_zoomLevel = 0xF70;  // int32 
@@ -8015,6 +10263,9 @@ namespace CCSWeaponBaseGun
 	constexpr uint32_t m_bSkillBoltLiftedFireKey = 0xF89;  // bool 
 }
 
+// Offset: 0x7ffe05862490 
+// N. Class: 748 
+// Fields: 11 
 namespace CC4
 {
 	constexpr uint32_t m_vecLastValidPlayerHeldPosition = 0xFA0;  // Vector 
@@ -8030,41 +10281,68 @@ namespace CC4
 	constexpr uint32_t m_bBombPlanted = 0xFEB;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 749 
+// Fields: 0 
 namespace CDEagle
 {
 }
 
+// Offset: 0x0 
+// N. Class: 750 
+// Fields: 0 
 namespace CWeaponElite
 {
 }
 
+// Offset: 0x0 
+// N. Class: 751 
+// Fields: 0 
 namespace CWeaponNOVA
 {
 }
 
+// Offset: 0x0 
+// N. Class: 752 
+// Fields: 0 
 namespace CWeaponSawedoff
 {
 }
 
+// Offset: 0x7ffe05867de0 
+// N. Class: 753 
+// Fields: 2 
 namespace CWeaponTaser
 {
 	constexpr uint32_t m_fFireTime = 0xF90;  // GameTime_t 
 	constexpr uint32_t m_nLastAttackTick = 0xF94;  // int32 
 }
 
+// Offset: 0x0 
+// N. Class: 754 
+// Fields: 0 
 namespace CWeaponXM1014
 {
 }
 
+// Offset: 0x7ffe05867be0 
+// N. Class: 755 
+// Fields: 1 
 namespace CKnife
 {
 	constexpr uint32_t m_bFirstAttack = 0xF70;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 756 
+// Fields: 0 
 namespace CMelee
 {
 }
 
+// Offset: 0x7ffe05867f50 
+// N. Class: 757 
+// Fields: 3 
 namespace CWeaponShield
 {
 	constexpr uint32_t m_flBulletDamageAbsorbed = 0xF90;  // float32 
@@ -8072,6 +10350,9 @@ namespace CWeaponShield
 	constexpr uint32_t m_flDisplayHealth = 0xF98;  // float32 
 }
 
+// Offset: 0x7ffe058627e0 
+// N. Class: 758 
+// Fields: 4 
 namespace CMolotovProjectile
 {
 	constexpr uint32_t m_bIsIncGrenade = 0xB50;  // bool 
@@ -8080,6 +10361,9 @@ namespace CMolotovProjectile
 	constexpr uint32_t m_bHasBouncedOffPlayer = 0xC40;  // bool 
 }
 
+// Offset: 0x7ffe05860d50 
+// N. Class: 759 
+// Fields: 4 
 namespace CDecoyProjectile
 {
 	constexpr uint32_t m_nDecoyShotTick = 0xB58;  // int32 
@@ -8088,6 +10372,9 @@ namespace CDecoyProjectile
 	constexpr uint32_t m_decoyWeaponDefIndex = 0xB70;  // uint16 
 }
 
+// Offset: 0x7ffe05864410 
+// N. Class: 760 
+// Fields: 11 
 namespace CSmokeGrenadeProjectile
 {
 	constexpr uint32_t m_nSmokeEffectTickBegin = 0xB68;  // int32 
@@ -8103,6 +10390,9 @@ namespace CSmokeGrenadeProjectile
 	constexpr uint32_t m_bExplodeFromInferno = 0x2E38;  // bool 
 }
 
+// Offset: 0x7ffe05864130 
+// N. Class: 761 
+// Fields: 14 
 namespace CBaseCSGrenade
 {
 	constexpr uint32_t m_bRedraw = 0xF70;  // bool 
@@ -8121,16 +10411,25 @@ namespace CBaseCSGrenade
 	constexpr uint32_t m_hSwitchToWeaponAfterThrow = 0xF98;  // CHandle< CCSWeaponBase > 
 }
 
+// Offset: 0x7ffe058645f0 
+// N. Class: 762 
+// Fields: 2 
 namespace CWeaponBaseItem
 {
 	constexpr uint32_t m_SequenceCompleteTimer = 0xF70;  // CountdownTimer 
 	constexpr uint32_t m_bRedraw = 0xF88;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 763 
+// Fields: 0 
 namespace CItem_Healthshot
 {
 }
 
+// Offset: 0x7ffe058660c0 
+// N. Class: 764 
+// Fields: 7 
 namespace CFists
 {
 	constexpr uint32_t m_bPlayingUninterruptableAct = 0xF70;  // bool 
@@ -8142,32 +10441,54 @@ namespace CFists
 	constexpr uint32_t m_bDestroyAfterTaunt = 0xF85;  // bool 
 }
 
+// Offset: 0x0 
+// N. Class: 765 
+// Fields: 0 
 namespace CSensorGrenade
 {
 }
 
+// Offset: 0x0 
+// N. Class: 766 
+// Fields: 0 
 namespace CBreachCharge
 {
 }
 
+// Offset: 0x0 
+// N. Class: 767 
+// Fields: 0 
 namespace CBumpMine
 {
 }
 
+// Offset: 0x0 
+// N. Class: 768 
+// Fields: 0 
 namespace CTablet
 {
 }
 
+// Offset: 0x0 
+// N. Class: 769 
+// Fields: 0 
 namespace CTripWireFire
 {
 }
 
+// Offset: 0x0 
+// N. Class: 770 
+// Fields: 0 
 namespace CWeaponZoneRepulsor
 {
 }
 
+// Offset: 0x7ffe057e63a0 
+// N. Class: 771 
+// Fields: 22 
 namespace CCSPlayerPawnBase
 {
+	constexpr uint32_t m_CTouchExpansionComponent = 0xC68;  // CTouchExpansionComponent 
 	constexpr uint32_t m_pPingServices = 0xCB8;  // CCSPlayer_PingServices* 
 	constexpr uint32_t m_pViewModelServices = 0xCC0;  // CPlayer_ViewModelServices* 
 	constexpr uint32_t m_blindUntilTime = 0xCC8;  // GameTime_t 
@@ -8191,11 +10512,17 @@ namespace CCSPlayerPawnBase
 	constexpr uint32_t m_hOriginalController = 0xDC4;  // CHandle< CCSPlayerController > 
 }
 
+// Offset: 0x7ffe057ef7b0 
+// N. Class: 772 
+// Fields: 1 
 namespace CHostageExpresserShim
 {
 	constexpr uint32_t m_pExpresser = 0xAC0;  // CAI_Expresser* 
 }
 
+// Offset: 0x7ffe057ef900 
+// N. Class: 773 
+// Fields: 39 
 namespace CHostage
 {
 	constexpr uint32_t m_OnHostageBeginGrab = 0xAD8;  // CEntityIOOutput 
@@ -8239,146 +10566,254 @@ namespace CHostage
 	constexpr uint32_t m_vecHostageResetPosition = 0x2D54;  // Vector 
 }
 
+// Offset: 0x0 
+// N. Class: 774 
+// Fields: 0 
 namespace CHostageAlias_info_hostage_spawn
 {
 }
 
+// Offset: 0x0 
+// N. Class: 775 
+// Fields: 0 
 namespace CItemDefuserAlias_item_defuser
 {
 }
 
+// Offset: 0x0 
+// N. Class: 776 
+// Fields: 0 
 namespace CAK47
 {
 }
 
+// Offset: 0x0 
+// N. Class: 777 
+// Fields: 0 
 namespace CWeaponAug
 {
 }
 
+// Offset: 0x0 
+// N. Class: 778 
+// Fields: 0 
 namespace CWeaponAWP
 {
 }
 
+// Offset: 0x0 
+// N. Class: 779 
+// Fields: 0 
 namespace CWeaponBizon
 {
 }
 
+// Offset: 0x0 
+// N. Class: 780 
+// Fields: 0 
 namespace CWeaponFamas
 {
 }
 
+// Offset: 0x0 
+// N. Class: 781 
+// Fields: 0 
 namespace CWeaponFiveSeven
 {
 }
 
+// Offset: 0x0 
+// N. Class: 782 
+// Fields: 0 
 namespace CWeaponG3SG1
 {
 }
 
+// Offset: 0x0 
+// N. Class: 783 
+// Fields: 0 
 namespace CWeaponGalilAR
 {
 }
 
+// Offset: 0x0 
+// N. Class: 784 
+// Fields: 0 
 namespace CWeaponGlock
 {
 }
 
+// Offset: 0x0 
+// N. Class: 785 
+// Fields: 0 
 namespace CWeaponHKP2000
 {
 }
 
+// Offset: 0x0 
+// N. Class: 786 
+// Fields: 0 
 namespace CWeaponUSPSilencer
 {
 }
 
+// Offset: 0x0 
+// N. Class: 787 
+// Fields: 0 
 namespace CWeaponM4A1
 {
 }
 
+// Offset: 0x0 
+// N. Class: 788 
+// Fields: 0 
 namespace CWeaponM4A1Silencer
 {
 }
 
+// Offset: 0x0 
+// N. Class: 789 
+// Fields: 0 
 namespace CWeaponMAC10
 {
 }
 
+// Offset: 0x0 
+// N. Class: 790 
+// Fields: 0 
 namespace CWeaponMag7
 {
 }
 
+// Offset: 0x0 
+// N. Class: 791 
+// Fields: 0 
 namespace CWeaponMP5SD
 {
 }
 
+// Offset: 0x0 
+// N. Class: 792 
+// Fields: 0 
 namespace CWeaponMP7
 {
 }
 
+// Offset: 0x0 
+// N. Class: 793 
+// Fields: 0 
 namespace CWeaponMP9
 {
 }
 
+// Offset: 0x0 
+// N. Class: 794 
+// Fields: 0 
 namespace CWeaponNegev
 {
 }
 
+// Offset: 0x0 
+// N. Class: 795 
+// Fields: 0 
 namespace CWeaponP250
 {
 }
 
+// Offset: 0x0 
+// N. Class: 796 
+// Fields: 0 
 namespace CWeaponCZ75a
 {
 }
 
+// Offset: 0x0 
+// N. Class: 797 
+// Fields: 0 
 namespace CWeaponP90
 {
 }
 
+// Offset: 0x0 
+// N. Class: 798 
+// Fields: 0 
 namespace CWeaponSCAR20
 {
 }
 
+// Offset: 0x0 
+// N. Class: 799 
+// Fields: 0 
 namespace CWeaponSG556
 {
 }
 
+// Offset: 0x0 
+// N. Class: 800 
+// Fields: 0 
 namespace CWeaponSSG08
 {
 }
 
+// Offset: 0x0 
+// N. Class: 801 
+// Fields: 0 
 namespace CWeaponTec9
 {
 }
 
+// Offset: 0x0 
+// N. Class: 802 
+// Fields: 0 
 namespace CWeaponUMP45
 {
 }
 
+// Offset: 0x0 
+// N. Class: 803 
+// Fields: 0 
 namespace CWeaponM249
 {
 }
 
+// Offset: 0x0 
+// N. Class: 804 
+// Fields: 0 
 namespace CWeaponRevolver
 {
 }
 
+// Offset: 0x0 
+// N. Class: 805 
+// Fields: 0 
 namespace CMolotovGrenade
 {
 }
 
+// Offset: 0x0 
+// N. Class: 806 
+// Fields: 0 
 namespace CIncendiaryGrenade
 {
 }
 
+// Offset: 0x0 
+// N. Class: 807 
+// Fields: 0 
 namespace CDecoyGrenade
 {
 }
 
+// Offset: 0x0 
+// N. Class: 808 
+// Fields: 0 
 namespace CFlashbang
 {
 }
 
+// Offset: 0x0 
+// N. Class: 809 
+// Fields: 0 
 namespace CHEGrenade
 {
 }

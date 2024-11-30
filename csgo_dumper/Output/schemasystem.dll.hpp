@@ -1,3 +1,10 @@
+// Schema offset: 0x26f7df808c0 
+// Schema name: schemasystem.dll 
+// Schema declared class: 6 
+
+// Offset: 0x7ffe3af342a0 
+// N. Class: 0 
+// Fields: 22 
 namespace CSchemaSystemInternalRegistration
 {
 	constexpr uint32_t m_Vector2D = 0x0;  // Vector2D 
@@ -24,26 +31,41 @@ namespace CSchemaSystemInternalRegistration
 	constexpr uint32_t m_KV3 = 0x170;  // KeyValues3 
 }
 
+// Offset: 0x0 
+// N. Class: 1 
+// Fields: 0 
 namespace InfoForResourceTypeCResourceManifestInternal
 {
 }
 
+// Offset: 0x7ffe3af33120 
+// N. Class: 2 
+// Fields: 1 
 namespace ResourceId_t
 {
 	constexpr uint32_t m_Value = 0x0;  // uint64 
 }
 
+// Offset: 0x7ffe3af33260 
+// N. Class: 3 
+// Fields: 2 
 namespace CExampleSchemaVData_Monomorphic
 {
 	constexpr uint32_t m_nExample1 = 0x0;  // int32 
 	constexpr uint32_t m_nExample2 = 0x4;  // int32 
 }
 
+// Offset: 0x7ffe3af33318 
+// N. Class: 4 
+// Fields: 1 
 namespace CExampleSchemaVData_PolymorphicBase
 {
 	constexpr uint32_t m_nBase = 0x8;  // int32 
 }
 
+// Offset: 0x7ffe3af333b8 
+// N. Class: 5 
+// Fields: 1 
 namespace CExampleSchemaVData_PolymorphicDerivedA
 {
 	constexpr uint32_t m_nDerivedA = 0x10;  // int32 
